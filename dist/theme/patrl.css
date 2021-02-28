@@ -1,68 +1,88 @@
 /**
- * A simple theme for reveal.js presentations, similar
- * to the default theme. The accent color is darkblue.
- *
- * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
- * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ * Solarized Light theme for reveal.js.
+ * Author: Achim Staebler
  */
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700,400italic,700italic,400bold,700bold);
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto; }
+
+.reveal .alert {
+  display: block;
+  background: #424242;
+  color: #C6C6C6;
+  text-align: left;
+  font-style: normal;
+  border-left-style: solid;
+  border-left-color: #4FB8CC;
+  padding-left: 5px;
+  border-left-width: 5px; }
+
+.reveal .alert[name]:before {
+  content: attr(name);
+  font-weight: bold;
+  color: #4FB8CC;
+  font-style: normal; }
+
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
-  color: #fff; }
+  color: #C6C6C6; }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #fff;
+  --background-color: #f1f1f1;
   --main-font: IBM Plex Sans Condensed, sans-serif;
   --main-font-size: 40px;
-  --main-color: #000;
+  --main-color: #424242;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
   --heading-font: IBM Plex Sans Condensed, sans-serif;
-  --heading-color: #000;
+  --heading-color: #424242;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
-  --heading-text-transform: none;
+  --heading-text-transform: uppercase;
   --heading-text-shadow: none;
-  --heading-font-weight: normal;
+  --heading-font-weight: bold;
   --heading1-text-shadow: none;
   --heading1-size: 3.77em;
-  --heading2-size: 2.11em;
+  --heading2-size: 1.55em;
   --heading3-size: 1.55em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #00008B;
-  --link-color-hover: #0000f1;
-  --selection-background-color: rgba(0, 0, 0, 0.99);
+  --link-color: #20A5BA;
+  --link-color-hover: #5dd1e3;
+  --selection-background-color: #C30771;
   --selection-color: #fff; }
 
 .reveal-viewport {
-  background: #fff;
-  background-color: #fff; }
+  background: #f1f1f1;
+  background-color: #f1f1f1; }
 
 .reveal {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #000; }
+  color: #424242; }
 
 .reveal ::selection {
   color: #fff;
-  background: rgba(0, 0, 0, 0.99);
+  background: #C30771;
   text-shadow: none; }
 
 .reveal ::-moz-selection {
   color: #fff;
-  background: rgba(0, 0, 0, 0.99);
+  background: #C30771;
   text-shadow: none; }
 
 .reveal .slides section,
 .reveal .slides section > section {
   line-height: 1.3;
-  font-weight: inherit; }
+  font-weight: inherit;
+  text-align: left; }
 
 /*********************************************
  * HEADERS
@@ -74,12 +94,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #000;
+  color: #424242;
   font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: none;
+  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -87,7 +107,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-size: 3.77em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 1.55em; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -250,49 +270,49 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * LINKS
  *********************************************/
 .reveal a {
-  color: #00008B;
+  color: #20A5BA;
   text-decoration: none;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #0000f1;
+  color: #5dd1e3;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #00003f; }
+  background: #156b79; }
 
 /*********************************************
  * Frame helper
  *********************************************/
 .reveal .r-frame {
-  border: 4px solid #000;
+  border: 4px solid #424242;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal a .r-frame {
   transition: all .15s linear; }
 
 .reveal a:hover .r-frame {
-  border-color: #00008B;
+  border-color: #20A5BA;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #00008B; }
+  color: #20A5BA; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #00008B; }
+  color: #20A5BA; }
 
 /*********************************************
  * PRINT BACKGROUND
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #fff; } }
+    background-color: #f1f1f1; } }
