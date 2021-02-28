@@ -1,24 +1,164 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>Trivalent foundations for a logic of anaphora</title>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+        <meta name="author" content="Patrick D. Elliott">
+                <title>Trivalent foundations for a logic of anaphora</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/patrl.css" id="theme">
-		<!-- need the following for chalkboard(?) -->
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
+
 		<div class="reveal">
-			<div class="slides">
-				<section data-markdown="test.md"></section>
-			</div>
-		</div>
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Trivalent foundations for a logic of anaphora</h1>
+  <p class="author">Patrick D. Elliott</p>
+</section>
+<section>
+<section id="discourse-anaphora-and-the-dynamic-notion-of-content" class="title-slide slide level1">
+<h1>Discourse anaphora and the dynamic notion of content</h1>
+
+</section>
+<section id="keeping-track-of-marbles" class="slide level2">
+<h2>Keeping track of marbles</h2>
+<ol class="example" type="1">
+<li class="fragment"><p>Andreea has <strong>a partner</strong>.<br />
+<strong>He</strong> is standing next to her.</p></li>
+<li class="fragment"><p>Andreea is married.<br />
+# <strong>He</strong> is standing next to her.</p></li>
+<li class="fragment"><p><strong>Exactly one of the ten balls</strong> is not in the bag.<br />
+<strong>It</strong> is under the sofa.</p></li>
+<li class="fragment"><p>Exactly nine of the ten balls are in the bag.<br />
+# <strong>It</strong> is under the sofa.</p></li>
+</ol>
+<ul>
+<li class="fragment">(Heim 1982, Kamp 1988)</li>
+</ul>
+</section>
+<section id="discourse-anaphora-and-aboutness" class="slide level2">
+<h2>Discourse anaphora and aboutness</h2>
+<ul>
+<li class="fragment"><em>Content</em> is influenced not just by <em>what</em> is said, but <em>how</em> it is said (Stalnaker 1998).</li>
+</ul>
+<aside class="notes">
+<p>Talk about Kamp, and Stalnaker’s response to Kamp.</p>
+</aside>
+</section>
+<section id="pragmatics" class="slide level2">
+<h2>Pragmatics</h2>
+<ul>
+<li class="fragment">The Stalnakerian perspective:</li>
+</ul>
+<aside class="notes">
+<p>sentences as arrows from worlds to truth-values; update an information state by filtering out the false-tagged worlds.</p>
+</aside>
+</section>
+<section id="the-dynamic-perspective" class="slide level2">
+<h2>The dynamic perspective</h2>
+<aside class="notes">
+<p>sentences as arrows from world-assignment pairs to sets of world assignment pairs; update an information state by gathering up the outputs.</p>
+</aside>
+</section></section>
+<section>
+<section id="anaphora-in-complex-sentences" class="title-slide slide level1" data-background-image="./img/background1.gif">
+<h1 data-background-image="./img/background1.gif">Anaphora in complex sentences</h1>
+
+</section>
+<section id="conjunction" class="slide level2">
+<h2>Conjunction</h2>
+<div class="element: fragment">
+<p>The dynamic connective <em>par excellence</em>: Referential information is piped from left-to-right, and flows outwards.</p>
+</div>
+<ol start="5" class="example" type="1">
+<li class="fragment"><strong>A linguist</strong> walked in, and <strong>she</strong> sat next to a philosopher.<br />
+He yawned.</li>
+</ol>
+<div class="element: fragment">
+<p>In the dynamic parlance, conjunction is <em>internally</em> and <em>externally dynamic</em>. (Groenendijk &amp; Stokhof 1991; henceforth G&amp;S)</p>
+</div>
+</section>
+<section id="conditionals" class="slide level2">
+<h2>Conditionals</h2>
+<div class="element: fragment">
+<p>Referential information is piped from left-to-right, but may flow no further.</p>
+</div>
+<ol start="6" class="example" type="1">
+<li class="fragment">If <strong>a linguist</strong>, <strong>she</strong>’s sitting next to a philosopher.<br />
+# He yawned.</li>
+</ol>
+<div class="element: fragment">
+<p>Conditionals are <em>internally dynamic</em> but <em>externally static</em>.</p>
+</div>
+</section>
+<section id="negation" class="slide level2">
+<h2>Negation</h2>
+<div class="element: fragment">
+<p>Negation acts like a dam, blocking referential information from flowing further.</p>
+</div>
+<ul>
+<li class="fragment"><p>EXAMPLES</p></li>
+<li class="fragment"><p>Negation is <em>externally static</em>.</p></li>
+</ul>
+</section>
+<section id="disjunction" class="slide level2">
+<h2>Disjunction</h2>
+<div class="element: fragment">
+<p>There are no through-channels between disjuncts; referential information flows neither between disjuncts, nor beyond the disjunction.</p>
+</div>
+<ol start="7" class="example" type="1">
+<li class="fragment"><p>Either a linguist is here, or she’s smoking outside.</p></li>
+<li class="fragment"><p>Either a linguist is here, or the talk was badly advertised.<br />
+# She’s smoking outside.</p></li>
+</ol>
+<div class="element: fragment">
+<p>Disjunction is <em>internally</em> and <em>externally static</em></p>
+</div>
+</section>
+<section id="context-change-potentials" class="slide level2">
+<h2>Context change potentials</h2>
+<p>DS puts the lexicon in charge of regulating referential information flow.</p>
+<div class="alert" name="The central dilemma">
+<p>If logical connectives are responsible for regulating the flow of information, we make no substantial predictions about how the truth-conditional contribution of the connectives relates to referential information flow.</p>
+</div>
+<p>(Schlenker 2006 a.o. make the same point wrt. presupposition projection.)</p>
+</section>
+<section id="an-alternative-take" class="slide level2">
+<h2>An alternative take</h2>
+<p>To be developed today:</p>
+<ul>
+<li class="fragment">Taking the accessibility generalizations to be indicative of the <em>semantic</em> contribution of the logical connectives <em>precludes</em> a principled account of referential information flow.</li>
+<li class="fragment">The accessibility generalizations are empirically flawed; accessibility is sensitive to contextual factors.</li>
+<li class="fragment"><strong>The main point:</strong> the logical connectives are exactly what they seem to be - <em>truth-functional operators</em> - referential information flows uniformly from left-to-right.</li>
+</ul>
+</section></section>
+<section>
+<section id="empirical-issues-for-dynamic-semantics" class="title-slide slide level1">
+<h1>Empirical issues for dynamic semantics</h1>
+
+</section>
+<section id="bathrooms" class="slide level2">
+<h2>Bathrooms</h2>
+<ul>
+<li class="fragment">Recall that, in DS, negation <em>destroys</em> referential information.</li>
+<li class="fragment">But, referential information destroyed in an initial disjunct can be resurrected in a subsequent disjunct (observation due to Barbara Partee).</li>
+</ul>
+<ol start="9" class="example" type="1">
+<li class="fragment">Either there isn’t <strong>a bathroom</strong>, or <strong>it</strong>’s upstairs.</li>
+</ol>
+</section></section>
+    </div>
+  </div>
+
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
