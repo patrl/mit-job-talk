@@ -12,12 +12,11 @@
 
 
 // Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700,400italic,700italic,400bold,700bold);
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@300);
+//
+$font-prefix: '../../node_modules/@ibm/plex';
+@import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
 
-/**
- * Solarized colors by Ethan Schoonover
- */
+
 html * {
 	color-profile: sRGB;
 	rendering-intent: auto;
@@ -34,14 +33,15 @@ $blue: #20BBFC;
 $dark-red: #C30771;
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'IBM Plex Sans Condensed', sans-serif;
-$headingFont: 'IBM Plex Mono', monospace;
+$mainFont: 'IBM Plex Sans Condensed';
+$headingFont: 'IBM Plex Mono';
 $headingFontWeight: normal;
 $mainColor: $light-black;
+$mainFontSize: 30px;
 $headingColor: $light-black;
 $headingTextShadow: none;
-$heading2Size: 1.55em;
-$heading1Size: 2.11em;
+// $heading2Size: 1.55em;
+// $heading1Size: 2.11em;
 $backgroundColor: $white;
 $linkColor: $dark-cyan;
 $linkColorHover: lighten( $linkColor, 20% );
