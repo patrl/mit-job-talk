@@ -128,15 +128,49 @@ To be developed today:
 - The accessibility generalizations are empirically flawed; accessibility is sensitive to contextual factors.
 - **The main point:** the logical connectives are exactly what they seem to be - *truth-functional operators* - referential information flows uniformly from left-to-right.
 
-# Empirical issues for dynamic semantics
+# Accessibility revisited
 
-## Bathrooms
+## Double negation
 
+:::{.element: class=fragment}
 In DS, negation *destroys* referential information.
+:::
+
+(@) Frank doesn't own **no shirt**. **It**'s in the closet.
+
+(@) It's not the case that  
+I haven't read any book by Chomsky.  
+I enjoyed it!
+
+Referential information can be resurrected by an additional negation (Krahmer & Muskens 1995, Gotham 2019).
+
+
+
+::: notes
+Mention uniqueness
+:::
+
+## Bathroom disjunctions
+
+:::{.element: class=fragment}
+In DS, negation *destroys* referential information.
+:::
 
 (@) Either there isn't **a bathroom**, or **it**'s upstairs.
 
-Referential information destroyed in an initial disjunct can be resurrected in a subsequent disjunct (observation due to Barbara Partee).
+- Referential information destroyed in an initial disjunct can be resurrected in a subsequent disjunct (observation due to Barbara Partee).
+
+- N.b. this intuitively parallels presupposition projection facts (Beaver 2001):
+
+(@) Either Sam *never* smoked, or he stopped smoking. 
+
+## Stone disjunctions
+
+Under certain circumstances, the ban on passing referential information further is lifted (G&S 1991, Stone 1992):
+
+(@) Either we're interviewing **a linguist**,  
+or we're interview **a philosopher**.  
+(Either way) **she's** waiting outside.
 
 
 
