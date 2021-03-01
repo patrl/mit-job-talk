@@ -26,25 +26,25 @@
 	<body>
 
 		<div class="reveal">
-    <div class="slides">
+      <div class="slides">
 
-$if(title)$
-<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
-  <h1 class="title">$title$</h1>
-$if(subtitle)$
-  <p class="subtitle">$subtitle$</p>
-$endif$
-$for(author)$
-  <p class="author">$author$</p>
-$endfor$
-$if(date)$
-  <p class="date">$date$</p>
-$endif$
-</section>
-$endif$
-$body$
+        $if(title)$
+        <section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+          <h1 class="title">$title$</h1>
+          <!-- $if(subtitle)$ -->
+          <!-- <p class="subtitle">$subtitle$</p> -->
+          <!-- $endif$ -->
+          <!-- $for(author)$ -->
+          <!-- <p class="author">$author$</p> -->
+          <!-- $endfor$ -->
+          <!-- $if(date)$ -->
+          <!-- <p class="date">$date$</p> -->
+          <!-- $endif$ -->
+        </section>
+        $endif$
+        $body$
+      </div>
     </div>
-  </div>
 
 
 		<script src="dist/reveal.js"></script>
@@ -57,10 +57,10 @@ $body$
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
+				  hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealNotes, RevealMath, RevealChalkboard ]
+				  // Learn about plugins: https://revealjs.com/plugins/
+				  plugins: [ RevealMarkdown, RevealNotes, RevealMath, RevealChalkboard ]
 			});
 		</script>
 	</body>
