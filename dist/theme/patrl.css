@@ -3,6 +3,7 @@
  * Author: Achim Staebler
  */
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700,400italic,700italic,400bold,700bold);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:wght@300);
 /**
  * Solarized colors by Ethan Schoonover
  */
@@ -12,8 +13,6 @@ html * {
 
 .reveal .alert {
   display: block;
-  background: #424242;
-  color: #C6C6C6;
   text-align: left;
   font-style: normal;
   border-left-style: solid;
@@ -21,10 +20,23 @@ html * {
   padding-left: 5px;
   border-left-width: 5px; }
 
+.reveal .boxed {
+  border: 1px solid #C30771;
+  padding: 5px; }
+
+.reveal .hl1 {
+  color: #C30771; }
+
+.reveal .hl2 {
+  color: #20A5BA; }
+
+.reveal h1 {
+  text-align: center; }
+
 .reveal .alert[name]:before {
   content: attr(name);
   font-weight: bold;
-  color: #4FB8CC;
+  color: #20A5BA;
   font-style: normal; }
 
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
@@ -40,15 +52,15 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --main-color: #424242;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
-  --heading-font: IBM Plex Sans Condensed, sans-serif;
+  --heading-font: IBM Plex Mono, monospace;
   --heading-color: #424242;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
   --heading-text-transform: uppercase;
   --heading-text-shadow: none;
-  --heading-font-weight: bold;
+  --heading-font-weight: normal;
   --heading1-text-shadow: none;
-  --heading1-size: 3.77em;
+  --heading1-size: 2.11em;
   --heading2-size: 1.55em;
   --heading3-size: 1.55em;
   --heading4-size: 1em;
@@ -95,8 +107,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #424242;
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
@@ -104,7 +116,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 2.11em; }
 
 .reveal h2 {
   font-size: 1.55em; }
