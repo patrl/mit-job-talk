@@ -3,25 +3,25 @@ title: Trivalent foundations for a logic of anaphora
 author: Patrick D. Elliott
 ---
 
-# Discourse anaphora and the dynamic notion of content
+# Discourse anaphora informs content
 
-## Keeping track of marbles
+## Marriage and marbles 
 
-(@) Andreea has **a partner**.  
-**He** is standing next to her.
+Heim 1982, Kamp 1988, a.o.
+
+(@) Andreea has [**a partner**]{class=hl1}.  
+[**He**]{class=hl1} is standing next to her.
 
 (@) Andreea is married.  
-\# **He** is standing next to her.
+\# [**He**]{class=hl1} is standing next to her.
 
-(@) **Exactly one of the ten balls** is not in the bag.  
-**It** is under the sofa. 
+(@) [**Exactly one of the ten balls**]{class=hl2} is not in the bag.  
+[**It**]{class=hl2} is under the sofa. 
   
 (@) Exactly nine of the ten balls are in the bag.  
-\# **It** is under the sofa.
+\# [**It**]{class=hl2} is under the sofa.
 
-- (Heim 1982, Kamp 1988)
-
-## Discourse anaphora and aboutness
+## Aboutness
 
 - *Content* is influenced not just by *what* is said, but *how* it is said (Stalnaker 1998).
 
@@ -29,7 +29,7 @@ author: Patrick D. Elliott
 Talk about Kamp, and Stalnaker's response to Kamp.
 :::
 
-## Pragmatics
+## Pragmatics {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3}
 
 - The Stalnakerian perspective:
 
@@ -47,16 +47,18 @@ sentences as arrows from world-assignment pairs to sets of world assignment pair
 
 :::
 
-# Anaphora in complex sentences {data-background-image="./img/background1.gif"}
+# Anaphora in complex sentences 
 
 ## Conjunction
 
 :::{.element: class="fragment"}
-The dynamic connective *par excellence*: Referential information is piped from left-to-right, and flows outwards.
+"and" is the dynamic connective *par excellence*: Referential information is piped from left-to-right, and flows outwards.
 :::
 
-(@) **A linguist** walked in, and **she** sat next to a philosopher.  
-He yawned.
+(@) [**A linguist**]{class=hl1} walked in, and [**she**]{class=hl1} sat next to [**a philosopher**]{class=hl2}.  
+[**He**]{class=hl2} yawned.
+
+(@) \# [**She**]{class=hl1} walked in, and [**a linguist**]{class=hl1} sat down.
 
 :::{.element: class="fragment"}
 In the dynamic parlance, conjunction is *internally* and *externally dynamic*. (Groenendijk & Stokhof 1991; henceforth G&S)
@@ -68,12 +70,13 @@ In the dynamic parlance, conjunction is *internally* and *externally dynamic*. (
 Referential information is piped from left-to-right, but may flow no further.
 :::
 
-(@) If **a linguist**, **she**'s sitting next to a philosopher.  
-\# He yawned.
+(@) [If [**a linguist**]{class=hl1} is here, [**she**]{class=hl1}'s sitting next to [**a philosopher**]{class=hl2}]{class=boxed}.  
+\# [**He**]{class=hl2} yawned.
 
 :::{.element: class="fragment"}
 Conditionals are *internally dynamic* but *externally static*.
 :::
+
 
 ## Negation
 
@@ -81,9 +84,12 @@ Conditionals are *internally dynamic* but *externally static*.
 Negation acts like a dam, blocking referential information from flowing further.
 :::
 
-- EXAMPLES
+(@) It's not the case that [[**a linguist**]{class=hl1} is here]{class=boxed}.  
+\# [**She**]{class=hl1} yawned.
 
-- Negation is *externally static*.
+:::{.element: class="fragment"}
+Negation is *externally static*.
+:::
 
 ## Disjunction
 
@@ -91,13 +97,17 @@ Negation acts like a dam, blocking referential information from flowing further.
 There are no through-channels between disjuncts; referential information flows neither between disjuncts, nor beyond the disjunction.
 :::
 
-(@) Either a linguist is here, or she's smoking outside.
+(@) \# [Either [**a linguist**]{class=hl1} is here]{class=boxed}, or [[**she**]{class=hl1}'s smoking outside]{class=boxed}.
 
-(@) Either a linguist is here, or the talk was badly advertised.  
-\# She's smoking outside.
+(@) [Either [**a linguist**]{class=hl1} is here, or it's raining]{class=boxed}.  
+\# [**She**]{class=hl1}'s smoking outside.
 
 :::{.element: class="fragment"}
 Disjunction is *internally* and *externally static*
+:::
+
+::: notes
+I need to work on making this examples a little more natural.
 :::
 
 ## Context change potentials
@@ -122,10 +132,11 @@ To be developed today:
 
 ## Bathrooms
 
-- Recall that, in DS, negation *destroys* referential information.
-- But, referential information destroyed in an initial disjunct can be resurrected in a subsequent disjunct (observation due to Barbara Partee).
+In DS, negation *destroys* referential information.
 
 (@) Either there isn't **a bathroom**, or **it**'s upstairs.
+
+Referential information destroyed in an initial disjunct can be resurrected in a subsequent disjunct (observation due to Barbara Partee).
 
 
 
