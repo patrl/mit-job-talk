@@ -138,10 +138,6 @@ In DS, negation *destroys* referential information.
 
 (@) Frank doesn't own **no shirt**. **It**'s in the closet.
 
-(@) It's not the case that  
-I haven't read any book by Chomsky.  
-I enjoyed it!
-
 Referential information can be resurrected by an additional negation (Krahmer & Muskens 1995, Gotham 2019).
 
 
@@ -168,9 +164,28 @@ In DS, negation *destroys* referential information.
 
 Under certain circumstances, the ban on passing referential information further is lifted (G&S 1991, Stone 1992):
 
-(@) Either we're interviewing **a linguist**,  
-or we're interview **a philosopher**.  
+(@) Either we're interviewing **a linguist**,  or we're interviewing **a philosopher**.  
 (Either way) **she's** waiting outside.
+
+(G&S chalk this up to a lexical ambiguity, positing an additional, externally dynamic disjunction operator; *program disjunction*.)
+
+## Rothschild's puzzle
+
+Rothschild (2017) observed that, if the truth of one of the disjuncts is contextually entailed later in the discourse, anaphora becomes possible.
+
+(@) A: Either it's a weekday, or Gabe baked **a cake**.  
+B: It's Saturday afternoon.  
+A: Then, **it**'s cooling on the windowsill!
+
+## Rothschild's puzzle beyond disjunction
+
+Recall that conditionals are also (claimed to be) externally static.
+
+(@) A: If it's the weekend, then Gabe baked **a cake**.  
+B: It's Saturday afternoon.  
+A: Then, **it**'s cooling on the windowsill!
+
+
 
 
 
