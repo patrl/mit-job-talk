@@ -165,7 +165,10 @@
                 </ol>
                 <p>Referential information can be resurrected by an additional negation (Krahmer &amp; Muskens 1995, Gotham 2019).</p>
                 <aside class="notes">
-                <p>Mention uniqueness</p>
+                <ul>
+                <li>Mention uniqueness</li>
+                <li>Mention the fact that we want our logic to be <em>more classical</em></li>
+                </ul>
                 </aside>
                 </section>
                 <section id="bathroom-disjunctions" class="slide level2">
@@ -201,6 +204,13 @@
                 B: It’s Saturday afternoon.<br />
                 A: Then, <strong>it</strong>’s cooling on the windowsill!</li>
                 </ol>
+                <aside class="notes">
+                <ul>
+                <li>After A’s first utterance, the context set contains <em>weekday</em>-worlds and <em>cake</em>-worlds. The <em>cake</em>-worlds can be either <em>weekday</em> worlds or <em>weekend</em> worlds.</li>
+                <li>B’s utterance, once accepted, eliminates all the <em>non-Saturday worlds</em>. All that is left is <em>cake-Saturday</em>-worlds.</li>
+                <li>TODO maybe make this a bit more abstract.</li>
+                </ul>
+                </aside>
                 </section>
                 <section id="rothschilds-puzzle-beyond-disjunction" class="slide level2">
                 <h2>Rothschild’s puzzle beyond disjunction</h2>
@@ -210,6 +220,148 @@
                 B: It’s Saturday afternoon.<br />
                 A: Then, <strong>it</strong>’s cooling on the windowsill!</li>
                 </ol>
+                <aside class="notes">
+                <p>I need to mention the witness generalization (citing Schlenker, Mandelkern, and Keny)</p>
+                </aside>
+                </section>
+                <section id="take-away-points" class="slide level2">
+                <h2>Take-away points</h2>
+                <ul>
+                <li class="fragment">Double-negation in particular suggests we want a theory of anaphora that is <em>more classical</em>.</li>
+                </ul>
+                </section></section>
+                <section>
+                <section id="anaphora-redux" class="title-slide slide level1">
+                <h1>Anaphora redux</h1>
+
+                </section>
+                <section id="a-logical-substrate" class="slide level2">
+                <h2>A logical substrate</h2>
+                <p>We’ll develop a theory of anaphora based on the following ideas:</p>
+                <ul>
+                <li class="fragment">The <em>core</em> semantic value of a sentence is a (trivalent) truth-value; referential information is computed <em>in tandem</em> with this logical substrate.</li>
+                <li class="fragment">The logical connectives operate <em>exclusively</em> on the logical substrate.
+                <ul>
+                <li class="fragment">Referential information is passed from left-to-right <em>uniformly</em>.</li>
+                <li class="fragment">Incrementality is achieved by flipping a single “switch”.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="enriching-the-dynamic-notion-of-content" class="slide level2">
+                <h2>Enriching the dynamic notion of content</h2>
+                <ul>
+                <li class="fragment">Assignments are a store of referential information; they tell us how to fix the value of variables (i.e., pronouns).</li>
+                <li class="fragment">Sentences are functions from <em>assignments</em> (the input) to <em>sets of assignment-truth-value pairs</em> (the outputs).
+                <ul>
+                <li class="fragment">Another way of thinking about this: output assignments are <em>polarized</em>.</li>
+                <li class="fragment">Whence talk of a ‘logical substrate’.</li>
+                </ul></li>
+                <li class="fragment">Sentences containing neither indefinites nor pronouns polarize the input according to truth-conditional content.</li>
+                </ul>
+                <p><span class="math display">\[
+                ⟦\text{Aeryn left}⟧ = λ g . \begin{cases}
+                \{(1,g)\}&amp;\text{Aeryn left}\\
+                \{(0,g)\}&amp;\text{Aeryn didn&#39;t leave}
+                \end{cases}
+                \]</span></p>
+                <aside class="notes">
+                <p>Consider using colours to indicate what’s going on here.</p>
+                </aside>
+                </section>
+                <section id="pronouns-and-the-third-truth-value" class="slide level2">
+                <h2>Pronouns and the third truth-value</h2>
+                <ul>
+                <li class="fragment">Sentences with pronouns polarize the input assignment <span class="math inline">\(g\)</span> depending on truth at <span class="math inline">\(g\)</span>.</li>
+                <li class="fragment">We’ll assume that assignments are <em>partial</em>; namely, an assignment <span class="math inline">\(g\)</span> may not deliver a value for a particular index <span class="math inline">\(n\)</span>.</li>
+                </ul>
+                <p><span class="math display">\[
+                ⟦\text{She}_1\text{ left}⟧ = \begin{cases}
+                \{(1,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ left}\\
+                \{(0,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave}\\
+                \{(\#,g)\}&amp;g(1)\text{ is undefined}
+                \end{cases}
+                \]</span></p>
+                <ul>
+                <li class="fragment">Our trivalent logical substrate is starting to do some work.</li>
+                </ul>
+                </section>
+                <section id="indefinites-and-indeterminacy" class="slide level2">
+                <h2>Indefinites and indeterminacy</h2>
+                <ul>
+                <li class="fragment">Outputs so far have always been singleton sets
+                <ul>
+                <li class="fragment">we may as well have said that sentences are just functions from an assignment to an assignment-truth-value pair.</li>
+                </ul></li>
+                <li class="fragment">We’ll use sets to model the idea that indefinites extend the input assignment <em>indeterministically</em> (following G&amp;S).
+                <ul>
+                <li class="fragment">Another way of thinking about this — indefinites introduce <em>alternatives</em>.</li>
+                </ul></li>
+                </ul>
+                <p><span class="math display">\[
+                ⟦\text{Someone}^1\text{ is here}⟧ = \begin{cases}
+                \{(1,g^{[1 → x]} \mid x \text{ is here})\}\\
+                \{(0,g)\}&amp;\text{nobody is here}
+                \end{cases}
+                \]</span></p>
+                <ul>
+                <li class="fragment">What’s important here is that, due to the logical substrate, we distinguish between:
+                <ul>
+                <li class="fragment">referential information introduced when there is a verifier (the input is extended indeterministically).</li>
+                <li class="fragment">referential information introduced when there is no verifier (the input remains unchanged).</li>
+                </ul></li>
+                </ul>
+                <aside class="notes">
+                <p>Remember to have something prepared about maximize presupposition.</p>
+                </aside>
+                </section>
+                <section id="an-illustration" class="slide level2">
+                <h2>An illustration</h2>
+                <ol start="17" class="example" type="1">
+                <li class="fragment">A<span class="math inline">\(^1\)</span> triangle is in the circle.</li>
+                </ol>
+                <p><span class="math display">\[
+                λ g . \begin{cases}
+                    \{(1,g^{[1 → x]}) \mid x\text{ is a triangle in the circle}\}\\
+                    \{(0,g)\}&amp;\text{there is no triangle in the circle}
+                \end{cases}
+                \]</span></p>
+                <p>PICTURE: red and blue triangles inside of a circle; a green one outside.</p>
+                <p><span class="math display">\[
+                \{(1,[\color{red}{Δ}]),(1,[\color{blue}{Δ}])\}
+                \]</span></p>
+                <p>Picture: all the triangles are outside the circle.</p>
+                <p><span class="math display">\[
+                \{(0,[])\}
+                \]</span></p>
+                <p>A note for those of you familiar with G&amp;S’s DPL — if we just take the positive outputs, what we have is equivalent to the DPL semantics for indefinites.</p>
+                <aside class="notes">
+                <p>remember to insert pics</p>
+                </aside>
+                </section>
+                <section id="payoff-1-negation" class="slide level2">
+                <h2>Payoff #1: negation</h2>
+                <ul>
+                <li class="fragment">Remember, one of the core foundations of the current approach: logical operators are <em>truth-functional</em>.</li>
+                <li class="fragment">Negation is lifted through the dynamic scaffolding, and applies to the contained truth-values pointwise.</li>
+                </ul>
+                <p><span class="math display">\[
+                ⟦\text{Nobody is here}⟧ = λ g . \begin{cases}
+                    \{(¬\,1,g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(¬\,0,g)\}&amp;\text{nobody is here}
+                \end{cases}
+                \]</span></p>
+                <p><span class="math display">\[
+                = λ g . \begin{cases}
+                    \{(0,g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(1,g)\}&amp;\text{nobody is here}
+                \end{cases}
+                \]</span></p>
+                <ul>
+                <li class="fragment">N.b. referential information survives, but it’s <em>false-tagged</em>.
+                <ul>
+                <li class="fragment">Crucially, no <em>positive</em> referential information is introduced, correctly predicting that negation blocks anaphora.</li>
+                </ul></li>
+                </ul>
                 </section></section>
       </div>
     </div>

@@ -140,10 +140,9 @@ In DS, negation *destroys* referential information.
 
 Referential information can be resurrected by an additional negation (Krahmer & Muskens 1995, Gotham 2019).
 
-
-
 ::: notes
-Mention uniqueness
+- Mention uniqueness
+- Mention the fact that we want our logic to be *more classical*
 :::
 
 ## Bathroom disjunctions
@@ -177,6 +176,12 @@ Rothschild (2017) observed that, if the truth of one of the disjuncts is context
 B: It's Saturday afternoon.  
 A: Then, **it**'s cooling on the windowsill!
 
+::: notes
+- After A's first utterance, the context set contains *weekday*-worlds and *cake*-worlds. The *cake*-worlds can be either *weekday* worlds or *weekend* worlds.
+- B's utterance, once accepted, eliminates all the *non-Saturday worlds*. All that is left is *cake-Saturday*-worlds. 
+- TODO maybe make this a bit more abstract.
+:::
+
 ## Rothschild's puzzle beyond disjunction
 
 Recall that conditionals are also (claimed to be) externally static.
@@ -184,6 +189,136 @@ Recall that conditionals are also (claimed to be) externally static.
 (@) A: If it's the weekend, then Gabe baked **a cake**.  
 B: It's Saturday afternoon.  
 A: Then, **it**'s cooling on the windowsill!
+
+::: notes
+I need to mention the witness generalization (citing Schlenker, Mandelkern, and Keny)
+:::
+
+## Take-away points
+
+- Double-negation in particular suggests we want a theory of anaphora that is *more classical*. 
+
+# Anaphora redux
+
+## A logical substrate
+
+We'll develop a theory of anaphora based on the following ideas:
+
+- The *core* semantic value of a sentence is a (trivalent) truth-value; referential information is computed *in tandem* with this logical substrate.
+- The logical connectives operate *exclusively* on the logical substrate.
+  + Referential information is passed from left-to-right *uniformly*.
+  + Incrementality is achieved by flipping a single "switch".
+
+## Enriching the dynamic notion of content
+
+- Assignments are a store of referential information; they tell us how to fix the value of variables (i.e., pronouns).
+- Sentences are functions from *assignments* (the input) to *sets of assignment-truth-value pairs* (the outputs). 
+  + Another way of thinking about this: output assignments are *polarized*. 
+  + Whence talk of a 'logical substrate'.
+  
+- Sentences containing neither indefinites nor pronouns polarize the input according to truth-conditional content.
+
+$$
+⟦\text{Aeryn left}⟧ = λ g . \begin{cases}
+\{(1,g)\}&\text{Aeryn left}\\
+\{(0,g)\}&\text{Aeryn didn't leave}
+\end{cases}
+$$
+
+::: notes
+Consider using colours to indicate what's going on here.
+:::
+
+## Pronouns and the third truth-value
+
+- Sentences with pronouns polarize the input assignment $g$ depending on truth at $g$. 
+- We'll assume that assignments are *partial*; namely, an assignment $g$ may not deliver a value for a particular index $n$.
+
+$$
+⟦\text{She}_1\text{ left}⟧ = \begin{cases}
+\{(1,g)\}&g(1)\text{ is defined and }g(1)\text{ left}\\
+\{(0,g)\}&g(1)\text{ is defined and }g(1)\text{ didn't leave}\\
+\{(\#,g)\}&g(1)\text{ is undefined}
+\end{cases}
+$$
+
+- Our trivalent logical substrate is starting to do some work.
+
+## Indefinites and indeterminacy
+
+- Outputs so far have always been singleton sets
+  + we may as well have said that sentences are just functions from an assignment to an assignment-truth-value pair.
+- We'll use sets to model the idea that indefinites extend the input assignment *indeterministically* (following G&S).
+  + Another way of thinking about this --- indefinites introduce *alternatives*.
+  
+$$
+⟦\text{Someone}^1\text{ is here}⟧ = \begin{cases}
+\{(1,g^{[1 → x]} \mid x \text{ is here})\}\\
+\{(0,g)\}&\text{nobody is here}
+\end{cases}
+$$
+
+- What's important here is that, due to the logical substrate, we distinguish between:
+  - referential information introduced when there is a verifier (the input is extended indeterministically).
+  - referential information introduced when there is no verifier (the input remains unchanged).
+  
+::: notes
+Remember to have something prepared about maximize presupposition.
+:::
+  
+## An illustration
+
+(@) A$^1$ triangle is in the circle.
+
+$$
+λ g . \begin{cases}
+    \{(1,g^{[1 → x]}) \mid x\text{ is a triangle in the circle}\}\\
+    \{(0,g)\}&\text{there is no triangle in the circle}
+\end{cases}
+$$
+
+PICTURE: red and blue triangles inside of a circle; a green one outside.
+
+$$
+\{(1,[\color{red}{Δ}]),(1,[\color{blue}{Δ}])\}
+$$
+
+Picture: all the triangles are outside the circle.
+
+$$
+\{(0,[])\}
+$$
+
+A note for those of you familiar with G&S's DPL --- if we just take the positive outputs, what we have is equivalent to the DPL semantics for indefinites.
+
+::: notes
+remember to insert pics
+:::
+
+## Payoff #1: negation
+
+- Remember, one of the core foundations of the current approach: logical operators are *truth-functional*.
+- Negation is lifted through the dynamic scaffolding, and applies to the contained truth-values pointwise.
+
+$$
+⟦\text{Nobody is here}⟧ = λ g . \begin{cases}
+    \{(¬\,1,g^{[1 → x]} \mid x\text{ is here})\}\\
+    \{(¬\,0,g)\}&\text{nobody is here}
+\end{cases}
+$$
+
+
+$$
+= λ g . \begin{cases}
+    \{(0,g^{[1 → x]} \mid x\text{ is here})\}\\
+    \{(1,g)\}&\text{nobody is here}
+\end{cases}
+$$
+
+- N.b. referential information survives, but it's *false-tagged*.
+  + Crucially, no *positive* referential information is introduced, correctly predicting that negation blocks anaphora.
+
+
 
 
 
