@@ -163,13 +163,12 @@
                 <ol start="11" class="example" type="1">
                 <li class="fragment">Frank doesn’t own <strong>no shirt</strong>. <strong>It</strong>’s in the closet.</li>
                 </ol>
+                <div class="element: fragment">
                 <p>Referential information can be resurrected by an additional negation (Krahmer &amp; Muskens 1995, Gotham 2019).</p>
-                <aside class="notes">
+                </div>
                 <ul>
-                <li>Mention uniqueness</li>
-                <li>Mention the fact that we want our logic to be <em>more classical</em></li>
+                <li class="fragment">N.b., the facts are a little more nuanced than I present them here. Ask me about double-negation and uniqueness during the Q&amp;A.</li>
                 </ul>
-                </aside>
                 </section>
                 <section id="bathroom-disjunctions" class="slide level2">
                 <h2>Bathroom disjunctions</h2>
@@ -187,14 +186,18 @@
                 <li class="fragment">Either Sam <em>never</em> smoked, or he stopped smoking.</li>
                 </ol>
                 </section>
-                <section id="stone-disjunctions" class="slide level2">
-                <h2>Stone disjunctions</h2>
-                <p>Under certain circumstances, the ban on passing referential information further is lifted (G&amp;S 1991, Stone 1992):</p>
+                <section id="gs-disjunctions" class="slide level2">
+                <h2>G&amp;S disjunctions</h2>
+                <div class="element fragment">
+                <p>Under certain circumstances, the ban on passing referential information further is lifted (G&amp;S 1991, Kamp &amp; Reyle 1993, Simons 1996):</p>
+                </div>
                 <ol start="14" class="example" type="1">
                 <li class="fragment">Either we’re interviewing <strong>a linguist</strong>, or we’re interviewing <strong>a philosopher</strong>.<br />
                 (Either way) <strong>she’s</strong> waiting outside.</li>
                 </ol>
+                <div class="element fragment">
                 <p>(G&amp;S chalk this up to a lexical ambiguity, positing an additional, externally dynamic disjunction operator; <em>program disjunction</em>.)</p>
+                </div>
                 </section>
                 <section id="rothschilds-puzzle" class="slide level2">
                 <h2>Rothschild’s puzzle</h2>
@@ -227,7 +230,10 @@
                 <section id="take-away-points" class="slide level2">
                 <h2>Take-away points</h2>
                 <ul>
-                <li class="fragment">Double-negation in particular suggests we want a theory of anaphora that is <em>more classical</em>.</li>
+                <li class="fragment"><strong>Double-negation</strong> suggests we want a theory that is <em>more classical</em> than, e.g., orthodox DS.</li>
+                <li class="fragment"><strong>Bathroom disjunctions</strong> tell us that disjunction isn’t straightforwardly internally static; referential information can be transmitted between disjuncts.</li>
+                <li class="fragment"><strong>G&amp;S disjunctions</strong> tell us that disjunction isn’t straightforwardly externally static; referential information can be passed further.</li>
+                <li class="fragment"><strong>Rothschild’s puzzle</strong> tells us that <em>pragmatic factors</em> have a role to play in regulating the availability of subsequent anaphora.</li>
                 </ul>
                 </section></section>
                 <section>
@@ -251,22 +257,21 @@
                 <h2>Enriching the dynamic notion of content</h2>
                 <ul>
                 <li class="fragment">Assignments are a store of referential information; they tell us how to fix the value of variables (i.e., pronouns).</li>
-                <li class="fragment">Sentences are functions from <em>assignments</em> (the input) to <em>sets of assignment-truth-value pairs</em> (the outputs).
+                <li class="fragment">Here we adopt Charlow’s (2014, 2019) notion of content: sentences are functions from <em>assignments</em> (the input) to <em>sets of assignment-truth-value pairs</em> (the outputs).
                 <ul>
                 <li class="fragment">Another way of thinking about this: output assignments are <em>polarized</em>.</li>
                 <li class="fragment">Whence talk of a ‘logical substrate’.</li>
                 </ul></li>
                 <li class="fragment">Sentences containing neither indefinites nor pronouns polarize the input according to truth-conditional content.</li>
                 </ul>
+                <div class="element fragment">
                 <p><span class="math display">\[
                 ⟦\text{Aeryn left}⟧ = λ g . \begin{cases}
                 \{(1,g)\}&amp;\text{Aeryn left}\\
                 \{(0,g)\}&amp;\text{Aeryn didn&#39;t leave}
                 \end{cases}
                 \]</span></p>
-                <aside class="notes">
-                <p>Consider using colours to indicate what’s going on here.</p>
-                </aside>
+                </div>
                 </section>
                 <section id="pronouns-and-the-third-truth-value" class="slide level2">
                 <h2>Pronouns and the third truth-value</h2>
@@ -274,13 +279,15 @@
                 <li class="fragment">Sentences with pronouns polarize the input assignment <span class="math inline">\(g\)</span> depending on truth at <span class="math inline">\(g\)</span>.</li>
                 <li class="fragment">We’ll assume that assignments are <em>partial</em>; namely, an assignment <span class="math inline">\(g\)</span> may not deliver a value for a particular index <span class="math inline">\(n\)</span>.</li>
                 </ul>
+                <div class="element fragment">
                 <p><span class="math display">\[
-                ⟦\text{She}_1\text{ left}⟧ = \begin{cases}
+                ⟦\text{She}_1\text{ left}⟧^g = \begin{cases}
                 \{(1,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ left}\\
                 \{(0,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave}\\
                 \{(\#,g)\}&amp;g(1)\text{ is undefined}
                 \end{cases}
                 \]</span></p>
+                </div>
                 <ul>
                 <li class="fragment">Our trivalent logical substrate is starting to do some work.</li>
                 </ul>
@@ -297,12 +304,14 @@
                 <li class="fragment">Another way of thinking about this — indefinites introduce <em>alternatives</em>.</li>
                 </ul></li>
                 </ul>
-                <p><span class="math display">\[
-                ⟦\text{Someone}^1\text{ is here}⟧ = \begin{cases}
+                <div class="element fragment">
+                <p><span class="math display">\[⟦\text{Someone}^1\text{ is here}⟧^g = \begin{cases}
                 \{(1,g^{[1 → x]} \mid x \text{ is here})\}\\
-                \{(0,g)\}&amp;\text{nobody is here}
-                \end{cases}
-                \]</span></p>
+                \qquad\text{someone is here}\\
+                \{(0,g)\}\\
+                \qquad\text{nobody is here}
+                \end{cases}\]</span></p>
+                </div>
                 <ul>
                 <li class="fragment">What’s important here is that, due to the logical substrate, we distinguish between:
                 <ul>
@@ -314,54 +323,573 @@
                 <p>Remember to have something prepared about maximize presupposition.</p>
                 </aside>
                 </section>
-                <section id="an-illustration" class="slide level2">
-                <h2>An illustration</h2>
+                <section id="illustration-i" class="slide level2">
+                <h2>Illustration i</h2>
                 <ol start="17" class="example" type="1">
-                <li class="fragment">A<span class="math inline">\(^1\)</span> triangle is in the circle.</li>
+                <li class="fragment"><span class="math inline">\(⟦\text{A}^1\text{ triangle is in the circle.}⟧^{g_⊤}\)</span></li>
                 </ol>
                 <p><span class="math display">\[
-                λ g . \begin{cases}
-                    \{(1,g^{[1 → x]}) \mid x\text{ is a triangle in the circle}\}\\
-                    \{(0,g)\}&amp;\text{there is no triangle in the circle}
+                = \begin{cases}
+                    \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
+                    \{(0,[])\}\\
+                    \qquad\text{there is no triangle in the circle}
                 \end{cases}
                 \]</span></p>
-                <p>PICTURE: red and blue triangles inside of a circle; a green one outside.</p>
+                <center>
+                <img data-src="img/Triangles1.png" style="width: 33%" />
+                </center>
                 <p><span class="math display">\[
-                \{(1,[\color{red}{Δ}]),(1,[\color{blue}{Δ}])\}
+                = \{(1,[\color{red}{Δ}]),(1,[\color{blue}{Δ}])\}
                 \]</span></p>
-                <p>Picture: all the triangles are outside the circle.</p>
+                </section>
+                <section id="illustration-ii" class="slide level2">
+                <h2>Illustration ii</h2>
+                <ol start="18" class="example" type="1">
+                <li class="fragment"><span class="math inline">\(⟦\text{A}^1\text{ triangle is in the circle.}⟧^{g_⊤}\)</span></li>
+                </ol>
+                <span class="math display">\[
+                = \begin{cases}
+                    \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
+                    \{(0,[])\}\\
+                    \qquad\text{there is no triangle in the circle}
+                \end{cases}
+                \]</span>
+                <center>
+                <img data-src="img/Triangles2.png" style="width: 33%" />
+                </center>
                 <p><span class="math display">\[
-                \{(0,[])\}
+                = \{(0,[])\}
                 \]</span></p>
-                <p>A note for those of you familiar with G&amp;S’s DPL — if we just take the positive outputs, what we have is equivalent to the DPL semantics for indefinites.</p>
-                <aside class="notes">
-                <p>remember to insert pics</p>
-                </aside>
+                </section>
+                <section id="comparison-with-indefinites-in-orthodox-ds" class="slide level2">
+                <h2>Comparison with indefinites in orthodox DS</h2>
+                <p>For those of you familiar with, e.g., G&amp;S’s Dyamic Predicate Logic (DPL):</p>
+                <ul>
+                <li class="fragment">If there is a witness for the existential statement, then the true-paired outputs are equivalent to what is delivered by DPL.</li>
+                <li class="fragment">If there is no witness for the existential statement, the output is just the input assignment paired with false.</li>
+                <li class="fragment">In DPL, if there is no witness then the output set is simply empty; here we crucially keep track of both positive <em>and</em> negative referential information.</li>
+                </ul>
                 </section>
                 <section id="payoff-1-negation" class="slide level2">
                 <h2>Payoff #1: negation</h2>
                 <ul>
                 <li class="fragment">Remember, one of the core foundations of the current approach: logical operators are <em>truth-functional</em>.</li>
-                <li class="fragment">Negation is lifted through the dynamic scaffolding, and applies to the contained truth-values pointwise.</li>
+                <li class="fragment">Negation is lifted through the dynamic scaffolding, and applies <em>pointwise</em> to the contained truth-values.</li>
                 </ul>
+                <div class="element fragment">
                 <p><span class="math display">\[
                 ⟦\text{Nobody is here}⟧ = λ g . \begin{cases}
-                    \{(¬\,1,g^{[1 → x]} \mid x\text{ is here})\}\\
-                    \{(¬\,0,g)\}&amp;\text{nobody is here}
+                    \{(\color{red}{¬\,1},g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(\color{red}{¬\,0},g)\}\\
+                    \qquad\text{nobody is here}
                 \end{cases}
                 \]</span></p>
+                </div>
+                <div class="element fragment">
                 <p><span class="math display">\[
                 = λ g . \begin{cases}
-                    \{(0,g^{[1 → x]} \mid x\text{ is here})\}\\
-                    \{(1,g)\}&amp;\text{nobody is here}
+                    \{(\color{red}{0},g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(\color{red}{1},g)\}\\
+                    \qquad\text{nobody is here}
                 \end{cases}
                 \]</span></p>
+                </div>
                 <ul>
                 <li class="fragment">N.b. referential information survives, but it’s <em>false-tagged</em>.
                 <ul>
                 <li class="fragment">Crucially, no <em>positive</em> referential information is introduced, correctly predicting that negation blocks anaphora.</li>
                 </ul></li>
                 </ul>
+                </section>
+                <section id="section" class="slide level2">
+                <h2></h2>
+                <ul>
+                <li class="fragment">Since negation is truth-functional, applying <em>another</em> negation will flip the polarities again.</li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                \begin{aligned}[t]
+                &amp;⟦\text{It&#39;s not the case that nobody is here}⟧\\
+                &amp;= λ g . \begin{cases}
+                    \{(\color{red}{¬ ¬\,1},g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(\color{red}{¬ ¬\,0},g)\}\\
+                    \qquad\text{nobody is here}
+                \end{cases}
+                \end{aligned}
+                \]</span></p>
+                </div>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                = λ g . \begin{cases}
+                    \{(\color{red}{1},g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(\color{red}{0},g)\}\\
+                    \qquad\text{nobody is here}
+                \end{cases}
+                \]</span></p>
+                </div>
+                <ul>
+                <li class="fragment">In other words, a doubly negated sentence will convey <em>the same referential information</em> as its positive counterpart!
+                <ul>
+                <li class="fragment">We can now account for the interaction between double-negation and anaphora in a more satisyfing way.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="interlude-strong-kleene" class="slide level2">
+                <h2>Interlude: Strong Kleene</h2>
+                <ul>
+                <li class="fragment"><p>Before we proceed much further, a remark is due on the semantics we’ll assume for the logical connectives.</p>
+                <ul>
+                <li class="fragment">Recall that a foundational assumption of the current approach is that logical operators are <em>truth-functional</em>; but we have three truth values (<span class="math inline">\(1,0,\#\)</span>) to consider, not just two, which opens up a number of possibilities.</li>
+                </ul></li>
+                <li class="fragment"><p>The interpretation schema we’ll adopt for the logical connectives is Kleene’s <strong>strong logic of indeterminacy</strong>; (i.e., <em>Strong Kleene</em>).</p></li>
+                <li class="fragment"><p>This is the logic that naturally emerges if we take <span class="math inline">\(\#\)</span> to stand in for <em>uncertainty whether true or false</em>.</p></li>
+                </ul>
+                </section>
+                <section id="strong-kleene-conjunction" class="slide level2">
+                <h2>Strong Kleene conjunction</h2>
+                <ul>
+                <li class="fragment">In Strong Kleene, conjunctive sentences are:
+                <ul>
+                <li class="fragment">true if both conjuncts are true,</li>
+                <li class="fragment">false if either conjunct is false.</li>
+                <li class="fragment">I.e., strong Kleene conjunctions have <em>conjunctive</em> verification conditions and <em>disjunctive</em> falsification conditions.</li>
+                </ul></li>
+                </ul>
+                <div class="element fragment">
+                <p>Truth-table for Strong Kleene conjunction (<span class="math inline">\(∧^s\)</span>):</p>
+                </div>
+                <center>
+                <div class="element fragment">
+                <table>
+                <thead>
+                <tr class="header">
+                <th style="text-align: left;"><span class="math inline">\(∧^s\)</span></th>
+                <th style="text-align: left;"><span class="math inline">\(\mathbf{1}\)</span></th>
+                <th><span class="math inline">\(\mathbf{0}\)</span></th>
+                <th style="text-align: left;"><span class="math inline">\(\mathbf{\#}\)</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{1}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+                <td><span class="math inline">\(0\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
+                </tr>
+                <tr class="even">
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{0}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(0\)</span></td>
+                <td><span class="math inline">\(0\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(0\)</span></td>
+                </tr>
+                <tr class="odd">
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{\#}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
+                <td><span class="math inline">\(0\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                </center>
+                </section>
+                <section id="strong-kleene-disjunction" class="slide level2">
+                <h2>Strong Kleene disjunction</h2>
+                <ul>
+                <li class="fragment">In Strong Kleene, disjunctive sentences are:
+                <ul>
+                <li class="fragment">true if either disjunct is true,</li>
+                <li class="fragment">false if both disjuncts are false.</li>
+                <li class="fragment">I.e., strong Kleene disjunctions have <em>disjunctive</em> verification conditions and <em>conjunctive</em> falsification conditions.</li>
+                </ul></li>
+                </ul>
+                <div class="element fragment">
+                <p>Truth-table for Strong Kleene disjunction (<span class="math inline">\(∨^s\)</span>)</p>
+                </div>
+                <div class="element fragment">
+                <table>
+                <thead>
+                <tr class="header">
+                <th style="text-align: left;"><span class="math inline">\(∨^s\)</span></th>
+                <th style="text-align: left;"><span class="math inline">\(\mathbf{1}\)</span></th>
+                <th><span class="math inline">\(\mathbf{0}\)</span></th>
+                <th style="text-align: left;"><span class="math inline">\(\mathbf{\#}\)</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{1}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+                <td><span class="math inline">\(1\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+                </tr>
+                <tr class="even">
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{0}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+                <td><span class="math inline">\(0\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
+                </tr>
+                <tr class="odd">
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{\#}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+                <td><span class="math inline">\(\#\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                </section>
+                <section id="on-explanatory-adequacy" class="slide level2">
+                <h2>On explanatory adequacy</h2>
+                <ul>
+                <li class="fragment"><p>The Strong Kleene entries for the connectives <em>don’t need to be stipulated</em> but rather reify how we ordinarily reason about uncertainty.</p></li>
+                <li class="fragment"><p>An independent reason to think that Strong Kleene is a reasonable foundation: I agree with Rothschild (2017, p1) that “<em>[…] when the dust has settled, this remains the simplest viable treatment of presupposition projection on the market.</em>”</p></li>
+                <li class="fragment"><p><strong>Important:</strong> the Strong Kleene logic underlying the analysis here is <em>completely symmetric</em>; there is no room for asymmetries or incrementality in the logical substrate.</p>
+                <ul>
+                <li class="fragment">Compare, e.g., George (2007, 2008, 2014) who incrementalizes the <em>logic</em> in order to account for asymmetries in presupposition projection.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="lifting-the-logical-operators" class="slide level2">
+                <h2>Lifting the logical operators</h2>
+                <ul>
+                <li class="fragment">In order to lift binary logical operators into a dynamic setting, we’ll adopt much the same strategy as with negation.
+                <ul>
+                <li class="fragment">The truth-functional operator applies pointwise to the values in the logical substrate.</li>
+                <li class="fragment">This time, we have two sets of outputs to worry about - the referential information ouputted by the first junct as passed in as the input to the second.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="section-1" class="slide level2">
+                <h2></h2>
+                <ul>
+                <li class="fragment">Some details for the more technically-minded. For any two-place truth-functional operator <span class="math inline">\(\mathbf{R}\)</span>:</li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                  ⟦ϕ\,\mathbf{R}\,ψ⟧^g = \{(\color{red}{t\,\mathbf{R}\,u},i)\mid ∃h[(\color{red}{t},h) ∈ ⟦ϕ⟧^g ∧ (\color{red}{u},i) ∈ ⟦ψ⟧^h]\}
+                \]</span></p>
+                </div>
+                <ul>
+                <li class="fragment">N.b. this algorithm can be reified in the compositional semantics via a regime of type-shifters, using monadic techniques pioneered by Shan (2002) and Charlow (2014); see Elliott (2020) Appendix A for details.</li>
+                </ul>
+                <div class="element fragment alert">
+                <p><strong>Important:</strong> the locus of stipulation on the current approach is in the <em>algorithm</em> for lifting any truth-functional operator into the dynamic domain of referential-information-passing. Nothing is stipulated about the dynamics of the individual logical connectives.</p>
+                </div>
+                </section>
+                <section id="payoff-2-dynamic-conjunction" class="slide level2">
+                <h2>Payoff 2: Dynamic conjunction</h2>
+                <ul>
+                <li class="fragment">Applying this algorithm to <span class="math inline">\(∧^s\)</span> gives us something equivalent to DPL conjunction wrt positive referential information (a running theme).
+                <ul>
+                <li class="fragment">We can see this most clearly if we just compute the positive extension (<span class="math inline">\(⟦.⟧_+\)</span>; the referential information paired with <em>true</em>).</li>
+                </ul></li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                ⟦\text{Someone}^1\text{ walked in}⟧_+^g = \{g^{[1 → x]} \mid x\text{ walked in}\}
+                \]</span></p>
+                </div>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                ⟦\text{She}_1\text{ sat down}⟧_+^g = \{g \mid \text{sat down }g(1)\text{ and }g(1)\text{ is defined}\}
+                \]</span></p>
+                </div>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                \begin{aligned}[t]
+                &amp;⟦\text{Someone}^1\text{ walked in and she}_1\text{ sat down}⟧_+^g\\
+                &amp; = \{g^{[1 → x]}\mid x\text{ walked in and sat down}\}
+                \end{aligned}
+                \]</span></p>
+                </div>
+                <ul>
+                <li class="fragment">Conjunction is asymmetric despite a symmetric logical substrate.</li>
+                <li class="fragment">N.b., when we take into account the possibility of either conjunct being false the predictions diverge from orthodox DS. We’ll come back to this when we discuss the pragmatics.</li>
+                </ul>
+                </section>
+                <section id="payoff-3-bathroom-disjunctions" class="slide level2">
+                <h2>Payoff 3: Bathroom disjunctions</h2>
+                <div class="element fragment">
+                <p>Let’s now return to bathroom disjunctions.</p>
+                </div>
+                <ol start="19" class="example" type="1">
+                <li class="fragment">Either there isn’t a<span class="math inline">\(^1\)</span> bathroom, or it<span class="math inline">\(_1\)</span>’s upstairs.</li>
+                </ol>
+                <div class="element fragment">
+                <p>Applying our algorithm to <span class="math inline">\(∨^s\)</span> gives us a disjunctive recipe for dynamically verifying disjunctive sentences:</p>
+                </div>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                ⟦ϕ ∨ ψ⟧_+^g = \begin{aligned}[t]
+                  \{i | ∃h[h ∈ ⟦ϕ⟧^g_+ ∧ (*,i) ∈ ⟦ψ⟧^h]\}\\
+                  ∪ \{i | ∃h[(*,h) ∈ ⟦ϕ⟧^g ∧ i ∈ ⟦ψ⟧^h_+]\}
+                  \end{aligned}
+                \]</span></p>
+                </div>
+                <ul>
+                <li class="fragment">In plain English, we can compute the positive referential information conveyed by the disjunctive sentence by:
+                <ul>
+                <li class="fragment">passing the positive referential information of the first disjunct into the second, and gathering <em>all</em> of the outputs, positive or otherwise.</li>
+                <li class="fragment">passing the outputs of the first disjunct (positive or otherwise) into the second, and retaining just the positive outputs.</li>
+                </ul></li>
+                <li class="fragment">For our purposes, the second clause is important: we can pass the <em>negative</em> ouputs of the first disjunct into the second, and if there are positive outputs we dynamically verify the disjunctive sentence.</li>
+                </ul>
+                </section>
+                <section id="section-2" class="slide level2">
+                <h2></h2>
+                <ul>
+                <li class="fragment">Because of how negation works, if <em>there is a bathroom</em> (<span class="math inline">\(b\)</span>), this will be stored in the negative information conveyed by the first disjunct :</li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                \{(0,[b])\}
+                \]</span></p>
+                </div>
+                <ul>
+                <li class="fragment">The false-tagged assignment licenses a pronoun in the subsequent sentence:</li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                ⟦\text{it}_1\text{&#39;s upstairs}⟧^{[b]} = \{(1,[b])\mid b\text{ is upstairs}\}
+                \]</span></p>
+                </div>
+                <div class="element fragment">
+                <p>N.b. an apparently bad prediction that you may notice at this point is that we predict a bathroom disjunction can license a subsequent pronoun, at least if there is indeed a bathroom.</p>
+                </div>
+                <ol start="20" class="example" type="1">
+                <li class="fragment">Either there isn’t a bathroom, or it’s upstairs.<br />
+                # It is very clean.</li>
+                </ol>
+                <div class="element fragment">
+                <p>This fact indicates what appears to be a more general problem with the approach we’re developing…</p>
+                </div>
+                </section>
+                <section id="the-dynamic-connective-par-excellence" class="slide level2">
+                <h2>The dynamic connective <em>par excellence</em></h2>
+                <ul>
+                <li class="fragment">One way of thinking about what we’re doing: we take DPL <em>conjunction</em> to be the dynamic connective <em>par excellence</em>, and generalize it.
+                <ul>
+                <li class="fragment">Referential information is always piped between juncts (from left-to-right), and can in principle be passed further.</li>
+                </ul></li>
+                </ul>
+                <div class="element fragment">
+                <p>This leads to a problem with external staticity.</p>
+                </div>
+                <ol start="21" class="example" type="1">
+                <li class="fragment">Either a<span class="math inline">\(^1\)</span> linguist is here or it’s raining.<br />
+                It<span class="math inline">\(_1\)</span>’s smoking outside.</li>
+                </ol>
+                <div class="element fragment">
+                <p>We predict that if a linguist is indeed here, anaphora should be licensed in (21).</p>
+                </div>
+                <ul>
+                <li class="fragment">Just how bad is this result? In the next section i’ll argue that, in stating accessibiliy generalizations, we haven’t been paying enough attention to the pragmatic component.</li>
+                <li class="fragment">Once we understand some of the independently motivated pragmatic constraints on asserting complex, sentences, we’ll be in a position to understand apparent external staticity.
+                <ul>
+                <li class="fragment">A move foreshadowed by Rothschild’s puzzle.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="what-weve-achieved-so-far" class="slide level2">
+                <h2>What we’ve achieved so far</h2>
+                <aside class="notes">
+                <p>fill this in.</p>
+                </aside>
+                </section></section>
+                <section>
+                <section id="the-pragmatics-of-anaphora" class="title-slide slide level1">
+                <h1>The pragmatics of anaphora</h1>
+
+                </section>
+                <section id="pragmatics-via-stalnaker-and-heim" class="slide level2">
+                <h2>Pragmatics via Stalnaker and Heim</h2>
+                <ul>
+                <li class="fragment"><p>In order to keep things simple, we’ve been operating in a purely extensional setting.</p></li>
+                <li class="fragment"><p>To return to one of the themes explored at the beginning of this talk, we’d like a theory which addresses both worldly, and referential information.</p></li>
+                <li class="fragment"><p>Following Heim (1982), we’ll treat the <em>context set</em> (which we’ll write as <span class="math inline">\(C\)</span>), as a set of world-assignment pairs.</p></li>
+                <li class="fragment"><p>Before anything has been uttered, every world in <span class="math inline">\(C\)</span> is simply paired with the initial assignment <span class="math inline">\([]\)</span>.</p></li>
+                </ul>
+                </section>
+                <section id="intensionalization" class="slide level2">
+                <h2>Intensionalization</h2>
+                <ul>
+                <li class="fragment">We can mechanically intensionalize our theory by adding a world parameter to our interpretation function.
+                <ul>
+                <li class="fragment">outputs are now <em>truth-value/world/assignment triples</em></li>
+                </ul></li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[⟦\text{Someone}^1\text{ is here}⟧^{w,g} = \begin{cases}
+                \{(1,w,g^{[1 → x]} \mid x \text{ is here in }w)\}\\
+                \qquad\text{someone is here}\\
+                \{(0,w,g)\}\\
+                \qquad\text{nobody is here in }w
+                \end{cases}\]</span></p>
+                </div>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                \begin{aligned}[t]
+                &amp;⟦\text{She}_1\text{ left}⟧^{w,g}\\
+                &amp;= \begin{cases}
+                \{(1,w,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ left in }w\\
+                \{(0,w,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave in }w\\
+                \{(\#,w,g)\}&amp;g(1)\text{ is undefined}
+                \end{cases}
+                \end{aligned}
+                \]</span></p>
+                </div>
+                </section>
+                <section id="stalnakers-bridge" class="slide level2">
+                <h2>Stalnaker’s bridge</h2>
+                <ul>
+                <li class="fragment"><p>We <em>update</em> <span class="math inline">\(C\)</span> with a sentence <span class="math inline">\(ϕ\)</span> (<span class="math inline">\(C[ϕ]\)</span>) by evaluating <span class="math inline">\(ϕ\)</span> wrt each world-assignment pair in <span class="math inline">\(C\)</span>, and retaining the true-tagged outputs.</p></li>
+                <li class="fragment"><p><em>Stalnaker’s bridge</em> (von Fintel 2008) demands that for assertion of <span class="math inline">\(ϕ\)</span> to be successful, <span class="math inline">\(ϕ\)</span> cannot be undefined at any point in <span class="math inline">\(C\)</span>.</p></li>
+                <li class="fragment"><p>A direct consequence: a sentence with a pronoun indexed <span class="math inline">\(n\)</span> carries a referential <em>presupposition</em> that <span class="math inline">\(n\)</span> is defined.</p></li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[\{(w,[]),(w,[a])\}[\text{she}_1\text{ left}] \text{ is undefined}\]</span></p>
+                </div>
+                <div class="element fragment">
+                <p><span class="math display">\[\begin{aligned}[t]
+                &amp;\{(w,[a]),(w,[b])\}[\text{she}_1\text{ left}]\\
+                &amp;= \{(w,[x])\mid x\text{ left in }w\text{ &amp; }x ∈ \{a,b\}\}
+                \end{aligned}\]</span></p>
+                </div>
+                </section>
+                <section id="indefinites-and-updates" class="slide level2">
+                <h2>Indefinites and updates</h2>
+                <p>Some things that fall out automatically:</p>
+                <ul>
+                <li class="fragment">Updating <span class="math inline">\(C\)</span> with an existential statement results in a new context-set that licenses the referential presupposition of a subsequent coindexed pronoun.</li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                \begin{aligned}[t]
+                &amp;C[\text{Andreea has a}^1\text{ partner}]\\
+                &amp;= \{(w,g^{[1 → x]})\mid (w,g) ∈ C\,\&amp;\,x\text{ a partner of A&#39;s in }w\} 
+                \end{aligned}
+                \]</span></p>
+                </div>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                \begin{aligned}[t]
+                &amp;C[\text{Andreea is married}]\\
+                &amp;= \{(w,g)\mid (w,g) ∈ C\,\&amp;\,\text{A has a partner in }w\} 
+                \end{aligned}
+                \]</span></p>
+                </div>
+                <ul>
+                <li class="fragment">A witness to the existential statement is a necessary but not sufficient condition for licensing subsequent anaphora; using an indefinite is crucial.</li>
+                </ul>
+                </section>
+                <section id="a-pragmatic-constraint-on-disjunction" class="slide level2">
+                <h2>A pragmatic constraint on disjunction</h2>
+                <ul>
+                <li class="fragment"><p>We now have everything we need to understand apparent external staticity with disjunction</p></li>
+                <li class="fragment"><p>We can independently observe that an utterance “P or Q” is only felicitous if P and Q are both <em>real possibilies</em> wrt the context set.</p>
+                <ul>
+                <li class="fragment"><span class="math inline">\(C\)</span> shouldn’t entail the truth or falsity of either disjunct.</li>
+                </ul></li>
+                </ul>
+                <div class="element fragment">
+                <p>Context: <em>It’s common ground that Andreea was in the audience</em>.</p>
+                </div>
+                <ol start="22" class="example" type="1">
+                <li class="fragment"># Either someone was in the audience or the event was a disaster.</li>
+                </ol>
+                <div class="element fragment">
+                <p>We use this to account for apparent external staticity.</p>
+                </div>
+                </section>
+                <section id="accounting-for-external-staticity" class="slide level2">
+                <h2>Accounting for external staticity</h2>
+                <div class="element fragment">
+                <p>Consider the following space of logical possibilities, which we’ll use to represent a context set in which “Either someone<span class="math inline">\(^1\)</span> was in the audience, or the event was a disaster” might be felicitously uttered:</p>
+                </div>
+                <ul>
+                <li class="fragment"><span class="math inline">\(w_{ad}\)</span>: <span class="math inline">\(a\)</span> was in the audience; the event was a disaster.</li>
+                <li class="fragment"><span class="math inline">\(w_{a¬d}\)</span>: <span class="math inline">\(a\)</span> was in the audience; the event was successful.</li>
+                <li class="fragment"><span class="math inline">\(w_{∅d}\)</span>: Nobody was in the audience; the event was a disaster.</li>
+                <li class="fragment"><span class="math inline">\(w_{∅¬d}\)</span>: Nobody was in the audience; the event wasn’t a disaster.</li>
+                </ul>
+                <div class="element fragment">
+                <p>Updating with the disjunctive sentence will:</p>
+                </div>
+                <ul>
+                <li class="fragment">Knock out the final world (<span class="math inline">\(w_{∅¬d}\)</span>).</li>
+                <li class="fragment">Extend assignments paired with <span class="math inline">\(a\)</span>-worlds with <span class="math inline">\(a\)</span> (<span class="math inline">\(w_{ad}\)</span>,<span class="math inline">\(w_{a¬d}\)</span>).</li>
+                <li class="fragment">Fail to extend the assignment paired with <span class="math inline">\(w_{∅d}\)</span>.</li>
+                </ul>
+                </section>
+                <section id="section-3" class="slide level2">
+                <h2></h2>
+                <p><span class="math display">\[
+                \left\{\begin{aligned}[c]
+                &amp;(w_{ad},[])\\
+                &amp;(w_{a¬d},[])\\
+                &amp;(w_{∅d},[])\\
+                &amp;(w_{∅¬d},[])\\
+                \end{aligned}\right\}\left[\begin{aligned}[c]
+                &amp;\text{someone}^1\text{ was in the audience}\\
+                &amp;\text{or the event was a disaster}
+                \end{aligned}\right]
+                \]</span></p>
+                <p><span class="math display">\[
+                = \{(w_{ad},[a]),(w_{a¬d},[a]),(w_{∅d},[])\}
+                \]</span></p>
+                <ul>
+                <li class="fragment">Note that the resulting context set is <em>not</em> one in which the presupposition of a subsequent pronoun will be licensed.
+                <ul>
+                <li class="fragment">This reflects the fact that a witness for the existential statement is not contextually entailed post-assertion!</li>
+                <li class="fragment">We therefore get the <em>appearance</em> of external staticity - this does <em>not</em> however motivate saying anything special about the dynamics of disjunction. Moreover, our system doesn’t <em>allow</em> us to say anything special.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="addressing-rothschilds-puzzle" class="slide level2">
+                <h2>Addressing Rothschild’s puzzle</h2>
+                <ul>
+                <li class="fragment">The explanation for Rothschild’s puzzle falls out straightforwardly.
+                <ul>
+                <li class="fragment">After using an indefinite, if a witness for the existential statement is subsequently contextually entailed, we predict anaphora to be possible.</li>
+                </ul></li>
+                <li class="fragment">For example, a subsequent utterance might knock out the problematic world assignment pair:</li>
+                </ul>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                \left\{\begin{aligned}[c]
+                &amp;(w_{ad},[a])\\
+                &amp;(w_{a¬d},[a])\\
+                &amp;(w_{∅d},[])\\
+                \end{aligned}\right\}\left[\text{the event wasn&#39;t a disaster}\right]
+                \]</span></p>
+                </div>
+                <div class="element fragment">
+                <p><span class="math display">\[
+                = \{(w_{ad},[a]),(w_{a¬d},[a])\}
+                \]</span></p>
+                </div>
+                <div class="element fragment">
+                <p>This correctly predicts the subsequent availability a pronoun.</p>
+                </div>
+                <ol start="23" class="example" type="1">
+                <li class="fragment">A: Either <span class="hl1">someone</span> was in the audience or the event was a disaster.<br />
+                B: The event wasn’t a disaster.<br />
+                A: In that case, I hope <span class="hl1">she</span> enjoyed it!</li>
+                </ol>
+                </section>
+                <section id="disjunctive-subordination" class="slide level2">
+                <h2>Disjunctive subordination</h2>
+                <div class="element fragment">
+                <p>An exception that proves the rule: Anaphora appears to be possible when not disrupted by uncertainty:</p>
+                </div>
+                <ol start="24" class="example" type="1">
+                <li class="fragment"><p>Each linguist [met with <span class="hl1">a philosopher</span> or read <span class="hl2">a philosophy paper</span>]</p></li>
+                <li class="fragment"><p>They each [found <span class="hl1">her</span> interesting or couldn’t understand <span class="hl2">it</span>]</p></li>
+                </ol>
+                <div class="element fragment">
+                <p>(N.b. these cases involve quantificational subordination, and require an extension of the system to a plural setting <em>ala</em> van den Berg 1996)</p>
+                </div>
                 </section></section>
       </div>
     </div>
@@ -378,6 +906,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				  hash: true,
+                  slideNumber: 'c/t',
 
 				  // Learn about plugins: https://revealjs.com/plugins/
 				  plugins: [ RevealMarkdown, RevealNotes, RevealMath, RevealChalkboard ]
