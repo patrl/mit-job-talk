@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
         <meta name="author" content="Patrick D. Elliott">
-                <title>Trivalent foundations for a logic of anaphora</title>
+                <title>The semantics and pragmatics of anaphora</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -20,8 +20,8 @@
 		<div class="reveal">
       <div class="slides">
 
-                <section id="title-slide">
-          <h1 class="title">Trivalent foundations for a logic of anaphora</h1>
+                <section id="title-slide" data-background-image="/img/wires.gif" data-background-opacity="0.3">
+          <h1 class="title">The semantics and pragmatics of anaphora</h1>
           <!--  -->
           <!--  -->
           <!-- <p class="author">Patrick D. Elliott</p> -->
@@ -29,8 +29,8 @@
           <!--  -->
         </section>
                 <section>
-                <section id="discourse-anaphora-informs-content" class="title-slide slide level1">
-                <h1>Discourse anaphora informs content</h1>
+                <section id="discourse-anaphora-informs-content" class="title-slide slide level1" data-background-image="./img/marbles.gif" data-background-opacity="0.3">
+                <h1 data-background-image="./img/marbles.gif" data-background-opacity="0.3">Discourse anaphora informs content</h1>
 
                 </section>
                 <section id="marriage-and-marbles" class="slide level2">
@@ -50,30 +50,50 @@
                 <section id="aboutness" class="slide level2">
                 <h2>Aboutness</h2>
                 <ul>
-                <li class="fragment"><em>Content</em> is influenced not just by <em>what</em> is said, but <em>how</em> it is said (Stalnaker 1998).</li>
-                </ul>
-                <aside class="notes">
-                <p>Talk about Kamp, and Stalnaker’s response to Kamp.</p>
-                </aside>
-                </section>
-                <section id="pragmatics" class="slide level2" data-background-image="./img/stalnaker.jpg" data-background-opacity="0.3">
-                <h2 data-background-image="./img/stalnaker.jpg" data-background-opacity="0.3">Pragmatics</h2>
+                <li class="fragment"><p>The requirement for an indefinite antecedent is sometimes called the <em>Formal Link Condition</em>.</p></li>
+                <li class="fragment"><p>The dynamic view: <em>Content</em> is influenced not just by <em>what</em> is said, but <em>how</em> it is said (Kamp 1981, Heim 1982).</p></li>
+                <li class="fragment"><p>In talking, we keep track not just of information concerning <em>how things are</em>, but also <em>referential information</em> concerning <em>what/who</em> the speaker intended to refer to.</p>
                 <ul>
-                <li class="fragment">The Stalnakerian perspective:</li>
+                <li class="fragment">An utterance of “Andreea has a partner” is <em>about</em> a partner of Andreea’s in a way that “Andreea is married is not”.</li>
+                <li class="fragment">Another way of saying the same thing: “Andreea has a partner” introduces a <em>discourse referent</em> (Karttunen 1969)</li>
+                <li class="fragment">In order to make sense of this, we need to go beyond a simple picture of the pragmatics of information exchange.</li>
+                </ul></li>
                 </ul>
-                <aside class="notes">
-                <p>sentences as arrows from worlds to truth-values; update an information state by filtering out the false-tagged worlds.</p>
-                </aside>
                 </section>
-                <section id="the-dynamic-perspective" class="slide level2">
-                <h2>The dynamic perspective</h2>
-                <aside class="notes">
-                <p>sentences as arrows from world-assignment pairs to sets of world assignment pairs; update an information state by gathering up the outputs.</p>
-                </aside>
+                <section id="pragmatics-of-information-exchange" class="slide level2" data-background-image="./img/stalnaker.jpg" data-background-opacity="0.3">
+                <h2 data-background-image="./img/stalnaker.jpg" data-background-opacity="0.3">Pragmatics of information exchange</h2>
+                <ul>
+                <li class="fragment"><p>In a number of works, Robert Stalnaker has developed an extremely influential notion of content, and a corresponding notion of assertion.</p></li>
+                <li class="fragment"><p>According to Stalnaker, a discourse is an attempt to collaboratively construct a mutually believed store of knowledge: <em>the common ground</em>.</p>
+                <ul>
+                <li class="fragment">The common ground can be modelled as the <em>context set</em>, i.e., a set of possibilities.</li>
+                <li class="fragment">The content expressed by a sentence is simply a set of possibilities.</li>
+                <li class="fragment">As discourse proceeds, the context set is <em>updated</em> with the information conveyed by accepted assertions, by simply intersecting the context set with the sentence’s content.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="the-dynamic-perspective" class="slide level2" data-background-image="./img/heim.jpg" data-background-opacity="0.3">
+                <h2 data-background-image="./img/heim.jpg" data-background-opacity="0.3">The dynamic perspective</h2>
+                <ul>
+                <li class="fragment"><p>Dynamic semantics goes beyond the Stalnakerian perspective, by enriching the context set with <em>referential information</em> concerning <em>intended reference</em> - Irene Heim’s notion of a <em>file</em>.</p></li>
+                <li class="fragment"><p>Formally, this is modeled by pairing worlds in the context set with assignment-functions/sequences (or some other suitable data structure).</p></li>
+                <li class="fragment"><p>Part of the dynamic thesis is that uttering a sentence with an indefinite <em>changes</em> the referential information in the context set in a special way.</p></li>
+                <li class="fragment"><p>Sentences with pronouns are sensitive to referential information in a way which other expressions aren’t.</p></li>
+                </ul>
+                </section>
+                <section id="section" class="slide level2">
+                <h2></h2>
+                <ul>
+                <li class="fragment">Dynamic semantics provides an elegant account of the <em>aboutness</em> properties of sentences with indefinites.
+                <ul>
+                <li class="fragment">Dynamic semantics has a problem however: the behaviour of anaphora in complex sentences motivates a theory in which individual lexical items are in charge of referential information flow.</li>
+                <li class="fragment">In the following, we’ll tour data concerning possible anaphoric dependencies between indefinites and pronouns taken for granted in orthodox dynamic theories.</li>
+                </ul></li>
+                </ul>
                 </section></section>
                 <section>
-                <section id="anaphora-in-complex-sentences" class="title-slide slide level1">
-                <h1>Anaphora in complex sentences</h1>
+                <section id="anaphora-in-complex-sentences" class="title-slide slide level1" data-background-image="./img/gol.gif" data-background-opacity="0.3">
+                <h1 data-background-image="./img/gol.gif" data-background-opacity="0.3">Anaphora in complex sentences</h1>
 
                 </section>
                 <section id="conjunction" class="slide level2">
@@ -151,8 +171,8 @@
                 </ul>
                 </section></section>
                 <section>
-                <section id="accessibility-revisited" class="title-slide slide level1">
-                <h1>Accessibility revisited</h1>
+                <section id="accessibility-revisited" class="title-slide slide level1" data-background-image="./img/sphere.gif" data-background-opacity="0.3">
+                <h1 data-background-image="./img/sphere.gif" data-background-opacity="0.3">Accessibility revisited</h1>
 
                 </section>
                 <section id="double-negation" class="slide level2">
@@ -237,8 +257,8 @@
                 </ul>
                 </section></section>
                 <section>
-                <section id="anaphora-redux" class="title-slide slide level1">
-                <h1>Anaphora redux</h1>
+                <section id="anaphora-redux" class="title-slide slide level1" data-background-image="./img/dots.gif" data-background-opacity="0.3">
+                <h1 data-background-image="./img/dots.gif" data-background-opacity="0.3">Anaphora redux</h1>
 
                 </section>
                 <section id="a-logical-substrate" class="slide level2">
@@ -401,7 +421,7 @@
                 </ul></li>
                 </ul>
                 </section>
-                <section id="section" class="slide level2">
+                <section id="section-1" class="slide level2">
                 <h2></h2>
                 <ul>
                 <li class="fragment">Since negation is truth-functional, applying <em>another</em> negation will flip the polarities again.</li>
@@ -560,7 +580,7 @@
                 </ul></li>
                 </ul>
                 </section>
-                <section id="section-1" class="slide level2">
+                <section id="section-2" class="slide level2">
                 <h2></h2>
                 <ul>
                 <li class="fragment">Some details for the more technically-minded. For any two-place truth-functional operator <span class="math inline">\(\mathbf{R}\)</span>:</li>
@@ -636,7 +656,7 @@
                 <li class="fragment">For our purposes, the second clause is important: we can pass the <em>negative</em> ouputs of the first disjunct into the second, and if there are positive outputs we dynamically verify the disjunctive sentence.</li>
                 </ul>
                 </section>
-                <section id="section-2" class="slide level2">
+                <section id="section-3" class="slide level2">
                 <h2></h2>
                 <ul>
                 <li class="fragment">Because of how negation works, if <em>there is a bathroom</em> (<span class="math inline">\(b\)</span>), this will be stored in the negative information conveyed by the first disjunct :</li>
@@ -698,8 +718,8 @@
                 </aside>
                 </section></section>
                 <section>
-                <section id="the-pragmatics-of-anaphora" class="title-slide slide level1">
-                <h1>The pragmatics of anaphora</h1>
+                <section id="the-pragmatics-of-anaphora" class="title-slide slide level1" data-background-image="./img/background1.gif" data-background-opacity="0.3">
+                <h1 data-background-image="./img/background1.gif" data-background-opacity="0.3">The pragmatics of anaphora</h1>
 
                 </section>
                 <section id="pragmatics-via-stalnaker-and-heim" class="slide level2">
@@ -822,7 +842,7 @@
                 <li class="fragment">Fail to extend the assignment paired with <span class="math inline">\(w_{∅d}\)</span>.</li>
                 </ul>
                 </section>
-                <section id="section-3" class="slide level2">
+                <section id="section-4" class="slide level2">
                 <h2></h2>
                 <p><span class="math display">\[
                 \left\{\begin{aligned}[c]
@@ -890,6 +910,148 @@
                 <div class="element fragment">
                 <p>(N.b. these cases involve quantificational subordination, and require an extension of the system to a plural setting <em>ala</em> van den Berg 1996)</p>
                 </div>
+                </section>
+                <section id="negating-conjunctions" class="slide level2">
+                <h2>Negating conjunctions</h2>
+                <div class="element fragment">
+                <p>I’ll note here that we can extend this general explanation to negations of conjunctive sentences, which we otherwise predict can license subsequent anaphora if the first conjunct is true second conjunct is false.</p>
+                </div>
+                <ol start="26" class="example" type="1">
+                <li class="fragment">It’s not the case that [<span class="hl1">anyone</span> walked in <em>and</em> <span class="hl1">they</span> sat down].<br />
+                # <span class="hl1">They</span> remained standing.</li>
+                </ol>
+                <div class="element fragment">
+                <p>The explanation takes advantage of the fact that an utterance of the form “not (P <em>and</em> Q)” typically requires “not P” and “not Q” to be <em>real possibilities</em>. See Elliott (2020) for details.</p>
+                </div>
+                </section>
+                <section id="gs-disjunctions-1" class="slide level2">
+                <h2>G&amp;S disjunctions</h2>
+                <div class="element fragment">
+                <p>We now straightforwardly account for <em>G&amp;S disjunctions</em> (discussed earlier).</p>
+                </div>
+                <ol start="27" class="example" type="1">
+                <li class="fragment">Either we’re interviewing <span class="hl1">a<span class="math inline">\(^1\)</span> linguist</span><br />
+                or we’re interviewing <span class="hl1">a<span class="math inline">\(^1\)</span> philosopher</span>.</li>
+                </ol>
+                <div class="element fragment">
+                <p>Updating a context set in which both disjuncts are real possibilities will extend every assignment with a linguist/philosopher at index <span class="math inline">\(1\)</span>.</p>
+                </div>
+                <ul>
+                <li class="fragment">The presupposition of a subsequent co-indexed pronoun will be satisfied, exactly because G&amp;S disjunctions contextually entail a witness.</li>
+                <li class="fragment">It’s crucial that the indefinites in each disjunct are co-indexed (this has interesting consequences for Heim’s <em>novelty condition</em> - ask me about this in the Q&amp;A).</li>
+                </ul>
+                </section>
+                <section id="internal-staticity-and-hurford-disjunctions" class="slide level2">
+                <h2>Internal staticity and Hurford disjunctions</h2>
+                <div class="element fragment">
+                <p>Recall that disjunctions appear to be <em>internally static</em></p>
+                </div>
+                <ol start="28" class="example" type="1">
+                <li class="fragment">Either <span class="hl1">a linguist</span> is here, or <span class="hl1">she</span>’s smoking outside.</li>
+                </ol>
+                <div class="element fragment">
+                <p>Since our algorithm for passing referential is modelled on dynamic conjunction, there’s no obvious reason why (28) should be unacceptable on the intended reading.</p>
+                </div>
+                </section>
+                <section id="simons-observation" class="slide level2">
+                <h2>Simons’ observation</h2>
+                <div class="element fragment">
+                <p>In order to explain what’s going on here, we’ll begin with Simons’ (1996) observation that the following sentence is deviant:</p>
+                </div>
+                <ol start="29" class="example" type="1">
+                <li class="fragment"># Either someone is in the audience,<br />
+                or the person in the audience is sitting down.</li>
+                </ol>
+                <div class="element fragment">
+                <p>What Simons observes is that, when a disjunct <em>Strawson entails</em> the other, the disjunction is odd.</p>
+                </div>
+                <ul>
+                <li class="fragment">In other words, if the presupposition of the second disjunct is satisfied, in entails the first.</li>
+                <li class="fragment">This is a special case of <em>Hurford’s constraint</em> (HC): a disjunction is odd if one disjunct entails the other.</li>
+                </ul>
+                </section>
+                <section id="hurfords-constraint-in-a-dynamic-setting" class="slide level2">
+                <h2>Hurford’s constraint in a dynamic setting</h2>
+                <div class="element fragment">
+                <p>Since we want to accommodate the possibility of anaphora between disjuncts, we need to state this constraint in a way that accommodates referential information flow.</p>
+                </div>
+                <div class="alert fragment" name="Dynamic HC">
+                <p>“<span class="math inline">\(\text{P or Q}\)</span>” is odd if<br />
+                <span class="math inline">\(⟦\text{(not P) and Q}⟧_+^g = ∅ ∨ ⟦\text{P and not Q}⟧_+^g = ∅, ∀ g\)</span></p>
+                </div>
+                <div class="element fragment">
+                <p>In plain English: a disjunction is odd if there is no way of verifying the disjunction other than by verifying both disjuncts.</p>
+                </div>
+                <ol start="30" class="example" type="1">
+                <li class="fragment"><span class="hl1">Someone<span class="math inline">\(^1\)</span></span> is in the audience, or <span class="hl1">she<span class="math inline">\(_1\)</span></span> is sitting down.</li>
+                </ol>
+                <div class="element fragment">
+                <p>Here, if the first disjunct is false, the second is always undefined</p>
+                </div>
+                </section></section>
+                <section>
+                <section id="wrapping-up" class="title-slide slide level1" data-background-image="./img/cube.gif" data-background-opacity="0.3">
+                <h1 data-background-image="./img/cube.gif" data-background-opacity="0.3">Wrapping up</h1>
+
+                </section>
+                <section id="ext-1-donkey-anaphora" class="slide level2">
+                <h2>Ext 1: Donkey anaphora</h2>
+                <ul>
+                <li class="fragment">Although material implication doesn’t give a realistic semantics for conditionals, it’s interesting to consider what this system predicts when we apply our algorithm for logical connectives.
+                <ul>
+                <li class="fragment">Unlike orthodox dynamic semantics, we systematically predict so-called “weak” or “existential” truth-conditions for donkey sentences (Kanazawa 1994, Chierchia 1995); ask me more about this in the Q&amp;A.</li>
+                <li class="fragment">Such readings are attested, but strong readings must be derived via some kind of strengthening mechanism.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="ext-2-generalized-quantifiers-and-modal-subordination" class="slide level2">
+                <h2>Ext 2: Generalized quantifiers and modal subordination</h2>
+                <div class="element fragment">
+                <p>The algorithm we’ve outlined for the logical connectives needs to be generalized to quantifiers such as <em>every linguist</em> and <em>most philosophers</em>.</p>
+                </div>
+                <ul>
+                <li class="fragment">This is necessary in order to develop a principled account of donkey anaphora which doesn’t face the proportion problem.</li>
+                </ul>
+                <div class="element fragment">
+                <p>Another interesting extension is <em>modal subordination</em>. In Elliott (2020b) I develop an extend this system with epistemic modality, in order to account for what I call <em>conjunctive bathroom sentences</em>.</p>
+                </div>
+                <ol start="31" class="example" type="1">
+                <li class="fragment">Maybe there is <span class="hl1">no bathroom</span> and maybe <span class="hl1">it</span> is upstairs.</li>
+                </ol>
+                </section>
+                <section id="the-bottom-line" class="slide level2">
+                <h2>The bottom line</h2>
+                <ul>
+                <li class="fragment">We’ve achieved a dynamic semantics which is up-front about <em>what</em> exactly it stipulates.
+                <ul>
+                <li class="fragment">Concretely, the <em>locus of stipulation</em> is in the statement of the algorithm for passing referential information, which we stipulate passes information from left-to-right.</li>
+                </ul></li>
+                <li class="fragment">The idea is that there is a single switch which gives rise to incrementality in anaphoric processing; this isn’t localized to the lexical entries of individual connectives.
+                <ul>
+                <li class="fragment">This makes a clear and (to my knowledge, unexplored) acquisition prediction.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="section-5" class="slide level2">
+                <h2></h2>
+                <ul>
+                <li class="fragment">In developing a more principled theory of anaphora, what we’ve learned is that the literature has essentially been mistaken in taking the accessibility generalizations at face value.
+                <ul>
+                <li class="fragment">In order to maintain a parsimonious semantic theory, due care needs to be taken to address the role of pragmatic factors.</li>
+                <li class="fragment">Developing an understanding of the <em>pragmatics</em> of referential information is <strong>essential</strong> in order to improve on our understanding of the semantic component.</li>
+                </ul></li>
+                <li class="fragment">As we’ve seen, it’s possible to retain some of the appealing aspects of dynamic semantics - such as the dynamic notion of content - while improving upon the stipulative nature of extant dynamic theories.</li>
+                </ul>
+                </section></section>
+                <section>
+                <section id="thank-you" class="title-slide slide level1" data-background-image="./img/voronoi.gif" data-background-opacity="0.3">
+                <h1 data-background-image="./img/voronoi.gif" data-background-opacity="0.3">Thank you!</h1>
+
+                </section>
+                <section id="acknowledgments" class="slide level2">
+                <h2>Acknowledgments</h2>
+                <p>I’m deeply grateful to Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.</p>
+                <p>I’d also like to thank audiences at Rutgers, NYU, and LENLS 17 for their feedback.</p>
                 </section></section>
       </div>
     </div>
