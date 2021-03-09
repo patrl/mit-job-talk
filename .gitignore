@@ -8,5 +8,6 @@ out/
 log/*.log
 tmp/**
 node_modules/
+!node_modules/@ibm/*
 .sass-cache
 dist/*.map
