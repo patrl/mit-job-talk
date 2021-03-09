@@ -24,11 +24,20 @@ Heim 1982, Kamp 1988, a.o.
 (@) Exactly nine of the ten balls are in the bag.  
 \# [**It**]{class=hl2} is under the sofa.
 
+::: notes
+
+I'd like to begin with a simple puzzle involving the effects of two contextually truth-conditionally equivalent sentences on a discourse. 
+
+- Begin with partner/marriage examples
+- Move on to marble examples - mention that Partee came up with this.
+
+:::
+
 ## Aboutness
 
 - The requirement for an indefinite antecedent is sometimes called the *Formal Link Condition*.
 
-- The dynamic view: *Content* is influenced not just by *what* is said, but *how* it is said (Kamp 1981, Heim 1982).
+- **The dynamic view:** *Content* is influenced not just by *what* is said, but *how* it is said (Kamp 1981, Heim 1982).
 
 - In talking, we keep track not just of information concerning *how things are*, but also *referential information* concerning *what/who* the speaker intended to refer to.
   + An utterance of "Andreea has a partner" is *about* a partner of Andreea's in a way that "Andreea is married is not".
@@ -44,7 +53,7 @@ Heim 1982, Kamp 1988, a.o.
   + The content expressed by a sentence is simply a set of possibilities.
   + As discourse proceeds, the context set is *updated* with the information conveyed by accepted assertions, by simply intersecting the context set with the sentence's content.
   
-## The dynamic perspective {data-background-image="./img/heim.jpg" data-background-opacity=0.3}
+## The dynamic perspective
 
 - Dynamic semantics goes beyond the Stalnakerian perspective, by enriching the context set with *referential information* concerning *intended reference* - Irene Heim's notion of a *file*.
 
@@ -146,10 +155,12 @@ To be developed today:
 ## Double negation
 
 :::{.element: class=fragment}
-In DS, negation *destroys* referential information.
+In DS, negation *destroys* referential information. But consider the following:
 :::
 
 (@) Frank doesn't own **no shirt**. **It**'s in the closet.
+
+(@) It's not the case that Frank doesn't own **any shirt**. **It**'s in the closet.
 
 ::: {.element: class=fragment}
 Referential information can be resurrected by an additional negation (Krahmer & Muskens 1995, Gotham 2019).
@@ -160,7 +171,7 @@ Referential information can be resurrected by an additional negation (Krahmer & 
 ## Bathroom disjunctions
 
 :::{.element: class=fragment}
-In DS, negation *destroys* referential information.
+Again, remember that in DS, negation *destroys* referential information...
 :::
 
 (@) Either there isn't **a bathroom**, or **it**'s upstairs.
@@ -186,7 +197,11 @@ Under certain circumstances, the ban on passing referential information further 
 
 ## Rothschild's puzzle
 
+- The final issue is, in my opinion, the most telling of all.
+
+::: {.element class=fragment}
 Rothschild (2017) observed that, if the truth of one of the disjuncts is contextually entailed later in the discourse, anaphora becomes possible.
+:::
 
 (@) A: Either it's a weekday, or Gabe baked **a cake**.  
 B: It's Saturday afternoon.  
@@ -217,6 +232,12 @@ I need to mention the witness generalization (citing Schlenker, Mandelkern, and 
 - **G\&S disjunctions** tell us that disjunction isn't straightforwardly externally static; referential information can be passed further.
 - **Rothschild's puzzle** tells us that *pragmatic factors* have a role to play in regulating the availability of subsequent anaphora.
 
+::: {.element class=fragment}
+::: alert
+The accessibility generalizations assumed in DS are full of holes. Rothschild's puzzle suggests a way of resolving the tension - develop a more classical, more permissive dynamic semantics that can be restricted in the pragmatics.
+:::
+:::
+
 # Anaphora redux {data-background-image="./img/dots.gif" data-background-opacity=0.3}
 
 ## A logical substrate
@@ -226,7 +247,7 @@ We'll develop a theory of anaphora based on the following ideas:
 - The *core* semantic value of a sentence is a (trivalent) truth-value; referential information is computed *in tandem* with this logical substrate.
 - The logical connectives operate *exclusively* on the logical substrate.
   + Referential information is passed from left-to-right *uniformly*.
-  + Incrementality is achieved by flipping a single "switch".
+  + Incrementality in anaphoric processing is achieved by flipping a single "switch" throughout the grammar.
 
 ## Enriching the dynamic notion of content
 
@@ -265,8 +286,6 @@ $$
 
 ## Indefinites and indeterminacy
 
-- Outputs so far have always been singleton sets
-  + we may as well have said that sentences are just functions from an assignment to an assignment-truth-value pair.
 - We'll use sets to model the idea that indefinites extend the input assignment *indeterministically* (following G&S).
   + Another way of thinking about this --- indefinites introduce *alternatives*.
   
@@ -293,11 +312,12 @@ Remember to have something prepared about maximize presupposition.
 
 (@) $⟦\text{A}^1\text{ triangle is in the circle.}⟧^{g_⊤}$
 
+::: {.element class=fragment}
+
 $$
 = \begin{cases}
     \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-    \{(0,[])\}\\
-    \qquad\text{there is no triangle in the circle}
+    \{(0,[])\}\qquad\text{there is no triangle in the circle}
 \end{cases}
 $$
 
@@ -309,15 +329,18 @@ $$
 = \{(1,[\color{red}{Δ}]),(1,[\color{blue}{Δ}])\}
 $$
 
+:::
+
 ## Illustration ii
 
 (@) $⟦\text{A}^1\text{ triangle is in the circle.}⟧^{g_⊤}$
 
+::: {.element class=fragment}
+
 $$
 = \begin{cases}
     \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-    \{(0,[])\}\\
-    \qquad\text{there is no triangle in the circle}
+    \{(0,[])\}\qquad\text{there is no triangle in the circle}
 \end{cases}
 $$
 <center>
@@ -327,6 +350,8 @@ $$
 $$
 = \{(0,[])\}
 $$
+
+:::
 
 ## Comparison with indefinites in orthodox DS
 
@@ -535,7 +560,7 @@ $$
 
 ## 
 
-- Because of how negation works, if *there is a bathroom* ($b$), this will be stored in the negative information conveyed by the first disjunct \enquote{there isn't a bathroom}:
+- Because of how negation works, if *there is a bathroom* ($b$), this will be stored in the negative information conveyed by the first disjunct "there isn't a bathroom":
 
 ::: {.element class="fragment"}
 $$
@@ -543,7 +568,7 @@ $$
 $$
 :::
 
-- The false-tagged assignment licenses a pronoun in the subsequent sentence:
+- The false-tagged assignment licenses a pronoun in the subsequent sentence, which will be paired with true if there is indeed a bathroom upstairs:
 
 ::: {.element class="fragment"}
 $$
