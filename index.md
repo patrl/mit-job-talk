@@ -1,12 +1,10 @@
 ---
 title: The semantics and pragmatics of anaphora 
 author: Patrick D. Elliott
-title-slide-attributes:
-    data-background-image: /img/wires.gif
-    data-background-opacity: 0.3
 ---
 
-# Discourse anaphora informs content {data-background-image="./img/marbles.gif" data-background-opacity=0.3}
+# Discourse anaphora informs content
+
 
 ## Marriage and marbles 
 
@@ -69,7 +67,7 @@ I'd like to begin with a simple puzzle involving the effects of two contextually
   + Dynamic semantics has a problem however: the behaviour of anaphora in complex sentences motivates a theory in which individual lexical items are in charge of referential information flow.
   + In the following, we'll tour data concerning possible anaphoric dependencies between indefinites and pronouns taken for granted in orthodox dynamic theories. 
 
-# Anaphora in complex sentences {data-background-image="./img/gol.gif" data-background-opacity=0.3}
+# Anaphora in complex sentences
 
 ## Conjunction
 
@@ -150,7 +148,7 @@ To be developed today:
 - The accessibility generalizations are empirically flawed; accessibility is sensitive to contextual factors.
 - **The main point:** the logical connectives are exactly what they seem to be - *truth-functional operators* - referential information flows uniformly from left-to-right.
 
-# Accessibility revisited {data-background-image="./img/sphere.gif" data-background-opacity=0.3}
+# Accessibility revisited
 
 ## Double negation
 
@@ -238,7 +236,7 @@ The accessibility generalizations assumed in DS are full of holes. Rothschild's 
 :::
 :::
 
-# Anaphora redux {data-background-image="./img/dots.gif" data-background-opacity=0.3}
+# Anaphora redux
 
 ## A logical substrate
 
@@ -613,7 +611,7 @@ We predict that if a linguist is indeed here, anaphora should be licensed in (@d
 fill this in.
 :::
 
-# The pragmatics of anaphora {data-background-image="./img/background1.gif" data-background-opacity=0.3}
+# The pragmatics of anaphora
 
 ## Pragmatics via Stalnaker and Heim
 
@@ -878,7 +876,7 @@ In plain English: a disjunction is odd if there is no way of verifying the disju
 Here, if the first disjunct is false, the second is always undefined
 :::
 
-# Wrapping up {data-background-image="./img/cube.gif" data-background-opacity=0.3}
+# Wrapping up
 
 ## Ext 1: Donkey anaphora
 
@@ -916,11 +914,11 @@ Another interesting extension is *modal subordination*. In Elliott (2020b) I dev
   
 - As we've seen, it's possible to retain some of the appealing aspects of dynamic semantics - such as the dynamic notion of content - while improving upon the stipulative nature of extant dynamic theories.
 
-# Thank you! {data-background-image="./img/voronoi.gif" data-background-opacity=0.3}
+# Thank you!
 
 ## Acknowledgments
 
-I'm deeply grateful to Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.
+I'm deeply grateful to Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.
 
 I'd also like to thank audiences at Rutgers, NYU, and LENLS 17 for their feedback.
 
