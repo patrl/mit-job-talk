@@ -67,8 +67,9 @@
                 </ul></li>
                 </ul>
                 </section>
-                <section id="pragmatics-of-information-exchange" class="slide level2" data-background-image="./img/stalnaker.jpg" data-background-opacity="0.3">
-                <h2 data-background-image="./img/stalnaker.jpg" data-background-opacity="0.3">Pragmatics of information exchange</h2>
+                <section id="pragmatics-of-information-exchange" class="slide level2">
+                <h2>Pragmatics of information exchange</h2>
+                <!-- {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3} -->
                 <ul>
                 <li class="fragment"><p>In a number of works, Robert Stalnaker has developed an extremely influential notion of content, and a corresponding notion of assertion.</p></li>
                 <li class="fragment"><p>According to Stalnaker, a discourse is an attempt to collaboratively construct a mutually believed store of knowledge: <em>the common ground</em>.</p>
@@ -188,15 +189,18 @@
                 <p>In DS, negation <em>destroys</em> referential information. But consider the following:</p>
                 </div>
                 <ol start="11" class="example" type="1">
-                <li class="fragment"><p>Frank doesn’t own <strong>no shirt</strong>. <strong>It</strong>’s in the closet.</p></li>
-                <li class="fragment"><p>It’s not the case that Frank doesn’t own <strong>any shirt</strong>. <strong>It</strong>’s in the closet.</p></li>
+                <li class="fragment"><p>Frank doesn’t own <span class="hl1"><strong>no shirt</strong></span>. <span class="hl1"><strong>It</strong></span>’s in the closet.</p></li>
+                <li class="fragment"><p>It’s not the case that Frank doesn’t own <span class="hl1"><strong>any shirt</strong></span>. <span class="hl1"><strong>It</strong></span>’s in the closet.</p></li>
                 </ol>
                 <div class="element: fragment">
                 <p>Referential information can be resurrected by an additional negation (Krahmer &amp; Muskens 1995, Gotham 2019).</p>
                 </div>
+                <aside class="notes">
                 <ul>
-                <li class="fragment">N.b., the facts are a little more nuanced than I present them here. Ask me about double-negation and uniqueness during the Q&amp;A.</li>
+                <li>I’m assuming at Logical Form that negative indefinites such as <em>not shirt</em> are decomposed into negation and an existential quantifier.</li>
+                <li>The facts are a little more nuanced than I present them here; ask me about double-negation and uniqueness during the Q&amp;A.</li>
                 </ul>
+                </aside>
                 </section>
                 <section id="bathroom-disjunctions" class="slide level2">
                 <h2>Bathroom disjunctions</h2>
@@ -204,7 +208,7 @@
                 <p>Again, remember that in DS, negation <em>destroys</em> referential information…</p>
                 </div>
                 <ol start="13" class="example" type="1">
-                <li class="fragment">Either there isn’t <strong>a bathroom</strong>, or <strong>it</strong>’s upstairs.</li>
+                <li class="fragment">Either there isn’t <span class="hl1"><strong>a bathroom</strong></span>, or <span class="hl1"><strong>it</strong></span>’s upstairs.</li>
                 </ol>
                 <ul>
                 <li class="fragment"><p>Referential information destroyed in an initial disjunct can be resurrected in a subsequent disjunct (observation due to Barbara Partee).</p></li>
@@ -214,31 +218,31 @@
                 <li class="fragment">Either Sam <em>never</em> smoked, or he stopped smoking.</li>
                 </ol>
                 </section>
-                <section id="gs-disjunctions" class="slide level2">
-                <h2>G&amp;S disjunctions</h2>
+                <section id="groenendijk-stokhof-disjunctions" class="slide level2">
+                <h2>Groenendijk &amp; Stokhof disjunctions</h2>
                 <div class="element fragment">
                 <p>Under certain circumstances, the ban on passing referential information further is lifted (G&amp;S 1991, Kamp &amp; Reyle 1993, Simons 1996):</p>
                 </div>
                 <ol start="15" class="example" type="1">
-                <li class="fragment">Either we’re interviewing <strong>a linguist</strong>, or we’re interviewing <strong>a philosopher</strong>.<br />
-                (Either way) <strong>she’s</strong> waiting outside.</li>
+                <li class="fragment">Either we’re interviewing <span class="hl1"><strong>a linguist</strong></span>, or we’re interviewing <span class="hl1"><strong>a philosopher</strong></span>.<br />
+                (Either way) <span class="hl1"><strong>she’s</strong></span> waiting outside.</li>
                 </ol>
                 <div class="element fragment">
                 <p>(G&amp;S chalk this up to a lexical ambiguity, positing an additional, externally dynamic disjunction operator; <em>program disjunction</em>.)</p>
                 </div>
                 </section>
-                <section id="rothschilds-puzzle" class="slide level2">
-                <h2>Rothschild’s puzzle</h2>
+                <section id="anaphora-and-contextual-entailment" class="slide level2">
+                <h2>Anaphora and contextual entailment</h2>
                 <ul>
                 <li class="fragment">The final issue is, in my opinion, the most telling of all.</li>
                 </ul>
                 <div class="element fragment">
-                <p>Rothschild (2017) observed that, if the truth of one of the disjuncts is contextually entailed later in the discourse, anaphora becomes possible.</p>
+                <p>f the truth of one of the disjuncts is contextually entailed later in the discourse, anaphora becomes possible (see Rothschild 2017 for related observations).</p>
                 </div>
                 <ol start="16" class="example" type="1">
-                <li class="fragment">A: Either it’s a weekday, or Gabe baked <strong>a cake</strong>.<br />
+                <li class="fragment">A: Either it’s a weekday, or Gabe baked <strong><span class="hl1">a cake</span></strong>.<br />
                 B: It’s Saturday afternoon.<br />
-                A: Then, <strong>it</strong>’s cooling on the windowsill!</li>
+                A: Then, <strong><span class="hl1">it</span></strong>’s cooling on the windowsill!</li>
                 </ol>
                 <aside class="notes">
                 <ul>
@@ -248,16 +252,16 @@
                 </ul>
                 </aside>
                 </section>
-                <section id="rothschilds-puzzle-beyond-disjunction" class="slide level2">
-                <h2>Rothschild’s puzzle beyond disjunction</h2>
+                <section id="beyond-disjunction" class="slide level2">
+                <h2>Beyond disjunction</h2>
                 <p>Recall that conditionals are also (claimed to be) externally static.</p>
                 <ol start="17" class="example" type="1">
-                <li class="fragment">A: If it’s the weekend, then Gabe baked <strong>a cake</strong>.<br />
+                <li class="fragment">A: If it’s the weekend, then Gabe baked <strong><span class="hl1">a cake</span></strong>.<br />
                 B: It’s Saturday afternoon.<br />
-                A: Then, <strong>it</strong>’s cooling on the windowsill!</li>
+                A: Then, <strong><span class="hl1">it</span></strong>’s cooling on the windowsill!</li>
                 </ol>
                 <aside class="notes">
-                <p>I need to mention the witness generalization (citing Schlenker, Mandelkern, and Keny)</p>
+                <p>The witness generalization</p>
                 </aside>
                 </section>
                 <section id="take-away-points" class="slide level2">
@@ -266,11 +270,11 @@
                 <li class="fragment"><strong>Double-negation</strong> suggests we want a theory that is <em>more classical</em> than, e.g., orthodox DS.</li>
                 <li class="fragment"><strong>Bathroom disjunctions</strong> tell us that disjunction isn’t straightforwardly internally static; referential information can be transmitted between disjuncts.</li>
                 <li class="fragment"><strong>G&amp;S disjunctions</strong> tell us that disjunction isn’t straightforwardly externally static; referential information can be passed further.</li>
-                <li class="fragment"><strong>Rothschild’s puzzle</strong> tells us that <em>pragmatic factors</em> have a role to play in regulating the availability of subsequent anaphora.</li>
+                <li class="fragment"><strong>Anaphora and contextual entailment</strong> tells us that <em>pragmatic factors</em> have a role to play in regulating the availability of subsequent anaphora.</li>
                 </ul>
                 <div class="element fragment">
                 <div class="alert">
-                <p>The accessibility generalizations assumed in DS are full of holes. Rothschild’s puzzle suggests a way of resolving the tension - develop a more classical, more permissive dynamic semantics that can be restricted in the pragmatics.</p>
+                <p>The accessibility generalizations assumed in DS are full of holes. Anaphora licensed by contextual entailment suggests a way of resolving the tension - develop a more classical, more permissive dynamic semantics that can be restricted in the pragmatics.</p>
                 </div>
                 </div>
                 </section></section>
@@ -290,6 +294,7 @@
                 <li class="fragment">Incrementality in anaphoric processing is achieved by flipping a single “switch” throughout the grammar.</li>
                 </ul></li>
                 </ul>
+                <p>This is an extension of techniques developed by Charlow (2014,2019).</p>
                 </section>
                 <section id="enriching-the-dynamic-notion-of-content" class="slide level2">
                 <h2>Enriching the dynamic notion of content</h2>
@@ -340,10 +345,10 @@
                 </ul>
                 <div class="element fragment">
                 <p><span class="math display">\[⟦\text{Someone}^1\text{ is here}⟧^g = \begin{cases}
-                \{(1,g^{[1 → x]} \mid x \text{ is here})\}\\
-                \qquad\text{someone is here}\\
-                \{(0,g)\}\\
-                \qquad\text{nobody is here}
+                \{(\color{red}{1},g^{[1 → x]}) \mid x \text{ is here}\}\\
+                \qquad\color{gray}{\text{someone is here}}\\
+                \{(\color{red}0,g)\}\\
+                \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}\]</span></p>
                 </div>
                 <ul>
@@ -366,7 +371,7 @@
                 <p><span class="math display">\[
                 = \begin{cases}
                     \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-                    \{(0,[])\}\qquad\text{there is no triangle in the circle}
+                    \{(0,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
                 \end{cases}
                 \]</span></p>
                 <center>
@@ -386,7 +391,7 @@
                 <span class="math display">\[
                 = \begin{cases}
                     \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-                    \{(0,[])\}\qquad\text{there is no triangle in the circle}
+                    \{(0,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
                 \end{cases}
                 \]</span>
                 <center>
@@ -415,30 +420,30 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 ⟦\text{Nobody is here}⟧ = λ g . \begin{cases}
-                    \{(\color{red}{¬\,1},g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(\color{red}{¬\,1},g^{[1 → x]}) \mid x\text{ is here}\}\\
                     \{(\color{red}{¬\,0},g)\}\\
-                    \qquad\text{nobody is here}
+                    \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}
                 \]</span></p>
                 </div>
                 <div class="element fragment">
                 <p><span class="math display">\[
                 = λ g . \begin{cases}
-                    \{(\color{red}{0},g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(\color{red}{0},g^{[1 → x]}) \mid x\text{ is here}\}\\
                     \{(\color{red}{1},g)\}\\
-                    \qquad\text{nobody is here}
+                    \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}
                 \]</span></p>
                 </div>
                 <ul>
-                <li class="fragment">N.b. referential information survives, but it’s <em>false-tagged</em>.
-                <ul>
-                <li class="fragment">Crucially, no <em>positive</em> referential information is introduced, correctly predicting that negation blocks anaphora.</li>
-                </ul></li>
+                <li class="fragment">N.b. referential information survives, but it’s <em>false-tagged</em>.</li>
                 </ul>
+                <aside class="notes">
+                <p>What’s crucial here is that no <em>positive</em> referential information is introduced, correctly predicting that negation blocks anaphora.</p>
+                </aside>
                 </section>
-                <section id="section-1" class="slide level2">
-                <h2></h2>
+                <section id="double-negation-1" class="slide level2">
+                <h2>Double negation</h2>
                 <ul>
                 <li class="fragment">Since negation is truth-functional, applying <em>another</em> negation will flip the polarities again.</li>
                 </ul>
@@ -464,11 +469,13 @@
                 \]</span></p>
                 </div>
                 <ul>
-                <li class="fragment">In other words, a doubly negated sentence will convey <em>the same referential information</em> as its positive counterpart!
-                <ul>
-                <li class="fragment">We can now account for the interaction between double-negation and anaphora in a more satisyfing way.</li>
-                </ul></li>
+                <li class="fragment">A doubly negated sentence conveys <em>the same referential information</em> as its positive counterpart!</li>
                 </ul>
+                <aside class="notes">
+                <ul>
+                <li>We can now account for the interaction between double-negation and anaphora in a more satisyfing way.</li>
+                </ul>
+                </aside>
                 </section>
                 <section id="interlude-strong-kleene" class="slide level2">
                 <h2>Interlude: Strong Kleene</h2>
@@ -592,11 +599,11 @@
                 <li class="fragment">In order to lift binary logical operators into a dynamic setting, we’ll adopt much the same strategy as with negation.
                 <ul>
                 <li class="fragment">The truth-functional operator applies pointwise to the values in the logical substrate.</li>
-                <li class="fragment">This time, we have two sets of outputs to worry about - the referential information ouputted by the first junct as passed in as the input to the second.</li>
+                <li class="fragment">This time, we have two sets of outputs to worry about - the referential information ouputed by the first junct as passed in as the input to the second.</li>
                 </ul></li>
                 </ul>
                 </section>
-                <section id="section-2" class="slide level2">
+                <section id="section-1" class="slide level2">
                 <h2></h2>
                 <ul>
                 <li class="fragment">Some details for the more technically-minded. For any two-place truth-functional operator <span class="math inline">\(\mathbf{R}\)</span>:</li>
@@ -607,7 +614,7 @@
                 \]</span></p>
                 </div>
                 <ul>
-                <li class="fragment">N.b. this algorithm can be reified in the compositional semantics via a regime of type-shifters, using monadic techniques pioneered by Shan (2002) and Charlow (2014); see Elliott (2020) Appendix A for details.</li>
+                <li class="fragment">N.b. Charlow (2014, 2019) reifies this algorithm in the compositional semantics via a regime of type-shifters; the current approach can be spelled out in these terms too.</li>
                 </ul>
                 <div class="element fragment alert">
                 <p><strong>Important:</strong> the locus of stipulation on the current approach is in the <em>algorithm</em> for lifting any truth-functional operator into the dynamic domain of referential-information-passing. Nothing is stipulated about the dynamics of the individual logical connectives.</p>
@@ -618,7 +625,7 @@
                 <ul>
                 <li class="fragment">Applying this algorithm to <span class="math inline">\(∧^s\)</span> gives us something equivalent to DPL conjunction wrt positive referential information (a running theme).
                 <ul>
-                <li class="fragment">We can see this most clearly if we just compute the positive extension (<span class="math inline">\(⟦.⟧_+\)</span>; the referential information paired with <em>true</em>).</li>
+                <li class="fragment">We can see this most clearly if we just compute the positive extension (<span class="math inline">\(⟦.⟧_+\)</span>; the referential information paired with <span class="math inline">\(\color{red}{1}\)</span>).</li>
                 </ul></li>
                 </ul>
                 <div class="element fragment">
@@ -639,8 +646,11 @@
                 \end{aligned}
                 \]</span></p>
                 </div>
+                </section>
+                <section id="section-2" class="slide level2">
+                <h2></h2>
                 <ul>
-                <li class="fragment">Conjunction is asymmetric despite a symmetric logical substrate.</li>
+                <li class="fragment">Conjunction is asymmetric despite a symmetric logical substrate (Charlow 2014).</li>
                 <li class="fragment">N.b., when we take into account the possibility of either conjunct being false the predictions diverge from orthodox DS. We’ll come back to this when we discuss the pragmatics.</li>
                 </ul>
                 </section>
@@ -650,7 +660,7 @@
                 <p>Let’s now return to bathroom disjunctions.</p>
                 </div>
                 <ol start="20" class="example" type="1">
-                <li class="fragment">Either there isn’t a<span class="math inline">\(^1\)</span> bathroom, or it<span class="math inline">\(_1\)</span>’s upstairs.</li>
+                <li class="fragment">Either there isn’t <span class="hl1"><strong>a<span class="math inline">\(^1\)</span> bathroom</strong></span>, or <span class="hl1"><strong>it<span class="math inline">\(_1\)</span></strong></span>’s upstairs.</li>
                 </ol>
                 <div class="element fragment">
                 <p>Applying our algorithm to <span class="math inline">\(∨^s\)</span> gives us a disjunctive recipe for dynamically verifying disjunctive sentences:</p>
@@ -663,6 +673,9 @@
                   \end{aligned}
                 \]</span></p>
                 </div>
+                </section>
+                <section id="section-3" class="slide level2">
+                <h2></h2>
                 <ul>
                 <li class="fragment">In plain English, we can compute the positive referential information conveyed by the disjunctive sentence by:
                 <ul>
@@ -672,7 +685,7 @@
                 <li class="fragment">For our purposes, the second clause is important: we can pass the <em>negative</em> ouputs of the first disjunct into the second, and if there are positive outputs we dynamically verify the disjunctive sentence.</li>
                 </ul>
                 </section>
-                <section id="section-3" class="slide level2">
+                <section id="section-4" class="slide level2">
                 <h2></h2>
                 <ul>
                 <li class="fragment">Because of how negation works, if <em>there is a bathroom</em> (<span class="math inline">\(b\)</span>), this will be stored in the negative information conveyed by the first disjunct “there isn’t a bathroom”:</li>
@@ -694,12 +707,12 @@
                 <p>N.b. an apparently bad prediction that you may notice at this point is that we predict a bathroom disjunction can license a subsequent pronoun, at least if there is indeed a bathroom.</p>
                 </div>
                 <ol start="21" class="example" type="1">
-                <li class="fragment">Either there isn’t a bathroom, or it’s upstairs.<br />
-                # It is very clean.</li>
+                <li class="fragment">Either there isn’t <span class="hl1"><strong>a bathroom</strong></span>, or <span class="hl1"><strong>it</strong></span>’s upstairs.<br />
+                # <span class="hl1"><strong>It</strong></span> is very clean.</li>
                 </ol>
-                <div class="element fragment">
+                <aside class="notes">
                 <p>This fact indicates what appears to be a more general problem with the approach we’re developing…</p>
-                </div>
+                </aside>
                 </section>
                 <section id="the-dynamic-connective-par-excellence" class="slide level2">
                 <h2>The dynamic connective <em>par excellence</em></h2>
@@ -713,24 +726,24 @@
                 <p>This leads to a problem with external staticity.</p>
                 </div>
                 <ol start="22" class="example" type="1">
-                <li class="fragment">Either a<span class="math inline">\(^1\)</span> linguist is here or it’s raining.<br />
-                It<span class="math inline">\(_1\)</span>’s smoking outside.</li>
+                <li class="fragment">Either <span class="hl1"><strong>a<span class="math inline">\(^1\)</span> linguist</strong></span> is here or it’s raining.<br />
+                <span class="hl1"><strong>She<span class="math inline">\(_1\)</span></strong></span>’s smoking outside.</li>
                 </ol>
                 <div class="element fragment">
                 <p>We predict that if a linguist is indeed here, anaphora should be licensed in (22).</p>
                 </div>
+                </section>
+                <section id="section-5" class="slide level2">
+                <h2></h2>
                 <ul>
                 <li class="fragment">Just how bad is this result? In the next section i’ll argue that, in stating accessibiliy generalizations, we haven’t been paying enough attention to the pragmatic component.</li>
                 <li class="fragment">Once we understand some of the independently motivated pragmatic constraints on asserting complex, sentences, we’ll be in a position to understand apparent external staticity.
                 <ul>
-                <li class="fragment">A move foreshadowed by Rothschild’s puzzle.</li>
+                <li class="fragment">A move foreshadowed by the contextual entailment facts.</li>
                 </ul></li>
                 </ul>
-                </section>
-                <section id="what-weve-achieved-so-far" class="slide level2">
-                <h2>What we’ve achieved so far</h2>
                 <aside class="notes">
-                <p>fill this in.</p>
+                <p>Add a “what we’ve achieved so far” slide.</p>
                 </aside>
                 </section></section>
                 <section>
@@ -756,21 +769,21 @@
                 </ul></li>
                 </ul>
                 <div class="element fragment">
-                <p><span class="math display">\[⟦\text{Someone}^1\text{ is here}⟧^{w,g} = \begin{cases}
-                \{(1,w,g^{[1 → x]} \mid x \text{ is here in }w)\}\\
-                \qquad\text{someone is here}\\
-                \{(0,w,g)\}\\
-                \qquad\text{nobody is here in }w
+                <p><span class="math display">\[⟦\text{Someone}^1\text{ is here}⟧^{\color{#20A5BA}{w},\color{#10A778}{g}} = \begin{cases}
+                \{(\color{#C30771}{1},\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}}) \mid x \text{ is here in }w\}\\
+                \qquad\color{gray}{\text{someone is here}}\\
+                \{(\color{#C30771}{0},\color{#20A5BA}{w},\color{#10A778}{g})\}\\
+                \qquad\color{gray}{\text{nobody is here in }w}
                 \end{cases}\]</span></p>
                 </div>
                 <div class="element fragment">
                 <p><span class="math display">\[
                 \begin{aligned}[t]
-                &amp;⟦\text{She}_1\text{ left}⟧^{w,g}\\
+                &amp;⟦\text{She}_1\text{ left}⟧^{\color{#20A5BA}{w},\color{#10A778}{g}}\\
                 &amp;= \begin{cases}
-                \{(1,w,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ left in }w\\
-                \{(0,w,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave in }w\\
-                \{(\#,w,g)\}&amp;g(1)\text{ is undefined}
+                \{(\color{#C30771}{1},\color{#20A5BA}{w},\color{#10A778}{g})\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ left in }w}\\
+                \{(\color{#C30771}{0},\color{#20A5BA}{w},\color{#10A778}{g})\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave in }w}\\
+                \{(\color{#C30771}{\#},\color{#20A5BA}{w},\color{#10A778}{g})\}&amp;\color{gray}{g(1)\text{ is undefined}}
                 \end{cases}
                 \end{aligned}
                 \]</span></p>
@@ -784,12 +797,12 @@
                 <li class="fragment"><p>A direct consequence: a sentence with a pronoun indexed <span class="math inline">\(n\)</span> carries a referential <em>presupposition</em> that <span class="math inline">\(n\)</span> is defined.</p></li>
                 </ul>
                 <div class="element fragment">
-                <p><span class="math display">\[\{(w,[]),(w,[a])\}[\text{she}_1\text{ left}] \text{ is undefined}\]</span></p>
+                <p><span class="math display">\[\{(\color{#20A5BA}{w},\color{#10A778}{[]}),(\color{#20A5BA}{w},\color{#10A778}{[a]})\}[\text{she}_1\text{ left}] \text{ is undefined}\]</span></p>
                 </div>
                 <div class="element fragment">
                 <p><span class="math display">\[\begin{aligned}[t]
-                &amp;\{(w,[a]),(w,[b])\}[\text{she}_1\text{ left}]\\
-                &amp;= \{(w,[x])\mid x\text{ left in }w\text{ &amp; }x ∈ \{a,b\}\}
+                &amp;\{(\color{#20A5BA}{w},\color{#10A778}{[a]}),(\color{#20A5BA}{w},\color{#10A778}{[b]})\}[\text{she}_1\text{ left}]\\
+                &amp;= \{(\color{#20A5BA}{w},\color{#10A778}{[x]})\mid x\text{ left in }w\text{ &amp; }x ∈ \{a,b\}\}
                 \end{aligned}\]</span></p>
                 </div>
                 </section>
@@ -803,7 +816,7 @@
                 <p><span class="math display">\[
                 \begin{aligned}[t]
                 &amp;C[\text{Andreea has a}^1\text{ partner}]\\
-                &amp;= \{(w,g^{[1 → x]})\mid (w,g) ∈ C\,\&amp;\,x\text{ a partner of A&#39;s in }w\} 
+                &amp;= \{(\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}})\mid (w,g) ∈ C\,\&amp;\,x\text{ a partner of A&#39;s in }w\} 
                 \end{aligned}
                 \]</span></p>
                 </div>
@@ -811,7 +824,7 @@
                 <p><span class="math display">\[
                 \begin{aligned}[t]
                 &amp;C[\text{Andreea is married}]\\
-                &amp;= \{(w,g)\mid (w,g) ∈ C\,\&amp;\,\text{A has a partner in }w\} 
+                &amp;= \{(\color{#20A5BA}{w},\color{#10A778}{g})\mid (w,g) ∈ C\,\&amp;\,\text{A has a partner in }w\} 
                 \end{aligned}
                 \]</span></p>
                 </div>
@@ -844,35 +857,35 @@
                 <p>Consider the following space of logical possibilities, which we’ll use to represent a context set in which “Either someone<span class="math inline">\(^1\)</span> was in the audience, or the event was a disaster” might be felicitously uttered:</p>
                 </div>
                 <ul>
-                <li class="fragment"><span class="math inline">\(w_{ad}\)</span>: <span class="math inline">\(a\)</span> was in the audience; the event was a disaster.</li>
-                <li class="fragment"><span class="math inline">\(w_{a¬d}\)</span>: <span class="math inline">\(a\)</span> was in the audience; the event was successful.</li>
-                <li class="fragment"><span class="math inline">\(w_{∅d}\)</span>: Nobody was in the audience; the event was a disaster.</li>
-                <li class="fragment"><span class="math inline">\(w_{∅¬d}\)</span>: Nobody was in the audience; the event wasn’t a disaster.</li>
+                <li class="fragment"><span class="math inline">\(\color{#20A5BA}{w_{ad}}\)</span>: <span class="math inline">\(a\)</span> was in the audience; the event was a disaster.</li>
+                <li class="fragment"><span class="math inline">\(\color{#20A5BA}{w_{a¬d}}\)</span>: <span class="math inline">\(a\)</span> was in the audience; the event was successful.</li>
+                <li class="fragment"><span class="math inline">\(\color{#20A5BA}{w_{∅d}}\)</span>: Nobody was in the audience; the event was a disaster.</li>
+                <li class="fragment"><span class="math inline">\(\color{#20A5BA}{w_{∅¬d}}\)</span>: Nobody was in the audience; the event wasn’t a disaster.</li>
                 </ul>
                 <div class="element fragment">
                 <p>Updating with the disjunctive sentence will:</p>
                 </div>
                 <ul>
-                <li class="fragment">Knock out the final world (<span class="math inline">\(w_{∅¬d}\)</span>).</li>
-                <li class="fragment">Extend assignments paired with <span class="math inline">\(a\)</span>-worlds with <span class="math inline">\(a\)</span> (<span class="math inline">\(w_{ad}\)</span>,<span class="math inline">\(w_{a¬d}\)</span>).</li>
-                <li class="fragment">Fail to extend the assignment paired with <span class="math inline">\(w_{∅d}\)</span>.</li>
+                <li class="fragment">Knock out the final world (<span class="math inline">\(\color{#20A5BA}{w_{∅¬d}}\)</span>).</li>
+                <li class="fragment">Extend assignments paired with <span class="math inline">\(a\)</span>-worlds with <span class="math inline">\(a\)</span> (<span class="math inline">\(\color{#20A5BA}{w_{ad}}\)</span>,<span class="math inline">\(\color{#20A5BA}{w_{a¬d}}\)</span>).</li>
+                <li class="fragment">Fail to extend the assignment paired with <span class="math inline">\(\color{#20A5BA}{w_{∅d}}\)</span>.</li>
                 </ul>
                 </section>
-                <section id="section-4" class="slide level2">
+                <section id="section-6" class="slide level2">
                 <h2></h2>
                 <p><span class="math display">\[
                 \left\{\begin{aligned}[c]
-                &amp;(w_{ad},[])\\
-                &amp;(w_{a¬d},[])\\
-                &amp;(w_{∅d},[])\\
-                &amp;(w_{∅¬d},[])\\
+                &amp;(\color{#20A5BA}{w_{ad}},\color{#10A778}{[]})\\
+                &amp;(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[]})\\
+                &amp;(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\\
+                &amp;(\color{#20A5BA}{w_{∅¬d}},\color{#10A778}{[]})\\
                 \end{aligned}\right\}\left[\begin{aligned}[c]
                 &amp;\text{someone}^1\text{ was in the audience}\\
                 &amp;\text{or the event was a disaster}
                 \end{aligned}\right]
                 \]</span></p>
                 <p><span class="math display">\[
-                = \{(w_{ad},[a]),(w_{a¬d},[a]),(w_{∅d},[])\}
+                = \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{}{[a]}),(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\}
                 \]</span></p>
                 <ul>
                 <li class="fragment">Note that the resulting context set is <em>not</em> one in which the presupposition of a subsequent pronoun will be licensed.
@@ -882,10 +895,10 @@
                 </ul></li>
                 </ul>
                 </section>
-                <section id="addressing-rothschilds-puzzle" class="slide level2">
-                <h2>Addressing Rothschild’s puzzle</h2>
+                <section id="addressing-the-role-of-contextual-entailment" class="slide level2">
+                <h2>Addressing the role of contextual entailment</h2>
                 <ul>
-                <li class="fragment">The explanation for Rothschild’s puzzle falls out straightforwardly.
+                <li class="fragment">The explanation for anaphora and contextual entailment falls out straightforwardly.
                 <ul>
                 <li class="fragment">After using an indefinite, if a witness for the existential statement is subsequently contextually entailed, we predict anaphora to be possible.</li>
                 </ul></li>
@@ -894,15 +907,15 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 \left\{\begin{aligned}[c]
-                &amp;(w_{ad},[a])\\
-                &amp;(w_{a¬d},[a])\\
-                &amp;(w_{∅d},[])\\
+                &amp;(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]})\\
+                &amp;(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[a]})\\
+                &amp;(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\\
                 \end{aligned}\right\}\left[\text{the event wasn&#39;t a disaster}\right]
                 \]</span></p>
                 </div>
                 <div class="element fragment">
                 <p><span class="math display">\[
-                = \{(w_{ad},[a]),(w_{a¬d},[a])\}
+                = \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[a]})\}
                 \]</span></p>
                 </div>
                 <div class="element fragment">
@@ -940,7 +953,7 @@
                 <p>The explanation takes advantage of the fact that an utterance of the form “not (P <em>and</em> Q)” typically requires “not P” and “not Q” to be <em>real possibilities</em>. See Elliott (2020) for details.</p>
                 </div>
                 </section>
-                <section id="gs-disjunctions-1" class="slide level2">
+                <section id="gs-disjunctions" class="slide level2">
                 <h2>G&amp;S disjunctions</h2>
                 <div class="element fragment">
                 <p>We now straightforwardly account for <em>G&amp;S disjunctions</em> (discussed earlier).</p>
@@ -975,8 +988,8 @@
                 <p>In order to explain what’s going on here, we’ll begin with Simons’ (1996) observation that the following sentence is deviant:</p>
                 </div>
                 <ol start="30" class="example" type="1">
-                <li class="fragment"># Either someone is in the audience,<br />
-                or the person in the audience is sitting down.</li>
+                <li class="fragment"># Either <span class="hl2">someone is in the audience</span>,<br />
+                or <span class="hl2">the person in the audience is sitting down</span>.</li>
                 </ol>
                 <div class="element fragment">
                 <p>What Simons observes is that, when a disjunct <em>Strawson entails</em> the other, the disjunction is odd.</p>
@@ -1048,7 +1061,7 @@
                 </ul></li>
                 </ul>
                 </section>
-                <section id="section-5" class="slide level2">
+                <section id="section-7" class="slide level2">
                 <h2></h2>
                 <ul>
                 <li class="fragment">In developing a more principled theory of anaphora, what we’ve learned is that the literature has essentially been mistaken in taking the accessibility generalizations at face value.
@@ -1068,6 +1081,17 @@
                 <h2>Acknowledgments</h2>
                 <p>I’m deeply grateful to Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.</p>
                 <p>I’d also like to thank audiences at Rutgers, NYU, and LENLS 17 for their feedback.</p>
+                </section></section>
+                <section>
+                <section id="appendices" class="title-slide slide level1">
+                <h1>Appendices</h1>
+
+                </section>
+                <section id="todo" class="slide level2">
+                <h2>TODO</h2>
+                <aside class="notes">
+                <p>Fill this in.</p>
+                </aside>
                 </section></section>
       </div>
     </div>

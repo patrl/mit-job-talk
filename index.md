@@ -42,7 +42,8 @@ I'd like to begin with a simple puzzle involving the effects of two contextually
   + Another way of saying the same thing: "Andreea has a partner" introduces a *discourse referent* (Karttunen 1969)
   + In order to make sense of this, we need to go beyond a simple picture of the pragmatics of information exchange.
 
-## Pragmatics of information exchange {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3}
+## Pragmatics of information exchange
+<!-- {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3} -->
 
 - In a number of works, Robert Stalnaker has developed an extremely influential notion of content, and a corresponding notion of assertion.
 
@@ -156,15 +157,18 @@ To be developed today:
 In DS, negation *destroys* referential information. But consider the following:
 :::
 
-(@) Frank doesn't own **no shirt**. **It**'s in the closet.
+(@) Frank doesn't own [**no shirt**]{class=hl1}. [**It**]{class=hl1}'s in the closet.
 
-(@) It's not the case that Frank doesn't own **any shirt**. **It**'s in the closet.
+(@) It's not the case that Frank doesn't own [**any shirt**]{class=hl1}. [**It**]{class=hl1}'s in the closet.
 
 ::: {.element: class=fragment}
 Referential information can be resurrected by an additional negation (Krahmer & Muskens 1995, Gotham 2019).
 :::
 
-- N.b., the facts are a little more nuanced than I present them here. Ask me about double-negation and uniqueness during the Q&A.
+::: notes
+- I'm assuming at Logical Form that negative indefinites such as *not shirt* are decomposed into negation and an existential quantifier.
+- The facts are a little more nuanced than I present them here; ask me about double-negation and uniqueness during the Q&A.
+:::
 
 ## Bathroom disjunctions
 
@@ -172,7 +176,7 @@ Referential information can be resurrected by an additional negation (Krahmer & 
 Again, remember that in DS, negation *destroys* referential information...
 :::
 
-(@) Either there isn't **a bathroom**, or **it**'s upstairs.
+(@) Either there isn't [**a bathroom**]{class=hl1}, or [**it**]{class=hl1}'s upstairs.
 
 - Referential information destroyed in an initial disjunct can be resurrected in a subsequent disjunct (observation due to Barbara Partee).
 
@@ -180,30 +184,30 @@ Again, remember that in DS, negation *destroys* referential information...
 
 (@) Either Sam *never* smoked, or he stopped smoking. 
 
-## G\&S disjunctions
+## Groenendijk \& Stokhof disjunctions
 
 ::: {.element class="fragment"}
 Under certain circumstances, the ban on passing referential information further is lifted (G&S 1991, Kamp \& Reyle 1993, Simons 1996):
 :::
 
-(@) Either we're interviewing **a linguist**,  or we're interviewing **a philosopher**.  
-(Either way) **she's** waiting outside.
+(@) Either we're interviewing [**a linguist**]{class=hl1},  or we're interviewing [**a philosopher**]{class=hl1}.  
+(Either way) [**she's**]{class=hl1} waiting outside.
 
 ::: {.element class="fragment"}
 (G&S chalk this up to a lexical ambiguity, positing an additional, externally dynamic disjunction operator; *program disjunction*.)
 :::
 
-## Rothschild's puzzle
+## Anaphora and contextual entailment
 
 - The final issue is, in my opinion, the most telling of all.
 
 ::: {.element class=fragment}
-Rothschild (2017) observed that, if the truth of one of the disjuncts is contextually entailed later in the discourse, anaphora becomes possible.
+f the truth of one of the disjuncts is contextually entailed later in the discourse, anaphora becomes possible (see Rothschild 2017 for related observations).
 :::
 
-(@) A: Either it's a weekday, or Gabe baked **a cake**.  
+(@) A: Either it's a weekday, or Gabe baked **[a cake]{class=hl1}**.  
 B: It's Saturday afternoon.  
-A: Then, **it**'s cooling on the windowsill!
+A: Then, **[it]{class=hl1}**'s cooling on the windowsill!
 
 ::: notes
 - After A's first utterance, the context set contains *weekday*-worlds and *cake*-worlds. The *cake*-worlds can be either *weekday* worlds or *weekend* worlds.
@@ -211,16 +215,16 @@ A: Then, **it**'s cooling on the windowsill!
 - TODO maybe make this a bit more abstract.
 :::
 
-## Rothschild's puzzle beyond disjunction
+## Beyond disjunction
 
 Recall that conditionals are also (claimed to be) externally static.
 
-(@) A: If it's the weekend, then Gabe baked **a cake**.  
+(@) A: If it's the weekend, then Gabe baked **[a cake]{class=hl1}**.  
 B: It's Saturday afternoon.  
-A: Then, **it**'s cooling on the windowsill!
+A: Then, **[it]{class=hl1}**'s cooling on the windowsill!
 
 ::: notes
-I need to mention the witness generalization (citing Schlenker, Mandelkern, and Keny)
+The witness generalization
 :::
 
 ## Take-away points
@@ -228,11 +232,11 @@ I need to mention the witness generalization (citing Schlenker, Mandelkern, and 
 - **Double-negation**  suggests we want a theory that is *more classical* than, e.g., orthodox DS. 
 -  **Bathroom disjunctions** tell us that disjunction isn't straightforwardly internally static; referential information can be transmitted between disjuncts.
 - **G\&S disjunctions** tell us that disjunction isn't straightforwardly externally static; referential information can be passed further.
-- **Rothschild's puzzle** tells us that *pragmatic factors* have a role to play in regulating the availability of subsequent anaphora.
+- **Anaphora and contextual entailment** tells us that *pragmatic factors* have a role to play in regulating the availability of subsequent anaphora.
 
 ::: {.element class=fragment}
 ::: alert
-The accessibility generalizations assumed in DS are full of holes. Rothschild's puzzle suggests a way of resolving the tension - develop a more classical, more permissive dynamic semantics that can be restricted in the pragmatics.
+The accessibility generalizations assumed in DS are full of holes. Anaphora licensed by contextual entailment suggests a way of resolving the tension - develop a more classical, more permissive dynamic semantics that can be restricted in the pragmatics.
 :::
 :::
 
@@ -246,6 +250,8 @@ We'll develop a theory of anaphora based on the following ideas:
 - The logical connectives operate *exclusively* on the logical substrate.
   + Referential information is passed from left-to-right *uniformly*.
   + Incrementality in anaphoric processing is achieved by flipping a single "switch" throughout the grammar.
+  
+This is an extension of techniques developed by Charlow (2014,2019).
 
 ## Enriching the dynamic notion of content
 
@@ -290,10 +296,10 @@ $$
 ::: {.element class="fragment"}
 
 $$⟦\text{Someone}^1\text{ is here}⟧^g = \begin{cases}
-\{(1,g^{[1 → x]} \mid x \text{ is here})\}\\
-\qquad\text{someone is here}\\
-\{(0,g)\}\\
-\qquad\text{nobody is here}
+\{(\color{red}{1},g^{[1 → x]}) \mid x \text{ is here}\}\\
+\qquad\color{gray}{\text{someone is here}}\\
+\{(\color{red}0,g)\}\\
+\qquad\color{gray}{\text{nobody is here}}
 \end{cases}$$
 
 :::
@@ -315,7 +321,7 @@ Remember to have something prepared about maximize presupposition.
 $$
 = \begin{cases}
     \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-    \{(0,[])\}\qquad\text{there is no triangle in the circle}
+    \{(0,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
 \end{cases}
 $$
 
@@ -338,7 +344,7 @@ $$
 $$
 = \begin{cases}
     \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-    \{(0,[])\}\qquad\text{there is no triangle in the circle}
+    \{(0,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
 \end{cases}
 $$
 <center>
@@ -367,9 +373,9 @@ For those of you familiar with, e.g., G&S's Dyamic Predicate Logic (DPL):
 ::: {.element class="fragment"}
 $$
 ⟦\text{Nobody is here}⟧ = λ g . \begin{cases}
-    \{(\color{red}{¬\,1},g^{[1 → x]} \mid x\text{ is here})\}\\
+    \{(\color{red}{¬\,1},g^{[1 → x]}) \mid x\text{ is here}\}\\
     \{(\color{red}{¬\,0},g)\}\\
-    \qquad\text{nobody is here}
+    \qquad\color{gray}{\text{nobody is here}}
 \end{cases}
 $$
 :::
@@ -377,17 +383,20 @@ $$
 ::: {.element class="fragment"}
 $$
 = λ g . \begin{cases}
-    \{(\color{red}{0},g^{[1 → x]} \mid x\text{ is here})\}\\
+    \{(\color{red}{0},g^{[1 → x]}) \mid x\text{ is here}\}\\
     \{(\color{red}{1},g)\}\\
-    \qquad\text{nobody is here}
+    \qquad\color{gray}{\text{nobody is here}}
 \end{cases}
 $$
 :::
 
 - N.b. referential information survives, but it's *false-tagged*.
-  + Crucially, no *positive* referential information is introduced, correctly predicting that negation blocks anaphora.
 
-##
+::: notes
+What's crucial here is that no *positive* referential information is introduced, correctly predicting that negation blocks anaphora.
+:::
+
+## Double negation
 
 - Since negation is truth-functional, applying *another* negation will flip the polarities again.
 
@@ -414,8 +423,11 @@ $$
 $$
 :::
 
-- In other words, a doubly negated sentence will convey *the same referential information* as its positive counterpart!
-  - We can now account for the interaction between double-negation and anaphora in a more satisyfing way.
+- A doubly negated sentence conveys *the same referential information* as its positive counterpart!
+
+::: notes
+- We can now account for the interaction between double-negation and anaphora in a more satisyfing way.
+:::
   
 ## Interlude: Strong Kleene
 
@@ -483,7 +495,7 @@ Truth-table for Strong Kleene disjunction ($∨^s$)
 
 - In order to lift binary logical operators into a dynamic setting, we'll adopt much the same strategy as with negation.
   + The truth-functional operator applies pointwise to the values in the logical substrate.
-  + This time, we have two sets of outputs to worry about - the referential information ouputted by the first junct as passed in as the input to the second.
+  + This time, we have two sets of outputs to worry about - the referential information ouputed by the first junct as passed in as the input to the second.
   
 ##
   
@@ -495,7 +507,7 @@ $$
 $$
 :::
 
-- N.b. this algorithm can be reified in the compositional semantics via a regime of type-shifters, using monadic techniques pioneered by Shan (2002) and Charlow (2014); see Elliott (2020) Appendix A for details.
+- N.b. Charlow (2014, 2019) reifies this algorithm in the compositional semantics via a regime of type-shifters; the current approach can be spelled out in these terms too.
 
 ::: {.element class="fragment alert"}
 **Important:** the locus of stipulation on the current approach is in the *algorithm* for lifting any truth-functional operator into the dynamic domain of referential-information-passing. Nothing is stipulated about the dynamics of the individual logical connectives.
@@ -504,7 +516,7 @@ $$
 ## Payoff 2: Dynamic conjunction
 
 - Applying this algorithm to $∧^s$ gives us something equivalent to DPL conjunction wrt positive referential information (a running theme).
-  - We can see this most clearly if we just compute the positive extension ($⟦.⟧_+$; the referential information paired with *true*). 
+  - We can see this most clearly if we just compute the positive extension ($⟦.⟧_+$; the referential information paired with $\color{red}{1}$). 
   
 ::: {.element class="fragment"}
 $$
@@ -527,7 +539,9 @@ $$
 $$
 :::
 
-- Conjunction is asymmetric despite a symmetric logical substrate.
+## 
+
+- Conjunction is asymmetric despite a symmetric logical substrate (Charlow 2014).
 - N.b., when we take into account the possibility of either conjunct being false the predictions diverge from orthodox DS. We'll come back to this when we discuss the pragmatics.
 
 ## Payoff 3: Bathroom disjunctions
@@ -536,7 +550,7 @@ $$
 Let's now return to bathroom disjunctions.
 :::
 
-(@) Either there isn't a$^1$ bathroom, or it$_1$'s upstairs. 
+(@) Either there isn't [**a$^1$ bathroom**]{class=hl1}, or [**it$_1$**]{class=hl1}'s upstairs. 
 
 ::: {.element class="fragment"}
 Applying our algorithm to $∨^s$ gives us a disjunctive recipe for dynamically verifying disjunctive sentences: 
@@ -550,6 +564,8 @@ $$
   \end{aligned}
 $$
 :::
+
+## 
 
 - In plain English, we can compute the positive referential information conveyed by the disjunctive sentence by:
   + passing the positive referential information of the first disjunct into the second, and gathering *all* of the outputs, positive or otherwise.
@@ -578,10 +594,10 @@ $$
 N.b. an apparently bad prediction that you may notice at this point is that we predict a bathroom disjunction can license a subsequent pronoun, at least if there is indeed a bathroom. 
 :::
 
-(@) Either there isn't a bathroom, or it's upstairs.  
-\# It is very clean.
+(@) Either there isn't [**a bathroom**]{class=hl1}, or [**it**]{class=hl1}'s upstairs.  
+\# [**It**]{class=hl1} is very clean.
 
-::: {.element class="fragment"}
+::: notes
 This fact indicates what appears to be a more general problem with the approach we're developing...
 :::
 
@@ -594,22 +610,23 @@ This fact indicates what appears to be a more general problem with the approach 
 This leads to a problem with external staticity.
 :::
 
-(@disj) Either a$^1$ linguist is here or it's raining.  
-It$_1$'s smoking outside.
+(@disj) Either [**a$^1$ linguist**]{class=hl1} is here or it's raining.  
+[**She$_1$**]{class=hl1}'s smoking outside.
 
 ::: {.element class=fragment}
 We predict that if a linguist is indeed here, anaphora should be licensed in (@disj).
 :::
 
+## 
+
 - Just how bad is this result? In the next section i'll argue that, in stating accessibiliy generalizations, we haven't been paying enough attention to the pragmatic component.
 - Once we understand some of the independently motivated pragmatic constraints on asserting complex, sentences, we'll be in a position to understand apparent external staticity.
-  + A move foreshadowed by Rothschild's puzzle.
-
-## What we've achieved so far
+  + A move foreshadowed by the contextual entailment facts.
 
 ::: notes
-fill this in.
+Add a "what we've achieved so far" slide.
 :::
+
 
 # The pragmatics of anaphora
 
@@ -629,22 +646,22 @@ fill this in.
   + outputs are now *truth-value/world/assignment triples*
 
 ::: {.element class=fragment}
-$$⟦\text{Someone}^1\text{ is here}⟧^{w,g} = \begin{cases}
-\{(1,w,g^{[1 → x]} \mid x \text{ is here in }w)\}\\
-\qquad\text{someone is here}\\
-\{(0,w,g)\}\\
-\qquad\text{nobody is here in }w
+$$⟦\text{Someone}^1\text{ is here}⟧^{\color{#20A5BA}{w},\color{#10A778}{g}} = \begin{cases}
+\{(\color{#C30771}{1},\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}}) \mid x \text{ is here in }w\}\\
+\qquad\color{gray}{\text{someone is here}}\\
+\{(\color{#C30771}{0},\color{#20A5BA}{w},\color{#10A778}{g})\}\\
+\qquad\color{gray}{\text{nobody is here in }w}
 \end{cases}$$
 :::
 
 ::: {.element class=fragment}
 $$
 \begin{aligned}[t]
-&⟦\text{She}_1\text{ left}⟧^{w,g}\\
+&⟦\text{She}_1\text{ left}⟧^{\color{#20A5BA}{w},\color{#10A778}{g}}\\
 &= \begin{cases}
-\{(1,w,g)\}&g(1)\text{ is defined and }g(1)\text{ left in }w\\
-\{(0,w,g)\}&g(1)\text{ is defined and }g(1)\text{ didn't leave in }w\\
-\{(\#,w,g)\}&g(1)\text{ is undefined}
+\{(\color{#C30771}{1},\color{#20A5BA}{w},\color{#10A778}{g})\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ left in }w}\\
+\{(\color{#C30771}{0},\color{#20A5BA}{w},\color{#10A778}{g})\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn't leave in }w}\\
+\{(\color{#C30771}{\#},\color{#20A5BA}{w},\color{#10A778}{g})\}&\color{gray}{g(1)\text{ is undefined}}
 \end{cases}
 \end{aligned}
 $$
@@ -659,13 +676,13 @@ $$
 - A direct consequence: a sentence with a pronoun indexed $n$ carries a referential *presupposition* that $n$ is defined. 
 
 ::: {.element class=fragment}
-$$\{(w,[]),(w,[a])\}[\text{she}_1\text{ left}] \text{ is undefined}$$
+$$\{(\color{#20A5BA}{w},\color{#10A778}{[]}),(\color{#20A5BA}{w},\color{#10A778}{[a]})\}[\text{she}_1\text{ left}] \text{ is undefined}$$
 :::
 
 ::: {.element class=fragment}
 $$\begin{aligned}[t]
-&\{(w,[a]),(w,[b])\}[\text{she}_1\text{ left}]\\
-&= \{(w,[x])\mid x\text{ left in }w\text{ & }x ∈ \{a,b\}\}
+&\{(\color{#20A5BA}{w},\color{#10A778}{[a]}),(\color{#20A5BA}{w},\color{#10A778}{[b]})\}[\text{she}_1\text{ left}]\\
+&= \{(\color{#20A5BA}{w},\color{#10A778}{[x]})\mid x\text{ left in }w\text{ & }x ∈ \{a,b\}\}
 \end{aligned}$$
 :::
 
@@ -679,7 +696,7 @@ Some things that fall out automatically:
 $$
 \begin{aligned}[t]
 &C[\text{Andreea has a}^1\text{ partner}]\\
-&= \{(w,g^{[1 → x]})\mid (w,g) ∈ C\,\&\,x\text{ a partner of A's in }w\} 
+&= \{(\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}})\mid (w,g) ∈ C\,\&\,x\text{ a partner of A's in }w\} 
 \end{aligned}
 $$
 :::
@@ -688,7 +705,7 @@ $$
 $$
 \begin{aligned}[t]
 &C[\text{Andreea is married}]\\
-&= \{(w,g)\mid (w,g) ∈ C\,\&\,\text{A has a partner in }w\} 
+&= \{(\color{#20A5BA}{w},\color{#10A778}{g})\mid (w,g) ∈ C\,\&\,\text{A has a partner in }w\} 
 \end{aligned}
 $$
 :::
@@ -718,27 +735,27 @@ We use this to account for apparent external staticity.
 Consider the following space of logical possibilities, which we'll use to represent a context set in which "Either someone$^1$ was in the audience, or the event was a disaster" might be felicitously uttered:
 :::
 
-- $w_{ad}$: $a$ was in the audience; the event was a disaster.
-- $w_{a¬d}$: $a$ was in the audience; the event was successful.
-- $w_{∅d}$: Nobody was in the audience; the event was a disaster.
-- $w_{∅¬d}$: Nobody was in the audience; the event wasn't a disaster.
+- $\color{#20A5BA}{w_{ad}}$: $a$ was in the audience; the event was a disaster.
+- $\color{#20A5BA}{w_{a¬d}}$: $a$ was in the audience; the event was successful.
+- $\color{#20A5BA}{w_{∅d}}$: Nobody was in the audience; the event was a disaster.
+- $\color{#20A5BA}{w_{∅¬d}}$: Nobody was in the audience; the event wasn't a disaster.
 
 ::: {.element class=fragment}
 Updating with the disjunctive sentence will:
 :::
 
-- Knock out the final world ($w_{∅¬d}$).
-- Extend assignments paired with $a$-worlds with $a$ ($w_{ad}$,$w_{a¬d}$).
-- Fail to extend the assignment paired with $w_{∅d}$.
+- Knock out the final world ($\color{#20A5BA}{w_{∅¬d}}$).
+- Extend assignments paired with $a$-worlds with $a$ ($\color{#20A5BA}{w_{ad}}$,$\color{#20A5BA}{w_{a¬d}}$).
+- Fail to extend the assignment paired with $\color{#20A5BA}{w_{∅d}}$.
 
 ##
 
 $$
 \left\{\begin{aligned}[c]
-&(w_{ad},[])\\
-&(w_{a¬d},[])\\
-&(w_{∅d},[])\\
-&(w_{∅¬d},[])\\
+&(\color{#20A5BA}{w_{ad}},\color{#10A778}{[]})\\
+&(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[]})\\
+&(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\\
+&(\color{#20A5BA}{w_{∅¬d}},\color{#10A778}{[]})\\
 \end{aligned}\right\}\left[\begin{aligned}[c]
 &\text{someone}^1\text{ was in the audience}\\
 &\text{or the event was a disaster}
@@ -746,16 +763,16 @@ $$
 $$
 
 $$
-= \{(w_{ad},[a]),(w_{a¬d},[a]),(w_{∅d},[])\}
+= \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{}{[a]}),(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\}
 $$
 
 - Note that the resulting context set is *not* one in which the presupposition of a subsequent pronoun will be licensed.
   + This reflects the fact that a witness for the existential statement is not contextually entailed post-assertion!
   + We therefore get the *appearance* of external staticity - this does *not* however motivate saying anything special about the dynamics of disjunction. Moreover, our system doesn't *allow* us to say anything special.
 
-## Addressing Rothschild's puzzle
+## Addressing the role of contextual entailment
 
-- The explanation for Rothschild's puzzle falls out straightforwardly.
+- The explanation for anaphora and contextual entailment falls out straightforwardly.
   + After using an indefinite, if a witness for the existential statement is subsequently contextually entailed, we predict anaphora to be possible.
   
 - For example, a subsequent utterance might knock out the problematic world assignment pair:
@@ -763,16 +780,16 @@ $$
 ::: {.element class=fragment}
 $$
 \left\{\begin{aligned}[c]
-&(w_{ad},[a])\\
-&(w_{a¬d},[a])\\
-&(w_{∅d},[])\\
+&(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]})\\
+&(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[a]})\\
+&(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\\
 \end{aligned}\right\}\left[\text{the event wasn't a disaster}\right]
 $$
 :::
 
 ::: {.element class=fragment}
 $$
-= \{(w_{ad},[a]),(w_{a¬d},[a])\}
+= \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[a]})\}
 $$
 :::
 
@@ -845,8 +862,8 @@ Since our algorithm for passing referential is modelled on dynamic conjunction, 
 In order to explain what's going on here, we'll begin with Simons' (1996) observation that the following sentence is deviant:
 :::
 
-(@) \# Either someone is in the audience,  
-or the person in the audience is sitting down.
+(@) \# Either [someone is in the audience]{class=hl2},  
+or [the person in the audience is sitting down]{class=hl2}.
 
 ::: {.element class=fragment}
 What Simons observes is that, when a disjunct *Strawson entails* the other, the disjunction is odd.
@@ -921,6 +938,14 @@ Another interesting extension is *modal subordination*. In Elliott (2020b) I dev
 I'm deeply grateful to Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.
 
 I'd also like to thank audiences at Rutgers, NYU, and LENLS 17 for their feedback.
+
+# Appendices
+
+## TODO
+
+::: notes
+Fill this in.
+:::
 
 
 
