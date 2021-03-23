@@ -1,5 +1,5 @@
 ---
-title: The semantics and pragmatics of anaphora 
+title: Trivalent foundations for a logic of anaphora
 author: Patrick D. Elliott
 ---
 
@@ -40,33 +40,38 @@ I'd like to begin with a simple puzzle involving the effects of two contextually
 - In talking, we keep track not just of information concerning *how things are*, but also *referential information* concerning *what/who* the speaker intended to refer to.
   + An utterance of "Andreea has a partner" is *about* a partner of Andreea's in a way that "Andreea is married is not".
   + Another way of saying the same thing: "Andreea has a partner" introduces a *discourse referent* (Karttunen 1969)
-  + In order to make sense of this, we need to go beyond a simple picture of the pragmatics of information exchange.
 
-## Pragmatics of information exchange
-<!-- {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3} -->
+<!-- ## Pragmatics of information exchange -->
+<!-- <\!-- {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3} -\-> -->
 
-- In a number of works, Robert Stalnaker has developed an extremely influential notion of content, and a corresponding notion of assertion.
+<!-- - In a number of works, Robert Stalnaker has developed an extremely influential notion of content, and a corresponding notion of assertion. -->
 
-- According to Stalnaker, a discourse is an attempt to collaboratively construct a mutually believed store of knowledge: *the common ground*. 
-  + The common ground can be modelled as the *context set*, i.e., a set of possibilities.
-  + The content expressed by a sentence is simply a set of possibilities.
-  + As discourse proceeds, the context set is *updated* with the information conveyed by accepted assertions, by simply intersecting the context set with the sentence's content.
+<!-- - According to Stalnaker, a discourse is an attempt to collaboratively construct a mutually believed store of knowledge: *the common ground*.  -->
+<!--   + The common ground can be modelled as the *context set*, i.e., a set of possibilities. -->
+<!--   + The content expressed by a sentence is simply a set of possibilities. -->
+<!--   + As discourse proceeds, the context set is *updated* with the information conveyed by accepted assertions, by simply intersecting the context set with the sentence's content. -->
   
 ## The dynamic perspective
 
-- Dynamic semantics goes beyond the Stalnakerian perspective, by enriching the context set with *referential information* concerning *intended reference* - Irene Heim's notion of a *file*.
+- Dynamic semantics enriches conversational contexts with *referential information* concerning *intended reference* (Irene Heim's notion of a *file*).
 
-- Formally, this is modeled by pairing worlds in the context set with assignment-functions/sequences (or some other suitable data structure).
-
-- Part of the dynamic thesis is that uttering a sentence with an indefinite *changes* the referential information in the context set in a special way.
+- Part of the dynamic thesis is that uttering a sentence with an indefinite *changes* the referential information in the conversational context in a special way.
 
 - Sentences with pronouns are sensitive to referential information in a way which other expressions aren't.
 
-##
+## 
 
 - Dynamic semantics provides an elegant account of the *aboutness* properties of sentences with indefinites.
   + Dynamic semantics has a problem however: the behaviour of anaphora in complex sentences motivates a theory in which individual lexical items are in charge of referential information flow.
-  + In the following, we'll tour data concerning possible anaphoric dependencies between indefinites and pronouns taken for granted in orthodox dynamic theories. 
+  
+## Where we're going 
+
+- We'll begin by touring data concerning possible anaphoric dependencies between indefinites and pronouns taken for granted in orthodox dynamic theories --- the *accessibility generalizations*. 
+- We'll lay out some problems and tensions for the accessibility generalizations, concluding that:
+  + Orthodox dynamic semantics isn't classical enough.
+  + We need to take into account the role of pragmatics in anaphoric licensing.
+- The goal will be a dynamic semantics in which referential information is passed *uniformly* from left-to-right (following Charlow 2014,2019).
+  + The resulting theory will be rather permissive - we'll restrict it in the pragmatic component.
 
 # Anaphora in complex sentences
 
@@ -251,7 +256,12 @@ We'll develop a theory of anaphora based on the following ideas:
   + Referential information is passed from left-to-right *uniformly*.
   + Incrementality in anaphoric processing is achieved by flipping a single "switch" throughout the grammar.
   
-This is an extension of techniques developed by Charlow (2014,2019).
+## Previous work
+  
+- This is an application of techniques developed by Charlow for passing referential information uniformly through composition (2014,2019).
+- What's new here is:
+  + the semantics of indefinites.
+  + a defense of the strong thesis that *every* logical connective is purely truth-functional.
 
 ## Enriching the dynamic notion of content
 
@@ -265,8 +275,8 @@ This is an extension of techniques developed by Charlow (2014,2019).
 ::: {.element class=fragment}
 $$
 ⟦\text{Aeryn left}⟧ = λ g . \begin{cases}
-\{(1,g)\}&\text{Aeryn left}\\
-\{(0,g)\}&\text{Aeryn didn't leave}
+\{(1,g)\}&\color{gray}{\text{Aeryn left}}\\
+\{(0,g)\}&\color{gray}{\text{Aeryn didn't leave}}
 \end{cases}
 $$
 :::
@@ -279,9 +289,9 @@ $$
 ::: {.element class="fragment"}
 $$
 ⟦\text{She}_1\text{ left}⟧^g = \begin{cases}
-\{(1,g)\}&g(1)\text{ is defined and }g(1)\text{ left}\\
-\{(0,g)\}&g(1)\text{ is defined and }g(1)\text{ didn't leave}\\
-\{(\#,g)\}&g(1)\text{ is undefined}
+\{(1,g)\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ left}}\\
+\{(0,g)\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn't leave}}\\
+\{(\#,g)\}&\color{gray}{g(1)\text{ is undefined}}
 \end{cases}
 $$
 :::
@@ -407,7 +417,7 @@ $$
 &= λ g . \begin{cases}
     \{(\color{red}{¬ ¬\,1},g^{[1 → x]} \mid x\text{ is here})\}\\
     \{(\color{red}{¬ ¬\,0},g)\}\\
-    \qquad\text{nobody is here}
+    \qquad\color{gray}{\text{nobody is here}}
 \end{cases}
 \end{aligned}
 $$
@@ -418,7 +428,7 @@ $$
 = λ g . \begin{cases}
     \{(\color{red}{1},g^{[1 → x]} \mid x\text{ is here})\}\\
     \{(\color{red}{0},g)\}\\
-    \qquad\text{nobody is here}
+    \qquad\color{gray}{\text{nobody is here}}
 \end{cases}
 $$
 :::
@@ -515,7 +525,7 @@ $$
 
 ## Payoff 2: Dynamic conjunction
 
-- Applying this algorithm to $∧^s$ gives us something equivalent to DPL conjunction wrt positive referential information (a running theme).
+- Applying this algorithm to $∧^s$ gives us something equivalent to DPL conjunction wrt positive referential information (Charlow 2019).
   - We can see this most clearly if we just compute the positive extension ($⟦.⟧_+$; the referential information paired with $\color{red}{1}$). 
   
 ::: {.element class="fragment"}
@@ -541,7 +551,7 @@ $$
 
 ## 
 
-- Conjunction is asymmetric despite a symmetric logical substrate (Charlow 2014).
+- Conjunction is asymmetric despite a symmetric logical substrate.
 - N.b., when we take into account the possibility of either conjunct being false the predictions diverge from orthodox DS. We'll come back to this when we discuss the pragmatics.
 
 ## Payoff 3: Bathroom disjunctions
@@ -793,6 +803,8 @@ $$
 $$
 :::
 
+## 
+
 ::: {.element class=fragment}
 This correctly predicts the subsequent availability a pronoun.
 :::
@@ -935,7 +947,7 @@ Another interesting extension is *modal subordination*. In Elliott (2020b) I dev
 
 ## Acknowledgments
 
-I'm deeply grateful to Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.
+I'm deeply grateful to Simon Charlow, Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.
 
 I'd also like to thank audiences at Rutgers, NYU, and LENLS 17 for their feedback.
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="generator" content="pandoc">
         <meta name="author" content="Patrick D. Elliott">
-                <title>The semantics and pragmatics of anaphora</title>
+                <title>Trivalent foundations for a logic of anaphora</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -21,7 +21,7 @@
       <div class="slides">
 
                 <section id="title-slide">
-          <h1 class="title">The semantics and pragmatics of anaphora</h1>
+          <h1 class="title">Trivalent foundations for a logic of anaphora</h1>
           <!--  -->
           <!--  -->
           <!-- <p class="author">Patrick D. Elliott</p> -->
@@ -63,29 +63,21 @@
                 <ul>
                 <li class="fragment">An utterance of “Andreea has a partner” is <em>about</em> a partner of Andreea’s in a way that “Andreea is married is not”.</li>
                 <li class="fragment">Another way of saying the same thing: “Andreea has a partner” introduces a <em>discourse referent</em> (Karttunen 1969)</li>
-                <li class="fragment">In order to make sense of this, we need to go beyond a simple picture of the pragmatics of information exchange.</li>
                 </ul></li>
                 </ul>
-                </section>
-                <section id="pragmatics-of-information-exchange" class="slide level2">
-                <h2>Pragmatics of information exchange</h2>
-                <!-- {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3} -->
-                <ul>
-                <li class="fragment"><p>In a number of works, Robert Stalnaker has developed an extremely influential notion of content, and a corresponding notion of assertion.</p></li>
-                <li class="fragment"><p>According to Stalnaker, a discourse is an attempt to collaboratively construct a mutually believed store of knowledge: <em>the common ground</em>.</p>
-                <ul>
-                <li class="fragment">The common ground can be modelled as the <em>context set</em>, i.e., a set of possibilities.</li>
-                <li class="fragment">The content expressed by a sentence is simply a set of possibilities.</li>
-                <li class="fragment">As discourse proceeds, the context set is <em>updated</em> with the information conveyed by accepted assertions, by simply intersecting the context set with the sentence’s content.</li>
-                </ul></li>
-                </ul>
+                <!-- ## Pragmatics of information exchange -->
+                <!-- <\!-- {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3} -\-> -->
+                <!-- - In a number of works, Robert Stalnaker has developed an extremely influential notion of content, and a corresponding notion of assertion. -->
+                <!-- - According to Stalnaker, a discourse is an attempt to collaboratively construct a mutually believed store of knowledge: *the common ground*.  -->
+                <!--   + The common ground can be modelled as the *context set*, i.e., a set of possibilities. -->
+                <!--   + The content expressed by a sentence is simply a set of possibilities. -->
+                <!--   + As discourse proceeds, the context set is *updated* with the information conveyed by accepted assertions, by simply intersecting the context set with the sentence's content. -->
                 </section>
                 <section id="the-dynamic-perspective" class="slide level2">
                 <h2>The dynamic perspective</h2>
                 <ul>
-                <li class="fragment"><p>Dynamic semantics goes beyond the Stalnakerian perspective, by enriching the context set with <em>referential information</em> concerning <em>intended reference</em> - Irene Heim’s notion of a <em>file</em>.</p></li>
-                <li class="fragment"><p>Formally, this is modeled by pairing worlds in the context set with assignment-functions/sequences (or some other suitable data structure).</p></li>
-                <li class="fragment"><p>Part of the dynamic thesis is that uttering a sentence with an indefinite <em>changes</em> the referential information in the context set in a special way.</p></li>
+                <li class="fragment"><p>Dynamic semantics enriches conversational contexts with <em>referential information</em> concerning <em>intended reference</em> (Irene Heim’s notion of a <em>file</em>).</p></li>
+                <li class="fragment"><p>Part of the dynamic thesis is that uttering a sentence with an indefinite <em>changes</em> the referential information in the conversational context in a special way.</p></li>
                 <li class="fragment"><p>Sentences with pronouns are sensitive to referential information in a way which other expressions aren’t.</p></li>
                 </ul>
                 </section>
@@ -95,7 +87,21 @@
                 <li class="fragment">Dynamic semantics provides an elegant account of the <em>aboutness</em> properties of sentences with indefinites.
                 <ul>
                 <li class="fragment">Dynamic semantics has a problem however: the behaviour of anaphora in complex sentences motivates a theory in which individual lexical items are in charge of referential information flow.</li>
-                <li class="fragment">In the following, we’ll tour data concerning possible anaphoric dependencies between indefinites and pronouns taken for granted in orthodox dynamic theories.</li>
+                </ul></li>
+                </ul>
+                </section>
+                <section id="where-were-going" class="slide level2">
+                <h2>Where we’re going</h2>
+                <ul>
+                <li class="fragment">We’ll begin by touring data concerning possible anaphoric dependencies between indefinites and pronouns taken for granted in orthodox dynamic theories — the <em>accessibility generalizations</em>.</li>
+                <li class="fragment">We’ll lay out some problems and tensions for the accessibility generalizations, concluding that:
+                <ul>
+                <li class="fragment">Orthodox dynamic semantics isn’t classical enough.</li>
+                <li class="fragment">We need to take into account the role of pragmatics in anaphoric licensing.</li>
+                </ul></li>
+                <li class="fragment">The goal will be a dynamic semantics in which referential information is passed <em>uniformly</em> from left-to-right (following Charlow 2014,2019).
+                <ul>
+                <li class="fragment">The resulting theory will be rather permissive - we’ll restrict it in the pragmatic component.</li>
                 </ul></li>
                 </ul>
                 </section></section>
@@ -294,7 +300,17 @@
                 <li class="fragment">Incrementality in anaphoric processing is achieved by flipping a single “switch” throughout the grammar.</li>
                 </ul></li>
                 </ul>
-                <p>This is an extension of techniques developed by Charlow (2014,2019).</p>
+                </section>
+                <section id="previous-work" class="slide level2">
+                <h2>Previous work</h2>
+                <ul>
+                <li class="fragment">This is an application of techniques developed by Charlow for passing referential information uniformly through composition (2014,2019).</li>
+                <li class="fragment">What’s new here is:
+                <ul>
+                <li class="fragment">the semantics of indefinites.</li>
+                <li class="fragment">a defense of the strong thesis that <em>every</em> logical connective is purely truth-functional.</li>
+                </ul></li>
+                </ul>
                 </section>
                 <section id="enriching-the-dynamic-notion-of-content" class="slide level2">
                 <h2>Enriching the dynamic notion of content</h2>
@@ -310,8 +326,8 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 ⟦\text{Aeryn left}⟧ = λ g . \begin{cases}
-                \{(1,g)\}&amp;\text{Aeryn left}\\
-                \{(0,g)\}&amp;\text{Aeryn didn&#39;t leave}
+                \{(1,g)\}&amp;\color{gray}{\text{Aeryn left}}\\
+                \{(0,g)\}&amp;\color{gray}{\text{Aeryn didn&#39;t leave}}
                 \end{cases}
                 \]</span></p>
                 </div>
@@ -325,9 +341,9 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 ⟦\text{She}_1\text{ left}⟧^g = \begin{cases}
-                \{(1,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ left}\\
-                \{(0,g)\}&amp;g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave}\\
-                \{(\#,g)\}&amp;g(1)\text{ is undefined}
+                \{(1,g)\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ left}}\\
+                \{(0,g)\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave}}\\
+                \{(\#,g)\}&amp;\color{gray}{g(1)\text{ is undefined}}
                 \end{cases}
                 \]</span></p>
                 </div>
@@ -454,7 +470,7 @@
                 &amp;= λ g . \begin{cases}
                     \{(\color{red}{¬ ¬\,1},g^{[1 → x]} \mid x\text{ is here})\}\\
                     \{(\color{red}{¬ ¬\,0},g)\}\\
-                    \qquad\text{nobody is here}
+                    \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}
                 \end{aligned}
                 \]</span></p>
@@ -464,7 +480,7 @@
                 = λ g . \begin{cases}
                     \{(\color{red}{1},g^{[1 → x]} \mid x\text{ is here})\}\\
                     \{(\color{red}{0},g)\}\\
-                    \qquad\text{nobody is here}
+                    \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}
                 \]</span></p>
                 </div>
@@ -623,7 +639,7 @@
                 <section id="payoff-2-dynamic-conjunction" class="slide level2">
                 <h2>Payoff 2: Dynamic conjunction</h2>
                 <ul>
-                <li class="fragment">Applying this algorithm to <span class="math inline">\(∧^s\)</span> gives us something equivalent to DPL conjunction wrt positive referential information (a running theme).
+                <li class="fragment">Applying this algorithm to <span class="math inline">\(∧^s\)</span> gives us something equivalent to DPL conjunction wrt positive referential information (Charlow 2019).
                 <ul>
                 <li class="fragment">We can see this most clearly if we just compute the positive extension (<span class="math inline">\(⟦.⟧_+\)</span>; the referential information paired with <span class="math inline">\(\color{red}{1}\)</span>).</li>
                 </ul></li>
@@ -650,7 +666,7 @@
                 <section id="section-2" class="slide level2">
                 <h2></h2>
                 <ul>
-                <li class="fragment">Conjunction is asymmetric despite a symmetric logical substrate (Charlow 2014).</li>
+                <li class="fragment">Conjunction is asymmetric despite a symmetric logical substrate.</li>
                 <li class="fragment">N.b., when we take into account the possibility of either conjunct being false the predictions diverge from orthodox DS. We’ll come back to this when we discuss the pragmatics.</li>
                 </ul>
                 </section>
@@ -918,6 +934,9 @@
                 = \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[a]})\}
                 \]</span></p>
                 </div>
+                </section>
+                <section id="section-7" class="slide level2">
+                <h2></h2>
                 <div class="element fragment">
                 <p>This correctly predicts the subsequent availability a pronoun.</p>
                 </div>
@@ -1061,7 +1080,7 @@
                 </ul></li>
                 </ul>
                 </section>
-                <section id="section-7" class="slide level2">
+                <section id="section-8" class="slide level2">
                 <h2></h2>
                 <ul>
                 <li class="fragment">In developing a more principled theory of anaphora, what we’ve learned is that the literature has essentially been mistaken in taking the accessibility generalizations at face value.
@@ -1079,7 +1098,7 @@
                 </section>
                 <section id="acknowledgments" class="slide level2">
                 <h2>Acknowledgments</h2>
-                <p>I’m deeply grateful to Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.</p>
+                <p>I’m deeply grateful to Simon Charlow, Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.</p>
                 <p>I’d also like to thank audiences at Rutgers, NYU, and LENLS 17 for their feedback.</p>
                 </section></section>
                 <section>
