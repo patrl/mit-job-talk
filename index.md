@@ -70,7 +70,7 @@ I'd like to begin with a simple puzzle involving the effects of two contextually
 - We'll lay out some problems and tensions for the accessibility generalizations, concluding that:
   + Orthodox dynamic semantics isn't classical enough.
   + We need to take into account the role of pragmatics in anaphoric licensing.
-- The goal will be a dynamic semantics in which referential information is passed *uniformly* from left-to-right (following Charlow 2014,2019).
+- The goal will be a dynamic semantics in which referential information is passed *uniformly* from left-to-right.
   + The resulting theory will be rather permissive - we'll restrict it in the pragmatic component.
 
 # Anaphora in complex sentences
@@ -251,22 +251,22 @@ The accessibility generalizations assumed in DS are full of holes. Anaphora lice
 
 We'll develop a theory of anaphora based on the following ideas:
 
-- The *core* semantic value of a sentence is a (trivalent) truth-value; referential information is computed *in tandem* with this logical substrate.
+- The *core* semantic value of a sentence is a (trivalent) truth-value; referential information is computed *in tandem* with this logical substrate, following Charlow (2014, 2019).
 - The logical connectives operate *exclusively* on the logical substrate.
   + Referential information is passed from left-to-right *uniformly*.
   + Incrementality in anaphoric processing is achieved by flipping a single "switch" throughout the grammar.
   
-## Previous work
+<!-- ## Previous work -->
   
-- This is an application of techniques developed by Charlow for passing referential information uniformly through composition (2014,2019).
-- What's new here is:
-  + the semantics of indefinites.
-  + a defense of the strong thesis that *every* logical connective is purely truth-functional.
+<!-- - This is an application of techniques developed by Charlow for passing referential information uniformly through composition (2014,2019). -->
+<!-- - What's new here is: -->
+<!--   + the semantics of indefinites. -->
+<!--   + a defense of the strong thesis that *every* logical connective is purely truth-functional. -->
 
 ## Enriching the dynamic notion of content
 
 - Assignments are a store of referential information; they tell us how to fix the value of variables (i.e., pronouns).
-- Here we adopt Charlow's (2014, 2019) notion of content: sentences are functions from *assignments* (the input) to *sets of assignment-truth-value pairs* (the outputs). 
+- Sentences express functions from *assignments* (the input) to *sets of assignment-truth-value pairs* (the outputs) (Charlow 2014, 2019). 
   + Another way of thinking about this: output assignments are *polarized*. 
   + Whence talk of a 'logical substrate'.
   
@@ -275,8 +275,8 @@ We'll develop a theory of anaphora based on the following ideas:
 ::: {.element class=fragment}
 $$
 ⟦\text{Aeryn left}⟧ = λ g . \begin{cases}
-\{(1,g)\}&\color{gray}{\text{Aeryn left}}\\
-\{(0,g)\}&\color{gray}{\text{Aeryn didn't leave}}
+\{(⊤,g)\}&\color{gray}{\text{Aeryn left}}\\
+\{(⊥,g)\}&\color{gray}{\text{Aeryn didn't leave}}
 \end{cases}
 $$
 :::
@@ -289,8 +289,8 @@ $$
 ::: {.element class="fragment"}
 $$
 ⟦\text{She}_1\text{ left}⟧^g = \begin{cases}
-\{(1,g)\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ left}}\\
-\{(0,g)\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn't leave}}\\
+\{(⊤,g)\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ left}}\\
+\{(⊥,g)\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn't leave}}\\
 \{(\#,g)\}&\color{gray}{g(1)\text{ is undefined}}
 \end{cases}
 $$
@@ -306,9 +306,9 @@ $$
 ::: {.element class="fragment"}
 
 $$⟦\text{Someone}^1\text{ is here}⟧^g = \begin{cases}
-\{(\color{red}{1},g^{[1 → x]}) \mid x \text{ is here}\}\\
+\{(\color{red}{⊤},g^{[1 → x]}) \mid x \text{ is here}\}\\
 \qquad\color{gray}{\text{someone is here}}\\
-\{(\color{red}0,g)\}\\
+\{(\color{red}{⊥},g)\}\\
 \qquad\color{gray}{\text{nobody is here}}
 \end{cases}$$
 
@@ -330,8 +330,8 @@ Remember to have something prepared about maximize presupposition.
 
 $$
 = \begin{cases}
-    \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-    \{(0,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
+    \{(⊤,[x]) \mid x\text{ is a triangle in the circle}\}\\
+    \{(⊥,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
 \end{cases}
 $$
 
@@ -340,7 +340,7 @@ $$
 </center>
 
 $$
-= \{(1,[\color{red}{Δ}]),(1,[\color{blue}{Δ}])\}
+= \{(⊤,[\color{red}{Δ}]),(⊥,[\color{blue}{Δ}])\}
 $$
 
 :::
@@ -353,8 +353,8 @@ $$
 
 $$
 = \begin{cases}
-    \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-    \{(0,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
+    \{(⊤,[x]) \mid x\text{ is a triangle in the circle}\}\\
+    \{(⊥,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
 \end{cases}
 $$
 <center>
@@ -367,13 +367,13 @@ $$
 
 :::
 
-## Comparison with indefinites in orthodox DS
+## Comparison with indefinites in first-generation DS
 
-For those of you familiar with, e.g., G&S's Dyamic Predicate Logic (DPL):
+For those of you familiar with first-generation approaches to dynamic semantics, such as G&S's *Dynamic Predicate Logic*:
 
-- If there is a witness for the existential statement, then the true-paired outputs are equivalent to what is delivered by DPL.
+- If there is a witness for the existential statement, then the true-paired outputs are equivalent to what is delivered by first-generation theories.
 - If there is no witness for the existential statement, the output is just the input assignment paired with false.
-- In DPL, if there is no witness then the output set is simply empty; here we crucially keep track of both positive *and* negative referential information.
+- In first-generation theories however, if there is no witness then the output set is simply empty; here we crucially keep track of both positive *and* negative referential information.
 
 ## Payoff #1: negation
 
@@ -383,8 +383,8 @@ For those of you familiar with, e.g., G&S's Dyamic Predicate Logic (DPL):
 ::: {.element class="fragment"}
 $$
 ⟦\text{Nobody is here}⟧ = λ g . \begin{cases}
-    \{(\color{red}{¬\,1},g^{[1 → x]}) \mid x\text{ is here}\}\\
-    \{(\color{red}{¬\,0},g)\}\\
+    \{(\color{red}{¬\,⊤},g^{[1 → x]}) \mid x\text{ is here}\}\\
+    \{(\color{red}{¬\,⊥},g)\}\\
     \qquad\color{gray}{\text{nobody is here}}
 \end{cases}
 $$
@@ -393,8 +393,8 @@ $$
 ::: {.element class="fragment"}
 $$
 = λ g . \begin{cases}
-    \{(\color{red}{0},g^{[1 → x]}) \mid x\text{ is here}\}\\
-    \{(\color{red}{1},g)\}\\
+    \{(\color{red}{⊥},g^{[1 → x]}) \mid x\text{ is here}\}\\
+    \{(\color{red}{⊤},g)\}\\
     \qquad\color{gray}{\text{nobody is here}}
 \end{cases}
 $$
@@ -415,8 +415,8 @@ $$
 \begin{aligned}[t]
 &⟦\text{It's not the case that nobody is here}⟧\\
 &= λ g . \begin{cases}
-    \{(\color{red}{¬ ¬\,1},g^{[1 → x]} \mid x\text{ is here})\}\\
-    \{(\color{red}{¬ ¬\,0},g)\}\\
+    \{(\color{red}{¬ ¬\,⊤},g^{[1 → x]} \mid x\text{ is here})\}\\
+    \{(\color{red}{¬ ¬\,⊥},g)\}\\
     \qquad\color{gray}{\text{nobody is here}}
 \end{cases}
 \end{aligned}
@@ -426,8 +426,8 @@ $$
 ::: {.element class="fragment"}
 $$
 = λ g . \begin{cases}
-    \{(\color{red}{1},g^{[1 → x]} \mid x\text{ is here})\}\\
-    \{(\color{red}{0},g)\}\\
+    \{(\color{red}{⊤},g^{[1 → x]} \mid x\text{ is here})\}\\
+    \{(\color{red}{⊥},g)\}\\
     \qquad\color{gray}{\text{nobody is here}}
 \end{cases}
 $$
@@ -442,7 +442,7 @@ $$
 ## Interlude: Strong Kleene
 
 - Before we proceed much further, a remark is due on the semantics we'll assume for the logical connectives.
-  + Recall that a foundational assumption of the current approach is that logical operators are *truth-functional*; but we have three truth values ($1,0,\#$) to consider, not just two, which opens up a number of possibilities.
+  + Recall that a foundational assumption of the current approach is that logical operators are *truth-functional*; but we have three truth values ($⊤,⊥,\#$) to consider, not just two, which opens up a number of possibilities.
   
 - The interpretation schema we'll adopt for the logical connectives is Kleene's **strong logic of indeterminacy**; (i.e., *Strong Kleene*).
 
@@ -463,11 +463,11 @@ Truth-table for Strong Kleene conjunction ($∧^s$):
 <center>
 
 ::: {.element class="fragment"}
- | $∧^s$         | $\mathbf{1}$ | $\mathbf{0}$ | $\mathbf{\#}$ |
+ | $∧^s$         | $\mathbf{⊤}$ | $\mathbf{⊥}$ | $\mathbf{\#}$ |
  |:--------------|:-------------|--------------|:--------------|
- | $\mathbf{1}$  | $1$          | $0$          | $\#$          |
- | $\mathbf{0}$  | $0$          | $0$          | $0$           |
- | $\mathbf{\#}$ | $\#$         | $0$          | $\#$          |
+ | $\mathbf{⊤}$  | $⊤$          | $⊥$          | $\#$          |
+ | $\mathbf{⊥}$  | $⊥$          | $⊥$          | $⊥$           |
+ | $\mathbf{\#}$ | $\#$         | $⊥$          | $\#$          |
 :::
 
 </center>
@@ -485,11 +485,11 @@ Truth-table for Strong Kleene disjunction ($∨^s$)
 :::
 
 ::: {.element class="fragment"}
- | $∨^s$ | $\mathbf{1}$  | $\mathbf{0}$ | $\mathbf{\#}$ |
+ | $∨^s$ | $\mathbf{⊤}$  | $\mathbf{⊥}$ | $\mathbf{\#}$ |
  |:------|:-----|-----|:-----|
- | $\mathbf{1}$   | $1$  | $1$ | $1$ |
- | $\mathbf{0}$   | $1$  | $0$ | $\#$ |
- | $\mathbf{\#}$  | $1$ | $\#$ | $\#$ |
+ | $\mathbf{⊤}$   | $⊤$  | $⊤$ | $⊤$ |
+ | $\mathbf{⊥}$   | $⊤$  | $⊥$ | $\#$ |
+ | $\mathbf{\#}$  | $⊤$ | $\#$ | $\#$ |
 :::
 
 ## On explanatory adequacy
@@ -521,12 +521,14 @@ $$
 
 ::: {.element class="fragment alert"}
 **Important:** the locus of stipulation on the current approach is in the *algorithm* for lifting any truth-functional operator into the dynamic domain of referential-information-passing. Nothing is stipulated about the dynamics of the individual logical connectives.
+
+- TODO: say something about the important architectural questions this gives rise to.
 :::
 
 ## Payoff 2: Dynamic conjunction
 
-- Applying this algorithm to $∧^s$ gives us something equivalent to DPL conjunction wrt positive referential information (Charlow 2019).
-  - We can see this most clearly if we just compute the positive extension ($⟦.⟧_+$; the referential information paired with $\color{red}{1}$). 
+- Applying this algorithm to $∧^s$ gives us something equivalent to DPL conjunction wrt positive referential information.
+  - We can see this most clearly if we just compute the positive extension ($⟦.⟧_+$; the referential information paired with $\color{red}{⊤}$). 
   
 ::: {.element class="fragment"}
 $$
@@ -588,7 +590,7 @@ $$
 
 ::: {.element class="fragment"}
 $$
-\{(0,[b])\}
+\{(⊥,[b])\}
 $$
 :::
 
@@ -596,7 +598,7 @@ $$
 
 ::: {.element class="fragment"}
 $$
-⟦\text{it}_1\text{'s upstairs}⟧^{[b]} = \{(1,[b])\mid b\text{ is upstairs}\}
+⟦\text{it}_1\text{'s upstairs}⟧^{[b]} = \{(⊤,[b])\mid b\text{ is upstairs}\}
 $$
 :::
 
@@ -621,7 +623,7 @@ This leads to a problem with external staticity.
 :::
 
 (@disj) Either [**a$^1$ linguist**]{class=hl1} is here or it's raining.  
-[**She$_1$**]{class=hl1}'s smoking outside.
+\# [**She$_1$**]{class=hl1}'s smoking outside.
 
 ::: {.element class=fragment}
 We predict that if a linguist is indeed here, anaphora should be licensed in (@disj).
@@ -636,7 +638,6 @@ We predict that if a linguist is indeed here, anaphora should be licensed in (@d
 ::: notes
 Add a "what we've achieved so far" slide.
 :::
-
 
 # The pragmatics of anaphora
 
@@ -657,9 +658,9 @@ Add a "what we've achieved so far" slide.
 
 ::: {.element class=fragment}
 $$⟦\text{Someone}^1\text{ is here}⟧^{\color{#20A5BA}{w},\color{#10A778}{g}} = \begin{cases}
-\{(\color{#C30771}{1},\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}}) \mid x \text{ is here in }w\}\\
+\{(\color{#C30771}{⊤},\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}}) \mid x \text{ is here in }w\}\\
 \qquad\color{gray}{\text{someone is here}}\\
-\{(\color{#C30771}{0},\color{#20A5BA}{w},\color{#10A778}{g})\}\\
+\{(\color{#C30771}{⊥},\color{#20A5BA}{w},\color{#10A778}{g})\}\\
 \qquad\color{gray}{\text{nobody is here in }w}
 \end{cases}$$
 :::
@@ -669,8 +670,8 @@ $$
 \begin{aligned}[t]
 &⟦\text{She}_1\text{ left}⟧^{\color{#20A5BA}{w},\color{#10A778}{g}}\\
 &= \begin{cases}
-\{(\color{#C30771}{1},\color{#20A5BA}{w},\color{#10A778}{g})\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ left in }w}\\
-\{(\color{#C30771}{0},\color{#20A5BA}{w},\color{#10A778}{g})\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn't leave in }w}\\
+\{(\color{#C30771}{⊤},\color{#20A5BA}{w},\color{#10A778}{g})\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ left in }w}\\
+\{(\color{#C30771}{⊥},\color{#20A5BA}{w},\color{#10A778}{g})\}&\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn't leave in }w}\\
 \{(\color{#C30771}{\#},\color{#20A5BA}{w},\color{#10A778}{g})\}&\color{gray}{g(1)\text{ is undefined}}
 \end{cases}
 \end{aligned}
@@ -773,7 +774,7 @@ $$
 $$
 
 $$
-= \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{}{[a]}),(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\}
+= \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\}
 $$
 
 - Note that the resulting context set is *not* one in which the presupposition of a subsequent pronoun will be licensed.
@@ -862,7 +863,7 @@ Updating a context set in which both disjuncts are real possibilities will exten
 Recall that disjunctions appear to be *internally static*
 :::
 
-(@stat) Either [a linguist]{class=hl1} is here, or [she]{class=hl1}'s smoking outside.
+(@stat) \# Either [a linguist]{class=hl1} is here, or [she]{class=hl1}'s smoking outside.
 
 ::: {.element class=fragment}
 Since our algorithm for passing referential is modelled on dynamic conjunction, there's no obvious reason why (@stat) should be unacceptable on the intended reading.
@@ -899,7 +900,7 @@ $⟦\text{(not P) and Q}⟧_+^g = ∅ ∨ ⟦\text{P and not Q}⟧_+^g = ∅, �
 In plain English: a disjunction is odd if there is no way of verifying the disjunction other than by verifying both disjuncts.
 :::
 
-(@) [Someone$^1$]{class=hl1} is in the audience, or [she$_1$]{class=hl1} is sitting down.
+(@) \# [Someone$^1$]{class=hl1} is in the audience, or [she$_1$]{class=hl1} is sitting down.
 
 ::: {.element class=fragment}
 Here, if the first disjunct is false, the second is always undefined

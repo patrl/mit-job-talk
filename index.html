@@ -99,7 +99,7 @@
                 <li class="fragment">Orthodox dynamic semantics isn’t classical enough.</li>
                 <li class="fragment">We need to take into account the role of pragmatics in anaphoric licensing.</li>
                 </ul></li>
-                <li class="fragment">The goal will be a dynamic semantics in which referential information is passed <em>uniformly</em> from left-to-right (following Charlow 2014,2019).
+                <li class="fragment">The goal will be a dynamic semantics in which referential information is passed <em>uniformly</em> from left-to-right.
                 <ul>
                 <li class="fragment">The resulting theory will be rather permissive - we’ll restrict it in the pragmatic component.</li>
                 </ul></li>
@@ -293,30 +293,24 @@
                 <h2>A logical substrate</h2>
                 <p>We’ll develop a theory of anaphora based on the following ideas:</p>
                 <ul>
-                <li class="fragment">The <em>core</em> semantic value of a sentence is a (trivalent) truth-value; referential information is computed <em>in tandem</em> with this logical substrate.</li>
+                <li class="fragment">The <em>core</em> semantic value of a sentence is a (trivalent) truth-value; referential information is computed <em>in tandem</em> with this logical substrate, following Charlow (2014, 2019).</li>
                 <li class="fragment">The logical connectives operate <em>exclusively</em> on the logical substrate.
                 <ul>
                 <li class="fragment">Referential information is passed from left-to-right <em>uniformly</em>.</li>
                 <li class="fragment">Incrementality in anaphoric processing is achieved by flipping a single “switch” throughout the grammar.</li>
                 </ul></li>
                 </ul>
-                </section>
-                <section id="previous-work" class="slide level2">
-                <h2>Previous work</h2>
-                <ul>
-                <li class="fragment">This is an application of techniques developed by Charlow for passing referential information uniformly through composition (2014,2019).</li>
-                <li class="fragment">What’s new here is:
-                <ul>
-                <li class="fragment">the semantics of indefinites.</li>
-                <li class="fragment">a defense of the strong thesis that <em>every</em> logical connective is purely truth-functional.</li>
-                </ul></li>
-                </ul>
+                <!-- ## Previous work -->
+                <!-- - This is an application of techniques developed by Charlow for passing referential information uniformly through composition (2014,2019). -->
+                <!-- - What's new here is: -->
+                <!--   + the semantics of indefinites. -->
+                <!--   + a defense of the strong thesis that *every* logical connective is purely truth-functional. -->
                 </section>
                 <section id="enriching-the-dynamic-notion-of-content" class="slide level2">
                 <h2>Enriching the dynamic notion of content</h2>
                 <ul>
                 <li class="fragment">Assignments are a store of referential information; they tell us how to fix the value of variables (i.e., pronouns).</li>
-                <li class="fragment">Here we adopt Charlow’s (2014, 2019) notion of content: sentences are functions from <em>assignments</em> (the input) to <em>sets of assignment-truth-value pairs</em> (the outputs).
+                <li class="fragment">Sentences express functions from <em>assignments</em> (the input) to <em>sets of assignment-truth-value pairs</em> (the outputs) (Charlow 2014, 2019).
                 <ul>
                 <li class="fragment">Another way of thinking about this: output assignments are <em>polarized</em>.</li>
                 <li class="fragment">Whence talk of a ‘logical substrate’.</li>
@@ -326,8 +320,8 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 ⟦\text{Aeryn left}⟧ = λ g . \begin{cases}
-                \{(1,g)\}&amp;\color{gray}{\text{Aeryn left}}\\
-                \{(0,g)\}&amp;\color{gray}{\text{Aeryn didn&#39;t leave}}
+                \{(⊤,g)\}&amp;\color{gray}{\text{Aeryn left}}\\
+                \{(⊥,g)\}&amp;\color{gray}{\text{Aeryn didn&#39;t leave}}
                 \end{cases}
                 \]</span></p>
                 </div>
@@ -341,8 +335,8 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 ⟦\text{She}_1\text{ left}⟧^g = \begin{cases}
-                \{(1,g)\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ left}}\\
-                \{(0,g)\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave}}\\
+                \{(⊤,g)\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ left}}\\
+                \{(⊥,g)\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave}}\\
                 \{(\#,g)\}&amp;\color{gray}{g(1)\text{ is undefined}}
                 \end{cases}
                 \]</span></p>
@@ -361,9 +355,9 @@
                 </ul>
                 <div class="element fragment">
                 <p><span class="math display">\[⟦\text{Someone}^1\text{ is here}⟧^g = \begin{cases}
-                \{(\color{red}{1},g^{[1 → x]}) \mid x \text{ is here}\}\\
+                \{(\color{red}{⊤},g^{[1 → x]}) \mid x \text{ is here}\}\\
                 \qquad\color{gray}{\text{someone is here}}\\
-                \{(\color{red}0,g)\}\\
+                \{(\color{red}{⊥},g)\}\\
                 \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}\]</span></p>
                 </div>
@@ -386,15 +380,15 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 = \begin{cases}
-                    \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-                    \{(0,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
+                    \{(⊤,[x]) \mid x\text{ is a triangle in the circle}\}\\
+                    \{(⊥,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
                 \end{cases}
                 \]</span></p>
                 <center>
                 <img data-src="img/Triangles1.png" style="width: 33%" />
                 </center>
                 <p><span class="math display">\[
-                = \{(1,[\color{red}{Δ}]),(1,[\color{blue}{Δ}])\}
+                = \{(⊤,[\color{red}{Δ}]),(⊥,[\color{blue}{Δ}])\}
                 \]</span></p>
                 </div>
                 </section>
@@ -406,8 +400,8 @@
                 <div class="element fragment">
                 <span class="math display">\[
                 = \begin{cases}
-                    \{(1,[x]) \mid x\text{ is a triangle in the circle}\}\\
-                    \{(0,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
+                    \{(⊤,[x]) \mid x\text{ is a triangle in the circle}\}\\
+                    \{(⊥,[])\}\qquad\color{gray}{\text{there is no triangle in the circle}}
                 \end{cases}
                 \]</span>
                 <center>
@@ -418,13 +412,13 @@
                 \]</span></p>
                 </div>
                 </section>
-                <section id="comparison-with-indefinites-in-orthodox-ds" class="slide level2">
-                <h2>Comparison with indefinites in orthodox DS</h2>
-                <p>For those of you familiar with, e.g., G&amp;S’s Dyamic Predicate Logic (DPL):</p>
+                <section id="comparison-with-indefinites-in-first-generation-ds" class="slide level2">
+                <h2>Comparison with indefinites in first-generation DS</h2>
+                <p>For those of you familiar with first-generation approaches to dynamic semantics, such as G&amp;S’s <em>Dynamic Predicate Logic</em>:</p>
                 <ul>
-                <li class="fragment">If there is a witness for the existential statement, then the true-paired outputs are equivalent to what is delivered by DPL.</li>
+                <li class="fragment">If there is a witness for the existential statement, then the true-paired outputs are equivalent to what is delivered by first-generation theories.</li>
                 <li class="fragment">If there is no witness for the existential statement, the output is just the input assignment paired with false.</li>
-                <li class="fragment">In DPL, if there is no witness then the output set is simply empty; here we crucially keep track of both positive <em>and</em> negative referential information.</li>
+                <li class="fragment">In first-generation theories however, if there is no witness then the output set is simply empty; here we crucially keep track of both positive <em>and</em> negative referential information.</li>
                 </ul>
                 </section>
                 <section id="payoff-1-negation" class="slide level2">
@@ -436,8 +430,8 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 ⟦\text{Nobody is here}⟧ = λ g . \begin{cases}
-                    \{(\color{red}{¬\,1},g^{[1 → x]}) \mid x\text{ is here}\}\\
-                    \{(\color{red}{¬\,0},g)\}\\
+                    \{(\color{red}{¬\,⊤},g^{[1 → x]}) \mid x\text{ is here}\}\\
+                    \{(\color{red}{¬\,⊥},g)\}\\
                     \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}
                 \]</span></p>
@@ -445,8 +439,8 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 = λ g . \begin{cases}
-                    \{(\color{red}{0},g^{[1 → x]}) \mid x\text{ is here}\}\\
-                    \{(\color{red}{1},g)\}\\
+                    \{(\color{red}{⊥},g^{[1 → x]}) \mid x\text{ is here}\}\\
+                    \{(\color{red}{⊤},g)\}\\
                     \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}
                 \]</span></p>
@@ -468,8 +462,8 @@
                 \begin{aligned}[t]
                 &amp;⟦\text{It&#39;s not the case that nobody is here}⟧\\
                 &amp;= λ g . \begin{cases}
-                    \{(\color{red}{¬ ¬\,1},g^{[1 → x]} \mid x\text{ is here})\}\\
-                    \{(\color{red}{¬ ¬\,0},g)\}\\
+                    \{(\color{red}{¬ ¬\,⊤},g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(\color{red}{¬ ¬\,⊥},g)\}\\
                     \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}
                 \end{aligned}
@@ -478,8 +472,8 @@
                 <div class="element fragment">
                 <p><span class="math display">\[
                 = λ g . \begin{cases}
-                    \{(\color{red}{1},g^{[1 → x]} \mid x\text{ is here})\}\\
-                    \{(\color{red}{0},g)\}\\
+                    \{(\color{red}{⊤},g^{[1 → x]} \mid x\text{ is here})\}\\
+                    \{(\color{red}{⊥},g)\}\\
                     \qquad\color{gray}{\text{nobody is here}}
                 \end{cases}
                 \]</span></p>
@@ -498,7 +492,7 @@
                 <ul>
                 <li class="fragment"><p>Before we proceed much further, a remark is due on the semantics we’ll assume for the logical connectives.</p>
                 <ul>
-                <li class="fragment">Recall that a foundational assumption of the current approach is that logical operators are <em>truth-functional</em>; but we have three truth values (<span class="math inline">\(1,0,\#\)</span>) to consider, not just two, which opens up a number of possibilities.</li>
+                <li class="fragment">Recall that a foundational assumption of the current approach is that logical operators are <em>truth-functional</em>; but we have three truth values (<span class="math inline">\(⊤,⊥,\#\)</span>) to consider, not just two, which opens up a number of possibilities.</li>
                 </ul></li>
                 <li class="fragment"><p>The interpretation schema we’ll adopt for the logical connectives is Kleene’s <strong>strong logic of indeterminacy</strong>; (i.e., <em>Strong Kleene</em>).</p></li>
                 <li class="fragment"><p>This is the logic that naturally emerges if we take <span class="math inline">\(\#\)</span> to stand in for <em>uncertainty whether true or false</em>.</p></li>
@@ -523,28 +517,28 @@
                 <thead>
                 <tr class="header">
                 <th style="text-align: left;"><span class="math inline">\(∧^s\)</span></th>
-                <th style="text-align: left;"><span class="math inline">\(\mathbf{1}\)</span></th>
-                <th><span class="math inline">\(\mathbf{0}\)</span></th>
+                <th style="text-align: left;"><span class="math inline">\(\mathbf{⊤}\)</span></th>
+                <th><span class="math inline">\(\mathbf{⊥}\)</span></th>
                 <th style="text-align: left;"><span class="math inline">\(\mathbf{\#}\)</span></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr class="odd">
-                <td style="text-align: left;"><span class="math inline">\(\mathbf{1}\)</span></td>
-                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
-                <td><span class="math inline">\(0\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{⊤}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(⊤\)</span></td>
+                <td><span class="math inline">\(⊥\)</span></td>
                 <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
                 </tr>
                 <tr class="even">
-                <td style="text-align: left;"><span class="math inline">\(\mathbf{0}\)</span></td>
-                <td style="text-align: left;"><span class="math inline">\(0\)</span></td>
-                <td><span class="math inline">\(0\)</span></td>
-                <td style="text-align: left;"><span class="math inline">\(0\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{⊥}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(⊥\)</span></td>
+                <td><span class="math inline">\(⊥\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(⊥\)</span></td>
                 </tr>
                 <tr class="odd">
                 <td style="text-align: left;"><span class="math inline">\(\mathbf{\#}\)</span></td>
                 <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
-                <td><span class="math inline">\(0\)</span></td>
+                <td><span class="math inline">\(⊥\)</span></td>
                 <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
                 </tr>
                 </tbody>
@@ -570,27 +564,27 @@
                 <thead>
                 <tr class="header">
                 <th style="text-align: left;"><span class="math inline">\(∨^s\)</span></th>
-                <th style="text-align: left;"><span class="math inline">\(\mathbf{1}\)</span></th>
-                <th><span class="math inline">\(\mathbf{0}\)</span></th>
+                <th style="text-align: left;"><span class="math inline">\(\mathbf{⊤}\)</span></th>
+                <th><span class="math inline">\(\mathbf{⊥}\)</span></th>
                 <th style="text-align: left;"><span class="math inline">\(\mathbf{\#}\)</span></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr class="odd">
-                <td style="text-align: left;"><span class="math inline">\(\mathbf{1}\)</span></td>
-                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
-                <td><span class="math inline">\(1\)</span></td>
-                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{⊤}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(⊤\)</span></td>
+                <td><span class="math inline">\(⊤\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(⊤\)</span></td>
                 </tr>
                 <tr class="even">
-                <td style="text-align: left;"><span class="math inline">\(\mathbf{0}\)</span></td>
-                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
-                <td><span class="math inline">\(0\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(\mathbf{⊥}\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(⊤\)</span></td>
+                <td><span class="math inline">\(⊥\)</span></td>
                 <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
                 </tr>
                 <tr class="odd">
                 <td style="text-align: left;"><span class="math inline">\(\mathbf{\#}\)</span></td>
-                <td style="text-align: left;"><span class="math inline">\(1\)</span></td>
+                <td style="text-align: left;"><span class="math inline">\(⊤\)</span></td>
                 <td><span class="math inline">\(\#\)</span></td>
                 <td style="text-align: left;"><span class="math inline">\(\#\)</span></td>
                 </tr>
@@ -634,14 +628,17 @@
                 </ul>
                 <div class="element fragment alert">
                 <p><strong>Important:</strong> the locus of stipulation on the current approach is in the <em>algorithm</em> for lifting any truth-functional operator into the dynamic domain of referential-information-passing. Nothing is stipulated about the dynamics of the individual logical connectives.</p>
+                <ul>
+                <li class="fragment">TODO: say something about the important architectural questions this gives rise to.</li>
+                </ul>
                 </div>
                 </section>
                 <section id="payoff-2-dynamic-conjunction" class="slide level2">
                 <h2>Payoff 2: Dynamic conjunction</h2>
                 <ul>
-                <li class="fragment">Applying this algorithm to <span class="math inline">\(∧^s\)</span> gives us something equivalent to DPL conjunction wrt positive referential information (Charlow 2019).
+                <li class="fragment">Applying this algorithm to <span class="math inline">\(∧^s\)</span> gives us something equivalent to DPL conjunction wrt positive referential information.
                 <ul>
-                <li class="fragment">We can see this most clearly if we just compute the positive extension (<span class="math inline">\(⟦.⟧_+\)</span>; the referential information paired with <span class="math inline">\(\color{red}{1}\)</span>).</li>
+                <li class="fragment">We can see this most clearly if we just compute the positive extension (<span class="math inline">\(⟦.⟧_+\)</span>; the referential information paired with <span class="math inline">\(\color{red}{⊤}\)</span>).</li>
                 </ul></li>
                 </ul>
                 <div class="element fragment">
@@ -708,7 +705,7 @@
                 </ul>
                 <div class="element fragment">
                 <p><span class="math display">\[
-                \{(0,[b])\}
+                \{(⊥,[b])\}
                 \]</span></p>
                 </div>
                 <ul>
@@ -716,7 +713,7 @@
                 </ul>
                 <div class="element fragment">
                 <p><span class="math display">\[
-                ⟦\text{it}_1\text{&#39;s upstairs}⟧^{[b]} = \{(1,[b])\mid b\text{ is upstairs}\}
+                ⟦\text{it}_1\text{&#39;s upstairs}⟧^{[b]} = \{(⊤,[b])\mid b\text{ is upstairs}\}
                 \]</span></p>
                 </div>
                 <div class="element fragment">
@@ -743,7 +740,7 @@
                 </div>
                 <ol start="22" class="example" type="1">
                 <li class="fragment">Either <span class="hl1"><strong>a<span class="math inline">\(^1\)</span> linguist</strong></span> is here or it’s raining.<br />
-                <span class="hl1"><strong>She<span class="math inline">\(_1\)</span></strong></span>’s smoking outside.</li>
+                # <span class="hl1"><strong>She<span class="math inline">\(_1\)</span></strong></span>’s smoking outside.</li>
                 </ol>
                 <div class="element fragment">
                 <p>We predict that if a linguist is indeed here, anaphora should be licensed in (22).</p>
@@ -786,9 +783,9 @@
                 </ul>
                 <div class="element fragment">
                 <p><span class="math display">\[⟦\text{Someone}^1\text{ is here}⟧^{\color{#20A5BA}{w},\color{#10A778}{g}} = \begin{cases}
-                \{(\color{#C30771}{1},\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}}) \mid x \text{ is here in }w\}\\
+                \{(\color{#C30771}{⊤},\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}}) \mid x \text{ is here in }w\}\\
                 \qquad\color{gray}{\text{someone is here}}\\
-                \{(\color{#C30771}{0},\color{#20A5BA}{w},\color{#10A778}{g})\}\\
+                \{(\color{#C30771}{⊥},\color{#20A5BA}{w},\color{#10A778}{g})\}\\
                 \qquad\color{gray}{\text{nobody is here in }w}
                 \end{cases}\]</span></p>
                 </div>
@@ -797,8 +794,8 @@
                 \begin{aligned}[t]
                 &amp;⟦\text{She}_1\text{ left}⟧^{\color{#20A5BA}{w},\color{#10A778}{g}}\\
                 &amp;= \begin{cases}
-                \{(\color{#C30771}{1},\color{#20A5BA}{w},\color{#10A778}{g})\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ left in }w}\\
-                \{(\color{#C30771}{0},\color{#20A5BA}{w},\color{#10A778}{g})\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave in }w}\\
+                \{(\color{#C30771}{⊤},\color{#20A5BA}{w},\color{#10A778}{g})\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ left in }w}\\
+                \{(\color{#C30771}{⊥},\color{#20A5BA}{w},\color{#10A778}{g})\}&amp;\color{gray}{g(1)\text{ is defined and }g(1)\text{ didn&#39;t leave in }w}\\
                 \{(\color{#C30771}{\#},\color{#20A5BA}{w},\color{#10A778}{g})\}&amp;\color{gray}{g(1)\text{ is undefined}}
                 \end{cases}
                 \end{aligned}
@@ -901,7 +898,7 @@
                 \end{aligned}\right]
                 \]</span></p>
                 <p><span class="math display">\[
-                = \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{}{[a]}),(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\}
+                = \{(\color{#20A5BA}{w_{ad}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{a¬d}},\color{#10A778}{[a]}),(\color{#20A5BA}{w_{∅d}},\color{#10A778}{[]})\}
                 \]</span></p>
                 <ul>
                 <li class="fragment">Note that the resulting context set is <em>not</em> one in which the presupposition of a subsequent pronoun will be licensed.
@@ -995,7 +992,7 @@
                 <p>Recall that disjunctions appear to be <em>internally static</em></p>
                 </div>
                 <ol start="29" class="example" type="1">
-                <li class="fragment">Either <span class="hl1">a linguist</span> is here, or <span class="hl1">she</span>’s smoking outside.</li>
+                <li class="fragment"># Either <span class="hl1">a linguist</span> is here, or <span class="hl1">she</span>’s smoking outside.</li>
                 </ol>
                 <div class="element fragment">
                 <p>Since our algorithm for passing referential is modelled on dynamic conjunction, there’s no obvious reason why (29) should be unacceptable on the intended reading.</p>
@@ -1031,7 +1028,7 @@
                 <p>In plain English: a disjunction is odd if there is no way of verifying the disjunction other than by verifying both disjuncts.</p>
                 </div>
                 <ol start="31" class="example" type="1">
-                <li class="fragment"><span class="hl1">Someone<span class="math inline">\(^1\)</span></span> is in the audience, or <span class="hl1">she<span class="math inline">\(_1\)</span></span> is sitting down.</li>
+                <li class="fragment"># <span class="hl1">Someone<span class="math inline">\(^1\)</span></span> is in the audience, or <span class="hl1">she<span class="math inline">\(_1\)</span></span> is sitting down.</li>
                 </ol>
                 <div class="element fragment">
                 <p>Here, if the first disjunct is false, the second is always undefined</p>

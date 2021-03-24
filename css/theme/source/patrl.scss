@@ -13,8 +13,11 @@
 
 // Include theme-specific fonts
 //
-$font-prefix: '../../node_modules/@ibm/plex';
-@import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
+// $font-prefix: '../../node_modules/@ibm/plex';
+// @import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
+
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700,400italic,700italic,400bold,700bold);
 
 
 html * {
@@ -31,8 +34,8 @@ $light-cyan: #4FB8CC;
 $dark-cyan: #20A5BA;
 $blue: #20BBFC;
 $dark-red: #C30771;
-$dark-green: #10A778
-#dark-purple: #523C79
+$dark-green: #10A778;
+$dark-purple: #523C79;
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'IBM Plex Sans Condensed';
