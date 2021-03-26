@@ -6,15 +6,15 @@ author: Patrick D. Elliott
 # Discourse anaphora informs content
 
 
-## Marriage and marbles 
+## Pronouns and their antecedents
 
 Heim 1982, Kamp 1988, a.o.
 
-(@) Andreea has [**a partner**]{class=hl1}.  
-[**He**]{class=hl1} is standing next to her.
+(@) Andrew has [**a child**]{class=hl1}.  
+[**She**]{class=hl1} is at school.
 
-(@) Andreea is married.  
-\# [**He**]{class=hl1} is standing next to her.
+(@) Andrew is a parent.  
+\# [**She**]{class=hl1} is at school.
 
 (@) [**Exactly one of the ten balls**]{class=hl2} is not in the bag.  
 [**It**]{class=hl2} is under the sofa. 
@@ -26,7 +26,7 @@ Heim 1982, Kamp 1988, a.o.
 
 I'd like to begin with a simple puzzle involving the effects of two contextually truth-conditionally equivalent sentences on a discourse. 
 
-- Begin with partner/marriage examples
+- Begin with child/parent examples
 - Move on to marble examples - mention that Partee came up with this.
 
 :::
@@ -38,19 +38,9 @@ I'd like to begin with a simple puzzle involving the effects of two contextually
 - **The dynamic view:** *Content* is influenced not just by *what* is said, but *how* it is said (Kamp 1981, Heim 1982).
 
 - In talking, we keep track not just of information concerning *how things are*, but also *referential information* concerning *what/who* the speaker intended to refer to.
-  + An utterance of "Andreea has a partner" is *about* a partner of Andreea's in a way that "Andreea is married is not".
-  + Another way of saying the same thing: "Andreea has a partner" introduces a *discourse referent* (Karttunen 1969)
+  + An utterance of "Andrew has a child" is *about* a child of Andrew's in a way that "Andrew is a parent" is not.
+  + Another way of saying the same thing: "Andrew has a child" introduces a *discourse referent* (Karttunen 1969)
 
-<!-- ## Pragmatics of information exchange -->
-<!-- <\!-- {data-background-image="./img/stalnaker.jpg" data-background-opacity=0.3} -\-> -->
-
-<!-- - In a number of works, Robert Stalnaker has developed an extremely influential notion of content, and a corresponding notion of assertion. -->
-
-<!-- - According to Stalnaker, a discourse is an attempt to collaboratively construct a mutually believed store of knowledge: *the common ground*.  -->
-<!--   + The common ground can be modelled as the *context set*, i.e., a set of possibilities. -->
-<!--   + The content expressed by a sentence is simply a set of possibilities. -->
-<!--   + As discourse proceeds, the context set is *updated* with the information conveyed by accepted assertions, by simply intersecting the context set with the sentence's content. -->
-  
 ## The dynamic perspective
 
 - Dynamic semantics enriches conversational contexts with *referential information* concerning *intended reference* (Irene Heim's notion of a *file*).
@@ -78,7 +68,7 @@ I'd like to begin with a simple puzzle involving the effects of two contextually
 ## Conjunction
 
 :::{.element: class="fragment"}
-"and" is the dynamic connective *par excellence*: Referential information is piped from left-to-right, and flows outwards.
+"and" is the dynamic connective *par excellence*: Referential information flows from left-to-right, and flows outwards.
 :::
 
 (@) [**A linguist**]{class=hl1} walked in, and [**she**]{class=hl1} sat next to [**a philosopher**]{class=hl2}.  
@@ -93,7 +83,7 @@ In the dynamic parlance, conjunction is *internally* and *externally dynamic*. (
 ## Conditionals
 
 :::{.element: class="fragment"}
-Referential information is piped from left-to-right, but may flow no further.
+Referential information flows from left-to-right, but may flow no further.
 :::
 
 (@) [If [**a linguist**]{class=hl1} is here, [**she**]{class=hl1}'s sitting next to [**a philosopher**]{class=hl2}]{class=boxed}.  
@@ -207,7 +197,7 @@ Under certain circumstances, the ban on passing referential information further 
 - The final issue is, in my opinion, the most telling of all.
 
 ::: {.element class=fragment}
-f the truth of one of the disjuncts is contextually entailed later in the discourse, anaphora becomes possible (see Rothschild 2017 for related observations).
+f the truth of one of the disjuncts is contextually entailed later in the discourse, anaphora becomes possible (see Rothschild 2017, Mandelkern 2020 for related observations).
 :::
 
 (@) A: Either it's a weekday, or Gabe baked **[a cake]{class=hl1}**.  
@@ -251,7 +241,7 @@ The accessibility generalizations assumed in DS are full of holes. Anaphora lice
 
 We'll develop a theory of anaphora based on the following ideas:
 
-- The *core* semantic value of a sentence is a (trivalent) truth-value; referential information is computed *in tandem* with this logical substrate, following Charlow (2014, 2019).
+- The *core* semantic value of a sentence is a (trivalent) truth-value; referential information is computed *in tandem* with this logical substrate.
 - The logical connectives operate *exclusively* on the logical substrate.
   + Referential information is passed from left-to-right *uniformly*.
   + Incrementality in anaphoric processing is achieved by flipping a single "switch" throughout the grammar.
@@ -324,7 +314,7 @@ Remember to have something prepared about maximize presupposition.
   
 ## Illustration i
 
-(@) $⟦\text{A}^1\text{ triangle is in the circle.}⟧^{g_⊤}$
+(@) $⟦\text{A}^1\text{ triangle is in the circle.}⟧^{[]}$
 
 ::: {.element class=fragment}
 
@@ -340,14 +330,14 @@ $$
 </center>
 
 $$
-= \{(⊤,[\color{red}{Δ}]),(⊥,[\color{blue}{Δ}])\}
+= \{(⊤,[\color{red}{Δ}]),(⊤,[\color{blue}{Δ}])\}
 $$
 
 :::
 
 ## Illustration ii
 
-(@) $⟦\text{A}^1\text{ triangle is in the circle.}⟧^{g_⊤}$
+(@) $⟦\text{A}^1\text{ triangle is in the circle.}⟧^{[]}$
 
 ::: {.element class=fragment}
 
@@ -362,16 +352,14 @@ $$
 </center>
 
 $$
-= \{(0,[])\}
+= \{(⊥,[])\}
 $$
 
 :::
 
-## Comparison with indefinites in first-generation DS
+## Comparison with first-generation Dynamic Semantics
 
-For those of you familiar with first-generation approaches to dynamic semantics, such as G&S's *Dynamic Predicate Logic*:
-
-- If there is a witness for the existential statement, then the true-paired outputs are equivalent to what is delivered by first-generation theories.
+- If there is a witness for the existential statement, then the true-paired outputs are equivalent to what is delivered by first-generation dynamic theories, such as Groenendijk & Stokhof's (1991) Dynamic Predicate Logic.
 - If there is no witness for the existential statement, the output is just the input assignment paired with false.
 - In first-generation theories however, if there is no witness then the output set is simply empty; here we crucially keep track of both positive *and* negative referential information.
 
@@ -521,9 +509,13 @@ $$
 
 ::: {.element class="fragment alert"}
 **Important:** the locus of stipulation on the current approach is in the *algorithm* for lifting any truth-functional operator into the dynamic domain of referential-information-passing. Nothing is stipulated about the dynamics of the individual logical connectives.
-
-- TODO: say something about the important architectural questions this gives rise to.
 :::
+
+## A note on architecture
+
+- Our algorithm relies on the assumption that the semantics can *see* the order of the juncts. 
+
+- This has important architectural ramifications regarding the information visible to the semantics.
 
 ## Payoff 2: Dynamic conjunction
 
@@ -706,8 +698,8 @@ Some things that fall out automatically:
 ::: {.element class=fragment}
 $$
 \begin{aligned}[t]
-&C[\text{Andreea has a}^1\text{ partner}]\\
-&= \{(\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}})\mid (w,g) ∈ C\,\&\,x\text{ a partner of A's in }w\} 
+&C[\text{Andrew has a}^1\text{ child}]\\
+&= \{(\color{#20A5BA}{w},\color{#10A778}{g^{[1 → x]}})\mid (w,g) ∈ C\,\&\,x\text{ a child of A's in }w\} 
 \end{aligned}
 $$
 :::
@@ -715,8 +707,8 @@ $$
 ::: {.element class=fragment}
 $$
 \begin{aligned}[t]
-&C[\text{Andreea is married}]\\
-&= \{(\color{#20A5BA}{w},\color{#10A778}{g})\mid (w,g) ∈ C\,\&\,\text{A has a partner in }w\} 
+&C[\text{Andrew is a parent}]\\
+&= \{(\color{#20A5BA}{w},\color{#10A778}{g})\mid (w,g) ∈ C\,\&\,\text{A has a child in }w\} 
 \end{aligned}
 $$
 :::
@@ -731,7 +723,7 @@ $$
   + $C$ shouldn't entail the truth or falsity of either disjunct.
   
 ::: {.element class=fragment}
-Context: *It's common ground that Andreea was in the audience*.
+Context: *It's common ground that Alice was in the audience*.
 :::
 
 (@) \# Either someone was in the audience or the event was a disaster.
@@ -810,9 +802,9 @@ $$
 This correctly predicts the subsequent availability a pronoun.
 :::
 
-(@) A: Either [someone]{class=hl1} was in the audience or the event was a disaster.  
+(@) A: Either [**someone**]{class=hl1} was in the audience or the event was a disaster.  
 B: The event wasn't a disaster.  
-A: In that case, I hope [she]{class=hl1} enjoyed it!
+A: In that case, I hope [**she**]{class=hl1} enjoyed it!
 
 ## Disjunctive subordination
 
@@ -820,12 +812,16 @@ A: In that case, I hope [she]{class=hl1} enjoyed it!
 An exception that proves the rule: Anaphora appears to be possible when not disrupted by uncertainty:
 :::
 
-(@) Each linguist [met with [a philosopher]{class=hl1} or read [a philosophy paper]{class=hl2}]
+(@) Each linguist [met with [**a philosopher**]{class=hl1} or read [**a philosophy paper**]{class=hl2}]
 
-(@) They each [found [her]{class=hl1} interesting or couldn't understand [it]{class=hl2}]
+(@) They each [found [**her**]{class=hl1} interesting or couldn't understand [**it**]{class=hl2}]
 
 ::: {.element class=fragment}
 (N.b. these cases involve quantificational subordination, and require an extension of the system to a plural setting *ala* van den Berg 1996)
+:::
+
+::: notes
+Skip this slide.
 :::
 
 ## Negating conjunctions
@@ -834,11 +830,11 @@ An exception that proves the rule: Anaphora appears to be possible when not disr
 I'll note here that we can extend this general explanation to negations of conjunctive sentences, which we otherwise predict can license subsequent anaphora if the first conjunct is true second conjunct is false.
 :::
 
-(@) It's not the case that [[anyone]{class=hl1} walked in *and* [they]{class=hl1} sat down].  
-\# [They]{class=hl1} remained standing.
+(@) It's not the case that [[**anyone**]{class=hl1} walked in *and* [**they**]{class=hl1} sat down].  
+\# [**They**]{class=hl1} remained standing.
 
 ::: {.element class=fragment}
-The explanation takes advantage of the fact that an utterance of the form "not (P *and* Q)" typically requires "not P" and "not Q" to be *real possibilities*. See Elliott (2020) for details.
+The explanation takes advantage of the fact that an utterance of the form "not (P *and* Q)" typically requires "not P" and "not Q" to be *real possibilities* in $C$. See Elliott (2020) for details.
 :::
 
 ## G\&S disjunctions
@@ -847,8 +843,8 @@ The explanation takes advantage of the fact that an utterance of the form "not (
 We now straightforwardly account for *G&S disjunctions* (discussed earlier).
 :::
 
-(@) Either we're interviewing [a$^1$ linguist]{class=hl1}  
-or we're interviewing [a$^1$ philosopher]{class=hl1}.
+(@) Either we're interviewing [**a$^1$ linguist**]{class=hl1}  
+or we're interviewing [**a$^1$ philosopher**]{class=hl1}.
 
 ::: {.element class=fragment}
 Updating a context set in which both disjuncts are real possibilities will extend every assignment with a linguist/philosopher at index $1$.
@@ -863,10 +859,10 @@ Updating a context set in which both disjuncts are real possibilities will exten
 Recall that disjunctions appear to be *internally static*
 :::
 
-(@stat) \# Either [a linguist]{class=hl1} is here, or [she]{class=hl1}'s smoking outside.
+(@stat) \# Either [**a linguist**]{class=hl1} is here, or [**she**]{class=hl1}'s smoking outside.
 
 ::: {.element class=fragment}
-Since our algorithm for passing referential is modelled on dynamic conjunction, there's no obvious reason why (@stat) should be unacceptable on the intended reading.
+Since our algorithm for passing referential is modeled on dynamic conjunction, there's no obvious reason why (@stat) should be unacceptable on the intended reading.
 :::
 
 ## Simons' observation
@@ -875,8 +871,8 @@ Since our algorithm for passing referential is modelled on dynamic conjunction, 
 In order to explain what's going on here, we'll begin with Simons' (1996) observation that the following sentence is deviant:
 :::
 
-(@) \# Either [someone is in the audience]{class=hl2},  
-or [the person in the audience is sitting down]{class=hl2}.
+(@) \# Either [**someone is in the audience**]{class=hl2},  
+or [**the person in the audience is sitting down**]{class=hl2}.
 
 ::: {.element class=fragment}
 What Simons observes is that, when a disjunct *Strawson entails* the other, the disjunction is odd.
@@ -900,13 +896,39 @@ $⟦\text{(not P) and Q}⟧_+^g = ∅ ∨ ⟦\text{P and not Q}⟧_+^g = ∅, �
 In plain English: a disjunction is odd if there is no way of verifying the disjunction other than by verifying both disjuncts.
 :::
 
-(@) \# [Someone$^1$]{class=hl1} is in the audience, or [she$_1$]{class=hl1} is sitting down.
+(@) \# [**Someone$^1$**]{class=hl1} is in the audience, or [**she$_1$**]{class=hl1} is sitting down.
 
 ::: {.element class=fragment}
 Here, if the first disjunct is false, the second is always undefined
 :::
 
 # Wrapping up
+
+## The bottom line
+
+- We've achieved a dynamic semantics which is up-front about *what* exactly it stipulates.
+  + Concretely, the *locus of stipulation* is in the statement of the algorithm for passing referential information, which we stipulate passes information from left-to-right.
+  
+- The idea is that there is a single switch which gives rise to incrementality in anaphoric processing; this isn't localized to the lexical entries of individual connectives.
+  + This makes a clear predictions with respect to acquisition, and cross-linguistic uniformity with respect to referential information flow.
+  
+##
+
+- In developing a more principled theory of anaphora, what we've learned is that the literature has essentially been mistaken in taking the accessibility generalizations at face value.
+  + In order to maintain a parsimonious semantic theory, due care needs to be taken to address the role of pragmatic factors.
+  + Developing an understanding of the *pragmatics* of referential information is **essential** in order to improve on our understanding of the semantic component.
+  
+- As we've seen, it's possible to retain some of the appealing aspects of dynamic semantics - such as the dynamic notion of content - while improving upon the stipulative nature of extant dynamic theories.
+
+# Thank you!
+
+## Acknowledgments
+
+I'm deeply grateful to Simon Charlow, Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and Yasu Sudo for feedback which greatly improved this work.
+
+I'd also like to thank audiences at Rutgers, NYU, and LENLS 17 for their feedback.
+
+# Appendices
 
 ## Ext 1: Donkey anaphora
 
@@ -926,40 +948,4 @@ The algorithm we've outlined for the logical connectives needs to be generalized
 Another interesting extension is *modal subordination*. In Elliott (2020b) I develop an extend this system with epistemic modality, in order to account for what I call *conjunctive bathroom sentences*.
 :::
   
-(@) Maybe there is [no bathroom]{class=hl1} and maybe [it]{class=hl1} is upstairs.
-
-## The bottom line
-
-- We've achieved a dynamic semantics which is up-front about *what* exactly it stipulates.
-  + Concretely, the *locus of stipulation* is in the statement of the algorithm for passing referential information, which we stipulate passes information from left-to-right.
-  
-- The idea is that there is a single switch which gives rise to incrementality in anaphoric processing; this isn't localized to the lexical entries of individual connectives.
-  + This makes a clear and (to my knowledge, unexplored) acquisition prediction.
-  
-##
-
-- In developing a more principled theory of anaphora, what we've learned is that the literature has essentially been mistaken in taking the accessibility generalizations at face value.
-  + In order to maintain a parsimonious semantic theory, due care needs to be taken to address the role of pragmatic factors.
-  + Developing an understanding of the *pragmatics* of referential information is **essential** in order to improve on our understanding of the semantic component.
-  
-- As we've seen, it's possible to retain some of the appealing aspects of dynamic semantics - such as the dynamic notion of content - while improving upon the stipulative nature of extant dynamic theories.
-
-# Thank you!
-
-## Acknowledgments
-
-I'm deeply grateful to Simon Charlow, Keny Chatain, Enrico Flor, Danny Fox, Matthew Gotham, Julian Grove, Nathan Klinedinst, Matt Mandelkern, and especially Yasu Sudo for feedback which greatly improved this work.
-
-I'd also like to thank audiences at Rutgers, NYU, and LENLS 17 for their feedback.
-
-# Appendices
-
-## TODO
-
-::: notes
-Fill this in.
-:::
-
-
-
-
+(@) Maybe there is [**no bathroom**]{class=hl1} and maybe [**it**]{class=hl1} is upstairs.
