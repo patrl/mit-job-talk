@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+                <title>readme</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/patrl.css" id="theme">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+
+		<div class="reveal">
+      <div class="slides">
+
+                <section>
+                <section id="readme" class="title-slide slide level1">
+                <h1>Readme</h1>
+
+                </section>
+                <section id="todo" class="slide level2">
+                <h2>TODO</h2>
+                <ul class="task-list">
+                <li class="fragment"><input type="checkbox" disabled="" />
+                Include discussion of the Witness generalization (Schlenker, Mandelkern, Chatain, …)</li>
+                <li class="fragment"><input type="checkbox" disabled="" />
+                Incorporate citation support via <code>pandoc-citeproc</code>.</li>
+                </ul>
+                </section>
+                <section id="reminders" class="slide level2">
+                <h2>Reminders</h2>
+                <ul>
+                <li class="fragment">Can find nice background gifs via pi-slices.</li>
+                <li class="fragment">We want a theory on which we can “flip a switch” and make predictions about <em>both</em> the incrementality of anaphora and presupposition projection (as emphasized by Chris). This is a theory that does this. We make a raft of interesting predictions, e.g., for acquisition and pathologies.</li>
+                </ul>
+                </section>
+                <section id="watch-markdown" class="slide level2">
+                <h2>Watch markdown</h2>
+                <div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> index.md <span class="kw">|</span> <span class="ex">entr</span> make index.html</span></code></pre></div>
+                </section>
+                <section id="watch-html" class="slide level2">
+                <h2>watch html</h2>
+                <div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> start</span></code></pre></div>
+                </section></section>
+      </div>
+    </div>
+
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/chalkboard/plugin.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				  hash: true,
+                  slideNumber: 'c/t',
+
+				  // Learn about plugins: https://revealjs.com/plugins/
+				  plugins: [ RevealMarkdown, RevealNotes, RevealMath, RevealChalkboard ]
+			});
+		</script>
+	</body>
+</html>
